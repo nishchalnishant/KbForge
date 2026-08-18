@@ -912,10 +912,10 @@ a {
   display: none;
 }
 
-/* The 12ch display measure is for the short-mode column; deep mode has the width. */
+/* The 16ch display measure is for the short-mode column; deep mode has the width. */
 .lesson-panel[data-mode="deep"] .lesson-copy h1,
 .lesson-panel[data-mode="deep"] .lesson-copy h2 {
-  max-width: 100%;
+  max-width: 24ch;
   margin-bottom: 1.6rem;
 }
 
@@ -942,19 +942,33 @@ a {
   font-size: 0.85rem;
 }
 
+/*
+ * Top-aligned rather than vertically centred. Centring was tuned for the old
+ * oversized heading that filled the panel; at the reduced scale it stranded the
+ * copy in the middle of a tall box with the meta row drifting away from it.
+ * The min-height is kept only so short and long nodes hold a similar footprint.
+ */
 .lesson-copy {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  min-height: 34rem;
+  justify-content: flex-start;
+  padding-top: clamp(1rem, 4vh, 3rem);
+  min-height: 30rem;
   padding-right: clamp(0rem, 3vw, 2rem);
 }
 
+/*
+ * The depth toggle is absolutely positioned into this same horizontal band, so
+ * the meta row reserves room for it. Without the reserve the two only clear
+ * each other by accident of viewport width, and collide once the panel narrows.
+ */
 .lesson-meta {
   display: flex;
   align-items: center;
   gap: 0.85rem;
   margin-bottom: 1.2rem;
+  padding-right: 11rem;
+  min-height: 2.75rem;
 }
 
 .lesson-count {
@@ -964,23 +978,38 @@ a {
   letter-spacing: 0.05em;
 }
 
+/*
+ * Measured, not guessed: at weight 780-800 this face draws a glyph box of
+ * 1.206em, so any line-height below that overlaps consecutive lines outright.
+ * The previous 0.98 collided by 25px per line at the old display size. 1.25
+ * clears the box and leaves room for titles whose wrap points carry descenders.
+ *
+ * The measure is in ch so it tracks the font size, and 16ch keeps a long title
+ * to two or three lines instead of the four that 12ch forced.
+ */
 .lesson-copy h1,
 .lesson-copy h2 {
-  max-width: 12ch;
-  margin: 0 0 1.3rem;
+  max-width: 16ch;
+  margin: 0 0 1.15rem;
   color: var(--fg);
-  line-height: 0.98;
-  letter-spacing: 0;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
 }
 
+/*
+ * Heading sizes are held to roughly 2.5x the body measure. The previous scale
+ * peaked at 6.8rem against a 1.2rem paragraph — a 5.7:1 ratio that read as a
+ * poster rather than a page and buried the copy underneath it.
+ */
 .lesson-copy h1 {
-  font-size: clamp(3rem, 8vw, 6.8rem);
-  font-weight: 850;
+  font-size: clamp(2.25rem, 4.2vw, 3.6rem);
+  font-weight: 800;
 }
 
 .lesson-copy h2 {
-  font-size: clamp(2.35rem, 5.8vw, 5rem);
-  font-weight: 820;
+  font-size: clamp(1.95rem, 3.4vw, 2.9rem);
+  font-weight: 780;
 }
 
 .lesson-copy p {
@@ -1330,11 +1359,21 @@ a {
   }
 
   .lesson-copy h1 {
-    font-size: clamp(2.7rem, 7vw, 4.5rem);
+    font-size: clamp(2rem, 4.6vw, 2.9rem);
   }
 
   .lesson-copy h2 {
-    font-size: clamp(2.15rem, 5.8vw, 3.6rem);
+    font-size: clamp(1.8rem, 4vw, 2.45rem);
+  }
+
+  /* Narrower panel: the toggle needs less reserved room, the title more measure. */
+  .lesson-meta {
+    padding-right: 10rem;
+  }
+
+  .lesson-copy h1,
+  .lesson-copy h2 {
+    max-width: 20ch;
   }
 }
 
