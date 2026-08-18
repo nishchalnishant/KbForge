@@ -1,15 +1,11 @@
-import { readFileSync, readdirSync } from "node:fs";
-import { join, dirname } from "node:path";
-import { fileURLToPath } from "node:url";
 import type { Node, Topic } from "@kbforge/content-types";
+import machineLearning from "../../../content/topics/machine-learning.json";
+import frontend from "../../../content/topics/frontend.json";
 
-const CONTENT_DIR = join(dirname(fileURLToPath(import.meta.url)), "..", "..", "..", "content");
+const TOPICS = [machineLearning, frontend] as unknown as Topic[];
 
 function loadAllTopics(): Topic[] {
-  const dir = join(CONTENT_DIR, "topics");
-  return readdirSync(dir)
-    .filter((f) => f.endsWith(".json"))
-    .map((f) => JSON.parse(readFileSync(join(dir, f), "utf-8")) as Topic);
+  return TOPICS;
 }
 
 function findNode(node: Node, id: string): Node | undefined {

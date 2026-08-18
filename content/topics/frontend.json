@@ -1,0 +1,78 @@
+{
+  "root": {
+    "id": "frontend",
+    "level": "topic",
+    "title": "Frontend",
+    "text": "Frontend development is the practice of building the part of a software product that runs in the user's browser: the layout, styling, and interactivity that turns raw data into something a person can see and act on. It splits into three foundational layers that build on each other — HTML for structure and content, CSS for presentation, and JavaScript for behavior — and modern frontend work adds frameworks on top of that stack to manage complex, interactive user interfaces at scale.",
+    "status": "text_only",
+    "children": [
+      {
+        "id": "html-css",
+        "level": "section",
+        "title": "HTML & CSS",
+        "text": "HTML and CSS together define what a page looks like: HTML provides the structural skeleton (headings, paragraphs, buttons, forms), and CSS controls how that skeleton is presented (colors, spacing, layout, responsiveness). They're taught together because most real style decisions only make sense in the context of the markup they're styling.",
+        "status": "text_only",
+        "children": [
+          {
+            "id": "semantic-html",
+            "level": "subsection",
+            "title": "Semantic HTML",
+            "text": "Semantic HTML means choosing tags that describe the meaning of content rather than just its appearance — using <button> instead of a styled <div>, or <article> instead of a generic <section> wrapper. This matters for accessibility (screen readers rely on semantic structure), SEO (search engines weight semantic tags more heavily), and maintainability, since a semantically-named element tells the next developer what it's for without needing to read its styles.",
+            "status": "text_only",
+            "children": []
+          },
+          {
+            "id": "css-layout",
+            "level": "subsection",
+            "title": "CSS Layout",
+            "text": "CSS layout is the set of techniques for positioning elements on a page. Flexbox handles one-dimensional layout — rows or columns of items that need to align, space out, or wrap — while CSS Grid handles two-dimensional layout, letting you define rows and columns simultaneously for more complex page structures. Most modern interfaces combine both: Grid for the overall page skeleton, Flexbox for aligning items within each section.",
+            "status": "text_only",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "javascript",
+        "level": "section",
+        "title": "JavaScript",
+        "text": "JavaScript is the language that makes web pages interactive: it responds to clicks, fetches data, and updates the page without a full reload. Its core ideas — the DOM as a live, manipulable representation of the page, and asynchronous programming for anything that takes time (network requests, timers) — are the foundation that every frontend framework is built on top of.",
+        "status": "text_only",
+        "children": [
+          {
+            "id": "dom-manipulation",
+            "level": "subsection",
+            "title": "DOM Manipulation",
+            "text": "The DOM (Document Object Model) is the browser's live, tree-shaped representation of the page, and DOM manipulation is using JavaScript to read or change that tree — adding an element, changing text, toggling a class. Direct DOM manipulation (document.querySelector, .addEventListener, etc.) is the lowest-level way to build interactivity; frameworks like React exist largely to manage this more declaratively at scale, but understanding direct manipulation is what makes framework abstractions make sense.",
+            "status": "text_only",
+            "children": []
+          },
+          {
+            "id": "async-javascript",
+            "level": "subsection",
+            "title": "Async JavaScript",
+            "text": "Async JavaScript is how code handles operations that don't finish immediately, like a network request. Promises represent a value that will exist in the future (or an error), and async/await is syntax that lets you write asynchronous code that reads like ordinary sequential code, without nesting callbacks. Nearly every frontend app calling an API relies on this pattern to fetch data without freezing the page while waiting.",
+            "status": "text_only",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "frontend-frameworks",
+        "level": "section",
+        "title": "Frontend Frameworks",
+        "text": "Frontend frameworks like React manage UI as a function of state: instead of manually finding and updating DOM elements, you describe what the UI should look like for a given state, and the framework figures out the minimal DOM changes needed. This shift — from imperative DOM updates to declarative, state-driven rendering — is what let frontend apps grow from simple pages into complex, maintainable single-page applications.",
+        "status": "text_only",
+        "children": [
+          {
+            "id": "react-components",
+            "level": "subsection",
+            "title": "React Components",
+            "text": "A React component is a reusable function that takes inputs (props) and returns a description of UI. Components can hold their own state and re-render automatically when that state changes, which is what makes React declarative: you write what the UI looks like for each possible state, and React handles updating the actual DOM to match whenever state changes, rather than you writing manual update logic yourself.",
+            "status": "text_only",
+            "children": []
+          }
+        ]
+      }
+    ]
+  }
+}
