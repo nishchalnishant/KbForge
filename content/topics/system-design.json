@@ -2,8 +2,8 @@
   "root": {
     "id": "system-design",
     "level": "topic",
-    "title": "System Design",
-    "text": "System design is the practice of architecting software systems that meet requirements for scale, reliability, and latency — deciding how components talk to each other, where data lives, and what breaks first under load. It's the most heavily tested skill in senior technical interviews because it forces you to reason about tradeoffs explicitly rather than follow a fixed recipe.",
+    "title": "High-Level System Design",
+    "text": "High-level system design is the practice of architecting software systems that meet requirements for scale, reliability, and latency — deciding how services talk to each other, where data lives, and what breaks first under load. It's the most heavily tested skill in senior technical interviews ('design Twitter', 'design a URL shortener') because it forces you to reason about tradeoffs explicitly rather than follow a fixed recipe.",
     "status": "text_only",
     "children": [
       {
@@ -27,6 +27,14 @@
         "level": "section",
         "title": "Queues & Async Processing",
         "text": "Message queues (Kafka, RabbitMQ, SQS) decouple producers of work from consumers, letting a system absorb traffic spikes, retry failed jobs, and process things asynchronously instead of blocking a user-facing request. They're the backbone of most systems that need to do slow work — sending emails, resizing images, processing payments — without making the user wait.",
+        "status": "text_only",
+        "children": []
+      },
+      {
+        "id": "capacity-estimation-and-tradeoffs",
+        "level": "section",
+        "title": "Capacity Estimation & Tradeoffs",
+        "text": "Back-of-envelope math — estimated requests per second, storage growth per year, read/write ratios — turns a vague design prompt into concrete numbers that justify design choices like 'we need sharding' or 'a single Postgres instance is fine.' Interviewers weight this reasoning process more heavily than arriving at any single 'correct' architecture.",
         "status": "text_only",
         "children": []
       }

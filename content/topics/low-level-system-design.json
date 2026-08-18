@@ -1,0 +1,43 @@
+{
+  "root": {
+    "id": "low-level-system-design",
+    "level": "topic",
+    "title": "Low-Level System Design",
+    "text": "Low-level system design is about turning a single system into concrete classes, interfaces, and object interactions — the 'design a parking lot', 'design an elevator system', 'design a rate limiter' style of interview question. Where high-level design asks how services and machines fit together, low-level design asks how objects within one service should be structured so the code stays correct, extensible, and testable.",
+    "status": "text_only",
+    "children": [
+      {
+        "id": "object-oriented-design-principles",
+        "level": "section",
+        "title": "Object-Oriented Design Principles",
+        "text": "SOLID principles — single responsibility, open/closed, and the rest — describe class-level design choices that keep a system easy to extend without rippling changes through unrelated code. Interviewers use LLD questions specifically to check whether you apply these principles under pressure, not just recite them.",
+        "status": "text_only",
+        "children": []
+      },
+      {
+        "id": "design-patterns",
+        "level": "section",
+        "title": "Design Patterns",
+        "text": "Design patterns (Factory, Observer, Strategy, Singleton, and others) are named, reusable solutions to recurring object-design problems, giving engineers a shared vocabulary to discuss structure without re-deriving it each time. They're tools, not mandates — misapplying a pattern where a simpler solution would do is a common source of unnecessary complexity, and interviewers notice when a pattern is forced in rather than earned.",
+        "status": "text_only",
+        "children": []
+      },
+      {
+        "id": "classic-lld-interview-problems",
+        "level": "section",
+        "title": "Classic LLD Interview Problems",
+        "text": "A recurring set of prompts — parking lot, elevator system, tic-tac-toe, rate limiter, LRU cache, ride-sharing matching — each test a different modeling skill: state machines, concurrency-safe access, or clean separation between entities and the rules governing them. Practicing the pattern behind each problem transfers far better than memorizing any single solution's class diagram.",
+        "status": "text_only",
+        "children": []
+      },
+      {
+        "id": "clean-architecture-and-layering",
+        "level": "section",
+        "title": "Clean Architecture & Layering",
+        "text": "Layered architectures separate business logic from infrastructure concerns (databases, frameworks, UI) so the core logic can be tested and changed without dragging along everything it happens to be plugged into. The dependency direction — infrastructure depends on business logic, never the reverse — is the detail most implementations get wrong.",
+        "status": "text_only",
+        "children": []
+      }
+    ]
+  }
+}

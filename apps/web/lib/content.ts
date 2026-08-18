@@ -17,7 +17,7 @@ import testingAndQuality from "../../../content/topics/testing-and-quality.json"
 import operatingSystems from "../../../content/topics/operating-systems.json";
 import computerNetworking from "../../../content/topics/computer-networking.json";
 import deepLearning from "../../../content/topics/deep-learning.json";
-import softwareArchitecture from "../../../content/topics/software-architecture.json";
+import lowLevelSystemDesign from "../../../content/topics/low-level-system-design.json";
 import pythonForEngineers from "../../../content/topics/python-for-engineers.json";
 
 const TOPICS = [
@@ -39,7 +39,7 @@ const TOPICS = [
   operatingSystems,
   computerNetworking,
   deepLearning,
-  softwareArchitecture,
+  lowLevelSystemDesign,
   pythonForEngineers,
 ] as unknown as Topic[];
 
