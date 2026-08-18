@@ -81,9 +81,8 @@ export function LessonPanel({
           <details className="mobile-copy-sheet">
             <summary>Read this section</summary>
             <div>
-              <h2>{lesson.title}</h2>
               <p>{lesson.text}</p>
-              {hasChildren && (
+              {hasChildren && !isRoot && (
                 <Link className="mobile-deeper-link" href={`/node/${lesson.id}`}>
                   Go deeper
                   <span aria-hidden="true">→</span>

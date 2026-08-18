@@ -52,29 +52,32 @@ export default function HomePage() {
           const published = countPublished(t.root);
           const pct = total ? Math.round((published / total) * 100) : 0;
           return (
-            <Link
-              key={t.root.id}
-              className="topic-card"
-              href={`/node/${t.root.id}`}
-              style={{ "--i": idx } as CSSProperties}
-            >
+            <article key={t.root.id} className="topic-card" style={{ "--i": idx } as CSSProperties}>
               <span className="topic-card-glow" aria-hidden="true" />
               <div className="topic-card-top">
                 <span className="level-pill">{LEVEL_LABEL[t.root.level]}</span>
                 <span className="topic-card-count">{total} concepts</span>
               </div>
-              <h2 className="topic-card-title">{t.root.title}</h2>
+              <h2 className="topic-card-title">
+                <Link href={`/node/${t.root.id}`} className="topic-card-title-link">
+                  {t.root.title}
+                </Link>
+              </h2>
               <p className="topic-card-text">{t.root.text}</p>
               <div className="topic-card-footer">
-                <div className="progress-track" aria-hidden="true">
-                  <div className="progress-fill" style={{ width: `${pct}%` }} />
-                </div>
-                <span className="topic-card-pct">{pct}%</span>
-                <span className="topic-card-cta">
+                {pct > 0 && (
+                  <>
+                    <div className="progress-track" aria-hidden="true">
+                      <div className="progress-fill" style={{ width: `${pct}%` }} />
+                    </div>
+                    <span className="topic-card-pct">{pct}%</span>
+                  </>
+                )}
+                <span className="topic-card-cta" aria-hidden="true">
                   Explore <span aria-hidden="true">→</span>
                 </span>
               </div>
-            </Link>
+            </article>
           );
         })}
       </section>

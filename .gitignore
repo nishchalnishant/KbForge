@@ -9,3 +9,4 @@ pipeline/**/out/
 *.tsbuildinfo
 .vercel
 .env*
+.DS_Store

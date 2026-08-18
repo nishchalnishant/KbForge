@@ -104,3 +104,45 @@ export function getBreadcrumbPath(nodeId: string): Node[] | undefined {
   }
   return undefined;
 }
+
+function flattenIds(node: Node, ids: string[]): void {
+  ids.push(node.id);
+  for (const child of node.children) flattenIds(child, ids);
+}
+
+/** Every node id across every topic, for sitemap generation. */
+export function getAllNodeIds(): string[] {
+  const ids: string[] = [];
+  for (const topic of loadAllTopics()) flattenIds(topic.root, ids);
+  return ids;
+}
+
+/** Sibling nodes of the given node within its parent, in order, plus the node's index. */
+export function getSiblings(nodeId: string): { siblings: Node[]; index: number } | undefined {
+  const trail = getBreadcrumbPath(nodeId);
+  if (!trail || trail.length < 2) return undefined;
+  const parent = trail[trail.length - 2];
+  const index = parent.children.findIndex((c) => c.id === nodeId);
+  if (index === -1) return undefined;
+  return { siblings: parent.children, index };
+}
+
+export type SearchEntry = {
+  id: string;
+  title: string;
+  text: string;
+  topic: string;
+  level: string;
+};
+
+function flattenSearchEntries(node: Node, topic: string, out: SearchEntry[]): void {
+  out.push({ id: node.id, title: node.title, text: node.text, topic, level: node.level });
+  for (const child of node.children) flattenSearchEntries(child, topic, out);
+}
+
+/** Flat search index of every node across every topic, for the ⌘K palette. */
+export function getSearchIndex(): SearchEntry[] {
+  const out: SearchEntry[] = [];
+  for (const topic of loadAllTopics()) flattenSearchEntries(topic.root, topic.root.title, out);
+  return out;
+}
