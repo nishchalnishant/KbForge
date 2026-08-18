@@ -6,6 +6,7 @@ export interface Node {
   level: NodeLevel;
   title: string;
   text: string;
+  deep_text?: string;
   youtube_video_id?: string;
   status: NodeStatus;
   children: Node[];

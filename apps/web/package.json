@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "@kbforge/content-types": "workspace:*",
+    "@vercel/analytics": "^2.0.1",
+    "@xyflow/react": "^12.11.3",
     "next": "^15.0.0",
     "react": "^18.3.0",
     "react-dom": "^18.3.0"

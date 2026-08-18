@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import Link from "next/link";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 export const metadata = {
@@ -35,6 +36,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             <span>learnforge.fyi — text-first explainers, narrated video landing on every node soon.</span>
           </footer>
         </div>
+        <Analytics />
       </body>
     </html>
   );
