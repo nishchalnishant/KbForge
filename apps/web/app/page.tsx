@@ -1,23 +1,74 @@
 import Link from "next/link";
-import { getAllTopics } from "@/lib/content";
+import { getAllTopics, countAll, countPublished } from "@/lib/content";
+
+const LEVEL_LABEL: Record<string, string> = {
+  topic: "Topic",
+  section: "Section",
+  subsection: "Subsection",
+  unit: "Unit",
+};
 
 export default function HomePage() {
   const topics = getAllTopics();
+  const totalNodes = topics.reduce((sum, t) => sum + countAll(t.root), 0);
 
   return (
-    <main style={{ maxWidth: 720, margin: "0 auto", padding: "3rem 2rem" }}>
-      <h1>learnforge.fyi</h1>
-      <p style={{ color: "var(--muted)" }}>
-        AI-narrated technical explainers, organized as skill trees.
-      </p>
-      <div className="children-list">
-        {topics.map((t) => (
-          <Link key={t.root.id} className="child-link" href={`/node/${t.root.id}`}>
-            <div className="level-tag">{t.root.level}</div>
-            <strong>{t.root.title}</strong>
-          </Link>
-        ))}
-      </div>
+    <main className="home">
+      <section className="hero">
+        <p className="hero-eyebrow">Skill trees, not video-course sludge</p>
+        <h1 className="hero-title">
+          Learn things properly,
+          <br />
+          <span className="hero-title-accent">one node at a time.</span>
+        </h1>
+        <p className="hero-sub">
+          Every concept is a card: a short, precise explanation you can read in
+          under a minute. Go deeper when you want to, stop when you don&apos;t.
+          Text is here now — narrated video is landing on the same pages soon.
+        </p>
+        <div className="hero-stats">
+          <div className="hero-stat">
+            <strong>{topics.length}</strong>
+            <span>topics</span>
+          </div>
+          <div className="hero-stat">
+            <strong>{totalNodes}</strong>
+            <span>concepts</span>
+          </div>
+          <div className="hero-stat">
+            <strong>0</strong>
+            <span>accounts needed</span>
+          </div>
+        </div>
+      </section>
+
+      <section className="topic-grid" aria-label="Topics">
+        {topics.map((t) => {
+          const total = countAll(t.root);
+          const published = countPublished(t.root);
+          return (
+            <Link key={t.root.id} className="topic-card" href={`/node/${t.root.id}`}>
+              <div className="topic-card-top">
+                <span className="level-pill">{LEVEL_LABEL[t.root.level]}</span>
+                <span className="topic-card-count">{total} concepts</span>
+              </div>
+              <h2 className="topic-card-title">{t.root.title}</h2>
+              <p className="topic-card-text">{t.root.text}</p>
+              <div className="topic-card-footer">
+                <div className="progress-track" aria-hidden="true">
+                  <div
+                    className="progress-fill"
+                    style={{ width: `${total ? (published / total) * 100 : 0}%` }}
+                  />
+                </div>
+                <span className="topic-card-cta">
+                  Explore <span aria-hidden="true">→</span>
+                </span>
+              </div>
+            </Link>
+          );
+        })}
+      </section>
     </main>
   );
 }
