@@ -1,0 +1,46 @@
+{
+  "root": {
+    "id": "machine-learning",
+    "level": "topic",
+    "title": "Machine Learning",
+    "text": "Machine learning splits into two broad families: classical machine learning, where a human picks the model structure and the algorithm fits its parameters to data, and deep learning, where a neural network learns its own internal representations from raw data with far less manual feature design. Classical ML is the right starting point — it's where the core ideas (fitting a model, measuring error, generalizing beyond training data) are easiest to see clearly, before deep learning adds the complexity of many-layered networks on top of the same foundations.",
+    "status": "text_only",
+    "children": [
+      {
+        "id": "classical-machine-learning",
+        "level": "section",
+        "title": "Classical Machine Learning",
+        "text": "Classical machine learning splits into supervised learning, where the training data includes the correct answer for each example and the model learns to predict it, and unsupervised learning, where there are no correct answers given and the model instead finds structure — clusters, patterns, compressed representations — in the data on its own. Supervised learning is the more common starting point, since 'here's the answer, learn to predict it' is the more intuitive setup and covers the majority of real-world classical ML use cases.",
+        "status": "text_only",
+        "children": [
+          {
+            "id": "supervised-learning",
+            "level": "subsection",
+            "title": "Supervised Learning",
+            "text": "Supervised learning splits into regression, where the model predicts a continuous number (a house price, a temperature), and classification, where the model predicts which of a fixed set of categories an example belongs to (spam or not spam, which digit is in an image). The two use different error metrics and often different model families, but the underlying recipe is the same: show the model labeled examples, let it adjust its parameters to reduce prediction error, then check how well it generalizes to examples it hasn't seen.",
+            "status": "text_only",
+            "children": [
+              {
+                "id": "regression",
+                "level": "unit",
+                "title": "Regression",
+                "text": "Regression is the supervised-learning task of predicting a continuous numeric value from input features — for example, predicting a house's sale price from its square footage, location, and age. The simplest and most foundational regression model is linear regression, which assumes the output is a weighted sum of the inputs plus a constant offset; more complex regression models (polynomial, tree-based, neural) relax that linear assumption to capture curved or interaction-heavy relationships, but linear regression is where the mechanics of fitting a model to data are easiest to see directly.",
+                "status": "text_only",
+                "children": [
+                  {
+                    "id": "linear-regression",
+                    "level": "unit",
+                    "title": "Linear Regression",
+                    "text": "Linear regression predicts a numeric output as a weighted sum of input features plus a bias term: y = w1*x1 + w2*x2 + ... + b. Fitting the model means finding the weights (w1, w2, ...) and bias (b) that make predictions as close as possible to the true values across the training examples, usually by minimizing mean squared error — the average of (prediction - true value) squared. The most common fitting method is gradient descent: start with random weights, repeatedly nudge each weight in the direction that reduces the error, and stop once the error stops meaningfully improving. Once fit, the model's weights themselves are interpretable — a weight of 150 on square footage means the model predicts roughly $150 more in price per additional square foot, holding other features constant.",
+                    "status": "text_only",
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

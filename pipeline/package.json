@@ -1,0 +1,25 @@
+{
+  "name": "@kbforge/pipeline",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "author": "tsx author/index.ts",
+    "generate": "tsx generate/index.ts",
+    "capture": "tsx capture/index.ts",
+    "avatar": "tsx avatar/index.ts",
+    "upload": "tsx upload/index.ts",
+    "backfill": "tsx backfill/index.ts",
+    "run": "tsx run.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@kbforge/content-types": "workspace:*",
+    "playwright": "^1.47.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}
