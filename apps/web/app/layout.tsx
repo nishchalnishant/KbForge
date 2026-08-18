@@ -11,6 +11,13 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <body>
+        <div className="bg-mesh" aria-hidden="true">
+          <span className="bg-orb bg-orb-1" />
+          <span className="bg-orb bg-orb-2" />
+          <span className="bg-orb bg-orb-3" />
+          <span className="bg-grid" />
+          <span className="bg-noise" />
+        </div>
         <div className="site-shell">
           <header className="site-header">
             <Link href="/" className="brand">
@@ -19,13 +26,13 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             </Link>
             <nav className="site-nav">
               <a href="https://github.com/nishchalnishant/KbForge" target="_blank" rel="noreferrer">
-                GitHub
+                <span>GitHub</span>
               </a>
             </nav>
           </header>
           {children}
           <footer className="site-footer">
-            <span>learnforge.fyi — text-first explainers, video coming soon.</span>
+            <span>learnforge.fyi — text-first explainers, narrated video landing on every node soon.</span>
           </footer>
         </div>
       </body>

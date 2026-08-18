@@ -1,3 +1,4 @@
+import type { CSSProperties } from "react";
 import Link from "next/link";
 import { getAllTopics, countAll, countPublished } from "@/lib/content";
 
@@ -15,7 +16,10 @@ export default function HomePage() {
   return (
     <main className="home">
       <section className="hero">
-        <p className="hero-eyebrow">Skill trees, not video-course sludge</p>
+        <span className="hero-badge">
+          <span className="hero-badge-dot" aria-hidden="true" />
+          Built as a living, git-versioned skill tree
+        </span>
         <h1 className="hero-title">
           Learn things properly,
           <br />
@@ -43,11 +47,18 @@ export default function HomePage() {
       </section>
 
       <section className="topic-grid" aria-label="Topics">
-        {topics.map((t) => {
+        {topics.map((t, idx) => {
           const total = countAll(t.root);
           const published = countPublished(t.root);
+          const pct = total ? Math.round((published / total) * 100) : 0;
           return (
-            <Link key={t.root.id} className="topic-card" href={`/node/${t.root.id}`}>
+            <Link
+              key={t.root.id}
+              className="topic-card"
+              href={`/node/${t.root.id}`}
+              style={{ "--i": idx } as CSSProperties}
+            >
+              <span className="topic-card-glow" aria-hidden="true" />
               <div className="topic-card-top">
                 <span className="level-pill">{LEVEL_LABEL[t.root.level]}</span>
                 <span className="topic-card-count">{total} concepts</span>
@@ -56,11 +67,9 @@ export default function HomePage() {
               <p className="topic-card-text">{t.root.text}</p>
               <div className="topic-card-footer">
                 <div className="progress-track" aria-hidden="true">
-                  <div
-                    className="progress-fill"
-                    style={{ width: `${total ? (published / total) * 100 : 0}%` }}
-                  />
+                  <div className="progress-fill" style={{ width: `${pct}%` }} />
                 </div>
+                <span className="topic-card-pct">{pct}%</span>
                 <span className="topic-card-cta">
                   Explore <span aria-hidden="true">→</span>
                 </span>

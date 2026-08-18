@@ -53,6 +53,7 @@ export default async function NodePage({ params }: { params: Promise<{ nodeId: s
 
       <div className="scroll-track">
         <section className="node-card node-card-hero">
+          <span className="node-card-glow" aria-hidden="true" />
           <div className="node-card-top">
             <span className="level-pill">{LEVEL_LABEL[node.level]}</span>
             <VideoStatus status={node.status} />
@@ -61,8 +62,11 @@ export default async function NodePage({ params }: { params: Promise<{ nodeId: s
           <p>{node.text}</p>
           {node.children.length > 0 && (
             <p className="scroll-hint">
-              Scroll down for {node.children.length}{" "}
-              {node.children.length === 1 ? "subtopic" : "subtopics"} ↓
+              <span className="scroll-hint-arrow" aria-hidden="true">
+                ↓
+              </span>
+              Scroll for {node.children.length}{" "}
+              {node.children.length === 1 ? "subtopic" : "subtopics"}
             </p>
           )}
         </section>
@@ -74,7 +78,7 @@ export default async function NodePage({ params }: { params: Promise<{ nodeId: s
               <VideoStatus status={child.status} />
             </div>
             <span className="node-card-index">
-              {i + 1} / {node.children.length}
+              {String(i + 1).padStart(2, "0")} / {String(node.children.length).padStart(2, "0")}
             </span>
             <h2>{child.title}</h2>
             <p>{child.text}</p>
