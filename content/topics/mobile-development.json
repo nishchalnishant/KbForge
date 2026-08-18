@@ -1,0 +1,35 @@
+{
+  "root": {
+    "id": "mobile-development",
+    "level": "topic",
+    "title": "Mobile Development",
+    "text": "Mobile development is building applications that run natively on phones and tablets, where the constraints — battery life, intermittent connectivity, small screens, app-store review — differ significantly from web development. The core decision is native (platform-specific, best performance) versus cross-platform (one codebase, faster to ship) frameworks.",
+    "status": "text_only",
+    "children": [
+      {
+        "id": "native-ios-android",
+        "level": "section",
+        "title": "Native iOS & Android",
+        "text": "Native development uses each platform's own language and SDK — Swift/SwiftUI for iOS, Kotlin/Jetpack Compose for Android — giving full access to platform APIs and the best possible performance and UI fidelity, at the cost of maintaining two separate codebases.",
+        "status": "text_only",
+        "children": []
+      },
+      {
+        "id": "cross-platform-frameworks",
+        "level": "section",
+        "title": "Cross-Platform Frameworks",
+        "text": "Frameworks like React Native and Flutter let you write one codebase that compiles or renders to both iOS and Android. React Native uses JavaScript and reuses web-adjacent skills and libraries, while Flutter compiles to native code from Dart and tends to give more consistent pixel-perfect UI — both trade some native performance and platform-specific polish for shared code.",
+        "status": "text_only",
+        "children": []
+      },
+      {
+        "id": "mobile-app-lifecycle",
+        "level": "section",
+        "title": "Mobile App Lifecycle",
+        "text": "Mobile apps have a lifecycle unlike web pages — they're suspended, backgrounded, and killed by the OS to save battery and memory, and your code has to save and restore state around those transitions. Handling this correctly is what separates an app that feels stable from one that loses user data on every phone call interruption.",
+        "status": "text_only",
+        "children": []
+      }
+    ]
+  }
+}

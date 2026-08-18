@@ -1,0 +1,35 @@
+{
+  "root": {
+    "id": "data-structures-and-algorithms",
+    "level": "topic",
+    "title": "Data Structures & Algorithms",
+    "text": "Data structures and algorithms are the foundational vocabulary of computer science: ways of organizing data (arrays, trees, graphs, hash maps) and precise procedures for operating on it (sorting, searching, traversal). They matter beyond interviews — picking the right data structure is often the single biggest lever on whether code is fast or slow at scale.",
+    "status": "text_only",
+    "children": [
+      {
+        "id": "core-data-structures",
+        "level": "section",
+        "title": "Core Data Structures",
+        "text": "Arrays and linked lists store sequences with different tradeoffs (fast random access vs. fast insertion); hash maps give near-constant-time lookup by key; trees and graphs model hierarchical or networked relationships. Nearly every higher-level system — databases, caches, routers — is built from a composition of these primitives.",
+        "status": "text_only",
+        "children": []
+      },
+      {
+        "id": "algorithmic-complexity",
+        "level": "section",
+        "title": "Algorithmic Complexity",
+        "text": "Big-O notation describes how an algorithm's running time or memory use grows as input size grows, abstracting away constant factors to focus on the shape of the growth curve. It's the language used to compare two solutions to the same problem and predict which one will still work when the input is 1000x bigger.",
+        "status": "text_only",
+        "children": []
+      },
+      {
+        "id": "classic-algorithm-patterns",
+        "level": "section",
+        "title": "Classic Algorithm Patterns",
+        "text": "A small set of reusable patterns — two pointers, sliding window, binary search, dynamic programming, graph traversal (BFS/DFS) — solve the vast majority of algorithmic problems in practice and in interviews. Recognizing which pattern applies to a new problem is a more valuable skill than memorizing any single solution.",
+        "status": "text_only",
+        "children": []
+      }
+    ]
+  }
+}

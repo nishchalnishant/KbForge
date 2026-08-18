@@ -1,0 +1,35 @@
+{
+  "root": {
+    "id": "operating-systems",
+    "level": "topic",
+    "title": "Operating Systems",
+    "text": "Operating systems manage a computer's hardware resources — CPU, memory, disk, network — and expose them to programs through a controlled set of abstractions. Understanding OS fundamentals explains why software behaves the way it does under the hood: why processes crash without taking down the machine, why memory is finite in ways that surprise you, why concurrency is hard.",
+    "status": "text_only",
+    "children": [
+      {
+        "id": "processes-and-threads",
+        "level": "section",
+        "title": "Processes & Threads",
+        "text": "A process is an isolated running program with its own memory space; threads are lighter-weight units of execution within a process that share memory. Understanding the difference explains why threads are faster to create and communicate between, but require careful synchronization to avoid race conditions that processes don't face.",
+        "status": "text_only",
+        "children": []
+      },
+      {
+        "id": "memory-management",
+        "level": "section",
+        "title": "Memory Management",
+        "text": "Operating systems give each process the illusion of its own large, contiguous memory space through virtual memory, backed by physical RAM and disk-based swap. Concepts like paging, the stack versus the heap, and garbage collection all sit on top of this foundation, and they explain a large share of real-world performance bugs.",
+        "status": "text_only",
+        "children": []
+      },
+      {
+        "id": "concurrency-and-synchronization",
+        "level": "section",
+        "title": "Concurrency & Synchronization",
+        "text": "Concurrency is multiple things happening in overlapping time; when they share state, you need synchronization primitives (locks, mutexes, semaphores) to prevent race conditions, deadlocks, and inconsistent data. Nearly every subtle, hard-to-reproduce bug in multi-threaded or distributed code traces back to a missing or misused synchronization primitive.",
+        "status": "text_only",
+        "children": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "root": {
+    "id": "data-engineering",
+    "level": "topic",
+    "title": "Data Engineering",
+    "text": "Data engineering builds the pipelines that move, transform, and store data so it's usable for analytics, reporting, and machine learning. Where data science asks questions of data, data engineering makes sure clean, reliable, timely data exists to ask questions of in the first place.",
+    "status": "text_only",
+    "children": [
+      {
+        "id": "etl-and-elt-pipelines",
+        "level": "section",
+        "title": "ETL & ELT Pipelines",
+        "text": "ETL (Extract, Transform, Load) transforms data before loading it into a warehouse; ELT loads raw data first and transforms it inside the warehouse using its compute power. The shift toward ELT (tools like dbt) reflects modern cloud warehouses being cheap and powerful enough to handle transformation themselves, keeping raw data available for reprocessing.",
+        "status": "text_only",
+        "children": []
+      },
+      {
+        "id": "data-warehousing",
+        "level": "section",
+        "title": "Data Warehousing",
+        "text": "A data warehouse (Snowflake, BigQuery, Redshift) is a database optimized for large analytical queries across historical data, using columnar storage to scan only the columns a query needs. This is architecturally different from transactional databases, which optimize for fast individual row reads/writes rather than scanning millions of rows.",
+        "status": "text_only",
+        "children": []
+      },
+      {
+        "id": "batch-vs-stream-processing",
+        "level": "section",
+        "title": "Batch vs. Stream Processing",
+        "text": "Batch processing runs on chunks of accumulated data on a schedule (nightly jobs); stream processing (Kafka, Flink) processes events continuously as they arrive, enabling near-real-time dashboards and alerts. Choosing between them is a tradeoff between latency requirements and system complexity.",
+        "status": "text_only",
+        "children": []
+      }
+    ]
+  }
+}

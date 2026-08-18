@@ -1,0 +1,35 @@
+{
+  "root": {
+    "id": "computer-networking",
+    "level": "topic",
+    "title": "Computer Networking",
+    "text": "Computer networking is how machines exchange data across distances — the layered protocols (Ethernet, IP, TCP, HTTP) that turn 'send these bytes to that address' into a reliable, addressable, application-level conversation. Nearly every backend or infrastructure bug at some point traces back to a networking fundamental.",
+    "status": "text_only",
+    "children": [
+      {
+        "id": "tcp-ip-fundamentals",
+        "level": "section",
+        "title": "TCP/IP Fundamentals",
+        "text": "IP handles addressing and routing packets across networks; TCP sits on top of it to guarantee ordered, reliable delivery via handshakes, acknowledgments, and retransmission, while UDP skips those guarantees for lower latency. Nearly every higher-level protocol, including HTTP, is built on this stack.",
+        "status": "text_only",
+        "children": []
+      },
+      {
+        "id": "dns-and-http",
+        "level": "section",
+        "title": "DNS & HTTP",
+        "text": "DNS translates human-readable domain names into IP addresses through a distributed, hierarchical lookup system; HTTP is the request/response protocol that web browsers and APIs use on top of TCP. Together they're the two protocols every web developer touches daily, often without thinking about what's happening underneath.",
+        "status": "text_only",
+        "children": []
+      },
+      {
+        "id": "load-balancing-and-cdns",
+        "level": "section",
+        "title": "Load Balancing & CDNs",
+        "text": "Load balancers distribute incoming requests across multiple servers so no single machine is overwhelmed; CDNs cache content at edge locations physically closer to users, cutting latency and offloading traffic from origin servers. Both are standard infrastructure for any service with meaningful traffic.",
+        "status": "text_only",
+        "children": []
+      }
+    ]
+  }
+}

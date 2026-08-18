@@ -1,0 +1,35 @@
+{
+  "root": {
+    "id": "cybersecurity",
+    "level": "topic",
+    "title": "Cybersecurity",
+    "text": "Cybersecurity is the practice of protecting systems and data from unauthorized access, misuse, or damage. It spans everything from writing code that resists common attacks, to configuring infrastructure securely, to actively probing systems for weaknesses before an attacker does — and every engineer benefits from understanding the basics, not just security specialists.",
+    "status": "text_only",
+    "children": [
+      {
+        "id": "web-application-security",
+        "level": "section",
+        "title": "Web Application Security",
+        "text": "The OWASP Top 10 — SQL injection, XSS, broken authentication, and similar categories — represent the vulnerability classes responsible for the vast majority of real-world web breaches. Understanding how each attack works and its standard mitigation (parameterized queries, output encoding, proper session handling) is baseline knowledge for shipping safe web software.",
+        "status": "text_only",
+        "children": []
+      },
+      {
+        "id": "network-security",
+        "level": "section",
+        "title": "Network Security",
+        "text": "Network security covers protecting data as it moves — TLS encrypts traffic in transit, firewalls and VPNs control what can reach what, and concepts like zero-trust networking assume no request is safe by default, even from inside the network perimeter.",
+        "status": "text_only",
+        "children": []
+      },
+      {
+        "id": "cryptography-fundamentals",
+        "level": "section",
+        "title": "Cryptography Fundamentals",
+        "text": "Cryptography is the mathematical foundation security is built on: symmetric encryption (same key to encrypt/decrypt, fast) versus asymmetric encryption (public/private key pairs, enables things like TLS and digital signatures), and hashing (one-way functions used for password storage and integrity checks). Misusing these primitives — like storing passwords unhashed — is one of the most common root causes of data breaches.",
+        "status": "text_only",
+        "children": []
+      }
+    ]
+  }
+}

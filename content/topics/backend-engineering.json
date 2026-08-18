@@ -1,0 +1,35 @@
+{
+  "root": {
+    "id": "backend-engineering",
+    "level": "topic",
+    "title": "Backend Engineering",
+    "text": "Backend engineering is the practice of building the server-side systems that store data, enforce business logic, and serve it to clients over a network. Where frontend work is about what a user sees, backend work is about what happens when a request arrives: authenticating it, reading or writing a database, and returning a correct, fast response — reliably, at scale, and without losing data.",
+    "status": "text_only",
+    "children": [
+      {
+        "id": "apis-and-protocols",
+        "level": "section",
+        "title": "APIs & Protocols",
+        "text": "APIs are the contracts backend systems expose so other programs can talk to them. REST models a system as resources manipulated with HTTP verbs; GraphQL lets a client ask for exactly the fields it needs in one request; gRPC uses binary protocol buffers for fast, strongly-typed service-to-service calls. Picking between them is a tradeoff between simplicity, flexibility, and performance.",
+        "status": "text_only",
+        "children": []
+      },
+      {
+        "id": "server-architecture",
+        "level": "section",
+        "title": "Server Architecture",
+        "text": "Server architecture is how you organize backend code and processes: a monolith keeps all logic in one deployable unit for simplicity, while microservices split it into independently deployable services for scalability and team autonomy, at the cost of added operational complexity (network calls, distributed failures, service discovery).",
+        "status": "text_only",
+        "children": []
+      },
+      {
+        "id": "authentication-and-authorization",
+        "level": "section",
+        "title": "Authentication & Authorization",
+        "text": "Authentication answers 'who is this user' — sessions, JWTs, OAuth — while authorization answers 'what are they allowed to do' — role-based or attribute-based access control. Nearly every backend system needs both, and getting them wrong is one of the most common sources of real-world security incidents.",
+        "status": "text_only",
+        "children": []
+      }
+    ]
+  }
+}

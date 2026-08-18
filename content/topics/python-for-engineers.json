@@ -1,0 +1,35 @@
+{
+  "root": {
+    "id": "python-for-engineers",
+    "level": "topic",
+    "title": "Python for Engineers",
+    "text": "Python is the dominant language for machine learning, scripting, backend services, and data work, valued for readable syntax and an enormous ecosystem of libraries. Fluency in Python beyond basic syntax — its type system, concurrency model, and tooling — is what separates writing working scripts from writing maintainable production code.",
+    "status": "text_only",
+    "children": [
+      {
+        "id": "python-typing-and-tooling",
+        "level": "section",
+        "title": "Typing & Tooling",
+        "text": "Python is dynamically typed by default, but type hints (checked by tools like mypy or pyright) let teams catch a large class of bugs before runtime and make large codebases navigable. Combined with modern tooling (uv, ruff, poetry) for dependency and environment management, this closes much of the gap with statically-typed languages.",
+        "status": "text_only",
+        "children": []
+      },
+      {
+        "id": "python-concurrency",
+        "level": "section",
+        "title": "Concurrency in Python",
+        "text": "Python's Global Interpreter Lock (GIL) means only one thread executes Python bytecode at a time, which is why CPU-bound work uses multiprocessing while I/O-bound work (network calls, file access) uses asyncio's cooperative concurrency instead. Understanding this distinction explains why 'just add threads' doesn't speed up Python the way it does in other languages.",
+        "status": "text_only",
+        "children": []
+      },
+      {
+        "id": "python-for-data-and-ml",
+        "level": "section",
+        "title": "Python for Data & ML",
+        "text": "Libraries like NumPy, pandas, and PyTorch give Python near-native performance for numerical work by pushing the actual computation into optimized C/C++ code underneath a Python interface. This is why Python dominates ML despite being slower than compiled languages for general-purpose code — the hot path isn't running in Python at all.",
+        "status": "text_only",
+        "children": []
+      }
+    ]
+  }
+}

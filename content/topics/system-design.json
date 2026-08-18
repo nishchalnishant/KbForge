@@ -1,0 +1,35 @@
+{
+  "root": {
+    "id": "system-design",
+    "level": "topic",
+    "title": "System Design",
+    "text": "System design is the practice of architecting software systems that meet requirements for scale, reliability, and latency — deciding how components talk to each other, where data lives, and what breaks first under load. It's the most heavily tested skill in senior technical interviews because it forces you to reason about tradeoffs explicitly rather than follow a fixed recipe.",
+    "status": "text_only",
+    "children": [
+      {
+        "id": "scalability-patterns",
+        "level": "section",
+        "title": "Scalability Patterns",
+        "text": "Scaling a system means handling more load without a proportional increase in latency or cost. Horizontal scaling adds more machines behind a load balancer; caching (in-memory or CDN) avoids recomputing or refetching the same data; sharding splits a dataset across multiple databases by key — each pattern solves a different bottleneck, and real systems combine several.",
+        "status": "text_only",
+        "children": []
+      },
+      {
+        "id": "distributed-systems-fundamentals",
+        "level": "section",
+        "title": "Distributed Systems Fundamentals",
+        "text": "Once a system spans multiple machines, you inherit new failure modes: the CAP theorem says you can't have perfect Consistency, Availability, and Partition tolerance simultaneously, and consensus algorithms (like Raft) exist to get multiple nodes to agree on a single value despite failures. Understanding these tradeoffs is what separates a system that degrades gracefully from one that corrupts data during an outage.",
+        "status": "text_only",
+        "children": []
+      },
+      {
+        "id": "queues-and-async-processing",
+        "level": "section",
+        "title": "Queues & Async Processing",
+        "text": "Message queues (Kafka, RabbitMQ, SQS) decouple producers of work from consumers, letting a system absorb traffic spikes, retry failed jobs, and process things asynchronously instead of blocking a user-facing request. They're the backbone of most systems that need to do slow work — sending emails, resizing images, processing payments — without making the user wait.",
+        "status": "text_only",
+        "children": []
+      }
+    ]
+  }
+}

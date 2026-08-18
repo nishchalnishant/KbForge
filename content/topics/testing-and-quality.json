@@ -1,0 +1,35 @@
+{
+  "root": {
+    "id": "testing-and-quality",
+    "level": "topic",
+    "title": "Testing & Software Quality",
+    "text": "Testing is how software teams get confidence that code works before users find out otherwise. It ranges from fast, narrow unit tests to slow, broad end-to-end tests, and a mature codebase deliberately balances the mix rather than maximizing any one type — this balance is usually described as the testing pyramid.",
+    "status": "text_only",
+    "children": [
+      {
+        "id": "unit-and-integration-testing",
+        "level": "section",
+        "title": "Unit & Integration Testing",
+        "text": "Unit tests check a single function or class in isolation, fast and precise about what broke; integration tests check that multiple components work together correctly (a service and a real database, for instance), catching issues unit tests can't see, at the cost of being slower and more brittle.",
+        "status": "text_only",
+        "children": []
+      },
+      {
+        "id": "end-to-end-testing",
+        "level": "section",
+        "title": "End-to-End Testing",
+        "text": "End-to-end tests (Playwright, Cypress, Selenium) drive a real browser or app through complete user flows, catching issues that only show up when all the pieces run together — but they're slow, flaky under network variance, and expensive to maintain, so teams use them sparingly for critical paths rather than exhaustively.",
+        "status": "text_only",
+        "children": []
+      },
+      {
+        "id": "test-driven-development",
+        "level": "section",
+        "title": "Test-Driven Development",
+        "text": "TDD is the discipline of writing a failing test before writing the code that makes it pass, then refactoring with the test as a safety net. It's less about achieving 100% coverage and more about using tests to clarify a function's intended behavior before you get lost implementing it.",
+        "status": "text_only",
+        "children": []
+      }
+    ]
+  }
+}

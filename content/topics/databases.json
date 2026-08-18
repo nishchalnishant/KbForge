@@ -1,0 +1,35 @@
+{
+  "root": {
+    "id": "databases",
+    "level": "topic",
+    "title": "Databases",
+    "text": "Databases are systems for storing data durably and retrieving it efficiently under concurrent access. The central decision in database work is choosing the right storage model and consistency guarantees for the problem — relational databases optimize for structured data with strong consistency, NoSQL databases trade some consistency or structure for scale and flexibility, and every real system eventually has to reason carefully about indexing and transactions.",
+    "status": "text_only",
+    "children": [
+      {
+        "id": "relational-databases",
+        "level": "section",
+        "title": "Relational Databases & SQL",
+        "text": "Relational databases (Postgres, MySQL) store data in tables with enforced schemas and relationships, queried with SQL. Their strength is strong consistency guarantees (ACID transactions) and a mature query language for complex joins and aggregations, which is why most business-critical systems of record still run on them.",
+        "status": "text_only",
+        "children": []
+      },
+      {
+        "id": "nosql-databases",
+        "level": "section",
+        "title": "NoSQL Databases",
+        "text": "NoSQL databases (MongoDB, DynamoDB, Redis) drop the fixed relational schema in exchange for horizontal scalability and flexible data models — documents, key-value pairs, or wide columns. They fit workloads with massive scale, simple access patterns, or evolving schemas, where relational joins and rigid structure would get in the way.",
+        "status": "text_only",
+        "children": []
+      },
+      {
+        "id": "indexing-and-query-optimization",
+        "level": "section",
+        "title": "Indexing & Query Optimization",
+        "text": "An index is a secondary data structure (usually a B-tree) that lets the database find rows without scanning the whole table. Query optimization is the skill of reading an execution plan, spotting full table scans or bad join orders, and adding the right index or rewriting the query — the difference between a query that takes milliseconds and one that takes minutes as data grows.",
+        "status": "text_only",
+        "children": []
+      }
+    ]
+  }
+}

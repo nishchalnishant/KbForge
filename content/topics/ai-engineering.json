@@ -1,0 +1,35 @@
+{
+  "root": {
+    "id": "ai-engineering",
+    "level": "topic",
+    "title": "AI Engineering",
+    "text": "AI engineering is the discipline of building production software around foundation models — distinct from ML research, it's less about training new models and more about orchestration: chaining calls, managing context, evaluating outputs, and handling failure modes at scale. It's the fastest-growing role category in software right now because every company suddenly needs it.",
+    "status": "text_only",
+    "children": [
+      {
+        "id": "agents-and-tool-use",
+        "level": "section",
+        "title": "Agents & Tool Use",
+        "text": "An AI agent is an LLM given the ability to call external tools (search, code execution, APIs) and loop over the results to accomplish a multi-step goal, rather than producing one static response. Designing reliable agents means constraining what tools they can call, handling tool errors gracefully, and knowing when to stop the loop.",
+        "status": "text_only",
+        "children": []
+      },
+      {
+        "id": "llm-evaluation",
+        "level": "section",
+        "title": "LLM Evaluation",
+        "text": "Evaluating LLM applications is harder than evaluating traditional software because outputs are non-deterministic and quality is often subjective. Practices like building eval datasets, using LLM-as-judge scoring, and tracking regressions across prompt/model changes are what separate a demo from a system you can trust in production.",
+        "status": "text_only",
+        "children": []
+      },
+      {
+        "id": "vector-databases-and-embeddings",
+        "level": "section",
+        "title": "Vector Databases & Embeddings",
+        "text": "Embeddings turn text (or images) into vectors where semantic similarity becomes geometric closeness, and vector databases (Pinecone, Weaviate, pgvector) index those vectors for fast nearest-neighbor search. This is the retrieval engine underneath most RAG systems and semantic search products.",
+        "status": "text_only",
+        "children": []
+      }
+    ]
+  }
+}

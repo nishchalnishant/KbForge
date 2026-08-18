@@ -1,0 +1,35 @@
+{
+  "root": {
+    "id": "llms-and-generative-ai",
+    "level": "topic",
+    "title": "LLMs & Generative AI",
+    "text": "Large language models are neural networks trained on huge text corpora that can generate, summarize, translate, and reason over language. They're the technology behind ChatGPT, Claude, and most of the current wave of AI products, and understanding how they're trained, prompted, and adapted is now a prerequisite for building almost any modern AI application.",
+    "status": "text_only",
+    "children": [
+      {
+        "id": "transformer-architecture",
+        "level": "section",
+        "title": "Transformer Architecture",
+        "text": "The transformer is the neural network architecture behind nearly every modern LLM, built around the self-attention mechanism, which lets every token in a sequence directly weigh its relevance to every other token. This replaced older recurrent architectures because it parallelizes across a whole sequence during training, making it feasible to train on internet-scale data.",
+        "status": "text_only",
+        "children": []
+      },
+      {
+        "id": "prompt-engineering",
+        "level": "section",
+        "title": "Prompt Engineering",
+        "text": "Prompt engineering is the practice of structuring the input to an LLM — instructions, examples, formatting — to reliably get the output you want, without changing the model itself. Techniques like few-shot examples, chain-of-thought, and system prompts are the cheapest and fastest lever for improving an LLM application's behavior.",
+        "status": "text_only",
+        "children": []
+      },
+      {
+        "id": "rag-and-fine-tuning",
+        "level": "section",
+        "title": "RAG & Fine-Tuning",
+        "text": "Retrieval-Augmented Generation (RAG) gives an LLM access to your own data at query time by retrieving relevant chunks and inserting them into the prompt, while fine-tuning adjusts the model's weights on your data directly. RAG is faster to iterate on and keeps data out of the model weights; fine-tuning changes the model's behavior or style more deeply — most production systems use RAG first and only fine-tune when it's clearly needed.",
+        "status": "text_only",
+        "children": []
+      }
+    ]
+  }
+}

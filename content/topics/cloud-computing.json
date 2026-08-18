@@ -1,0 +1,35 @@
+{
+  "root": {
+    "id": "cloud-computing",
+    "level": "topic",
+    "title": "Cloud Computing",
+    "text": "Cloud computing is renting computing resources — servers, storage, databases, networking — from a provider like AWS, GCP, or Azure instead of owning hardware. It shifts infrastructure from a fixed capital cost to a variable operating cost, and shifts the engineering skill from 'racking servers' to 'composing managed services correctly and cheaply.'",
+    "status": "text_only",
+    "children": [
+      {
+        "id": "core-cloud-services",
+        "level": "section",
+        "title": "Core Cloud Services",
+        "text": "Every major cloud provider offers the same core primitives under different names: compute (EC2, Compute Engine), object storage (S3, Cloud Storage), and managed databases (RDS, Cloud SQL). Learning one provider's mental model transfers almost directly to the others, since the underlying tradeoffs — durability, latency, cost — are the same everywhere.",
+        "status": "text_only",
+        "children": []
+      },
+      {
+        "id": "serverless",
+        "level": "section",
+        "title": "Serverless",
+        "text": "Serverless (AWS Lambda, Cloud Functions) runs your code in response to events without you managing any server — the platform handles provisioning, scaling, and patching. It trades some control and cold-start latency for near-zero operational overhead, which makes it a strong fit for spiky, event-driven workloads.",
+        "status": "text_only",
+        "children": []
+      },
+      {
+        "id": "cloud-cost-and-architecture",
+        "level": "section",
+        "title": "Cloud Cost & Architecture",
+        "text": "Cloud bills grow silently — idle resources, over-provisioned instances, and cross-region data transfer are the usual culprits. Designing cost-consciously (right-sizing instances, using spot/preemptible capacity, caching aggressively) is now a core cloud engineering skill, not an afterthought for finance teams.",
+        "status": "text_only",
+        "children": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "root": {
+    "id": "deep-learning",
+    "level": "topic",
+    "title": "Deep Learning",
+    "text": "Deep learning is the branch of machine learning built on neural networks with many layers, capable of learning their own feature representations directly from raw data — pixels, audio waveforms, raw text — rather than relying on hand-engineered features. It's the engine behind modern computer vision, speech, and language systems.",
+    "status": "text_only",
+    "children": [
+      {
+        "id": "neural-network-fundamentals",
+        "level": "section",
+        "title": "Neural Network Fundamentals",
+        "text": "A neural network is layers of simple units (neurons) connected by weighted edges, trained by backpropagation — computing how much each weight contributed to the error and nudging it in the direction that reduces that error, repeated over millions of examples via gradient descent.",
+        "status": "text_only",
+        "children": []
+      },
+      {
+        "id": "convolutional-networks",
+        "level": "section",
+        "title": "Convolutional Networks",
+        "text": "CNNs use small, shared filters that slide across an image to detect local patterns like edges and textures, building up to more abstract features in deeper layers. This weight-sharing makes them dramatically more efficient than fully-connected networks for image data, and they were the architecture that made modern computer vision practical.",
+        "status": "text_only",
+        "children": []
+      },
+      {
+        "id": "training-deep-networks",
+        "level": "section",
+        "title": "Training Deep Networks",
+        "text": "Training a deep network well requires more than just running gradient descent — techniques like batch normalization, dropout, learning rate schedules, and careful weight initialization are what make deep networks actually converge instead of diverging or overfitting. Most of the practical skill in deep learning lives in getting these details right.",
+        "status": "text_only",
+        "children": []
+      }
+    ]
+  }
+}

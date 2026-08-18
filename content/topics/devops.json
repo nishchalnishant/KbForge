@@ -1,0 +1,35 @@
+{
+  "root": {
+    "id": "devops",
+    "level": "topic",
+    "title": "DevOps",
+    "text": "DevOps is the set of practices that close the gap between writing code and running it reliably in production — automating builds, tests, and deployments so changes ship safely and often, and instrumenting systems so problems are caught before users notice. It turns 'it works on my machine' into a repeatable, observable process.",
+    "status": "text_only",
+    "children": [
+      {
+        "id": "ci-cd",
+        "level": "section",
+        "title": "CI/CD",
+        "text": "Continuous Integration automatically builds and tests every code change; Continuous Deployment automatically ships changes that pass those tests to production. Together they replace manual, error-prone release processes with a pipeline that catches regressions early and makes shipping a routine, low-risk event instead of a stressful one.",
+        "status": "text_only",
+        "children": []
+      },
+      {
+        "id": "containers-and-orchestration",
+        "level": "section",
+        "title": "Containers & Orchestration",
+        "text": "Containers (Docker) package an application with its dependencies into a portable, consistent unit that runs the same way everywhere. Orchestration systems (Kubernetes) then manage many containers across many machines — scheduling, scaling, restarting failed ones — which is how most modern production infrastructure is actually run.",
+        "status": "text_only",
+        "children": []
+      },
+      {
+        "id": "infrastructure-as-code",
+        "level": "section",
+        "title": "Infrastructure as Code",
+        "text": "Infrastructure as Code (Terraform, Pulumi) means defining servers, networks, and cloud resources in version-controlled config files instead of clicking through a cloud console. It makes infrastructure reviewable, repeatable, and reproducible — you can recreate an entire environment from the same files that describe it.",
+        "status": "text_only",
+        "children": []
+      }
+    ]
+  }
+}

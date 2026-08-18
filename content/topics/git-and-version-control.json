@@ -1,0 +1,35 @@
+{
+  "root": {
+    "id": "git-and-version-control",
+    "level": "topic",
+    "title": "Git & Version Control",
+    "text": "Version control tracks every change to a codebase over time, letting multiple people work on the same project without overwriting each other's work and letting anyone rewind to any previous state. Git is the near-universal standard, and fluency with it — not just the basic commands, but branching strategy and history hygiene — is a baseline expectation on any engineering team.",
+    "status": "text_only",
+    "children": [
+      {
+        "id": "git-fundamentals",
+        "level": "section",
+        "title": "Git Fundamentals",
+        "text": "Git models history as a graph of commits, each a snapshot of the whole repository with a pointer to its parent. Understanding commits, branches (just movable pointers to a commit), and the staging area is what makes the rest of Git's commands — which otherwise look like a pile of unrelated verbs — make sense as a coherent model.",
+        "status": "text_only",
+        "children": []
+      },
+      {
+        "id": "branching-strategies",
+        "level": "section",
+        "title": "Branching Strategies",
+        "text": "Teams need a shared convention for how branches are created, merged, and released — trunk-based development keeps everyone merging small changes into one main branch frequently, while Git Flow uses longer-lived feature and release branches. The right choice depends on release cadence and team size, not personal preference alone.",
+        "status": "text_only",
+        "children": []
+      },
+      {
+        "id": "resolving-conflicts-and-history",
+        "level": "section",
+        "title": "Resolving Conflicts & Rewriting History",
+        "text": "Merge conflicts happen when two branches change the same lines differently, and resolving them well requires understanding what each side intended, not just picking one blindly. Commands like rebase, cherry-pick, and interactive rebase let you rewrite history for a cleaner, more reviewable set of commits — powerful, but dangerous on shared branches if used carelessly.",
+        "status": "text_only",
+        "children": []
+      }
+    ]
+  }
+}
