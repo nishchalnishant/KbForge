@@ -1,0 +1,251 @@
+{
+  "key": "03-training-and-optimisation",
+  "nodes": [
+    {
+      "id": "training-and-optimisation",
+      "level": "section",
+      "title": "Training and Optimisation",
+      "path": "Machine Learning > Training and Optimisation",
+      "children": [
+        "Gradient Descent",
+        "Feature Engineering and Preparation",
+        "Hyperparameter Tuning"
+      ],
+      "siblings": [
+        "Foundations of Learning",
+        "Supervised Learning Algorithms",
+        "Evaluation and Model Selection",
+        "Unsupervised and Semi-Supervised Learning",
+        "Machine Learning in Production"
+      ]
+    },
+    {
+      "id": "gradient-descent",
+      "level": "subsection",
+      "title": "Gradient Descent",
+      "path": "Machine Learning > Training and Optimisation > Gradient Descent",
+      "children": [
+        "The Gradient as Direction of Steepest Ascent",
+        "Batch, Stochastic, and Mini-Batch Descent",
+        "Learning Rate and Convergence Behaviour",
+        "Momentum, RMSProp, and Adam",
+        "Local Minima, Saddle Points, and Plateaus"
+      ],
+      "siblings": [
+        "Feature Engineering and Preparation",
+        "Hyperparameter Tuning"
+      ]
+    },
+    {
+      "id": "the-gradient-as-direction-of-steepest-ascent",
+      "level": "unit",
+      "title": "The Gradient as Direction of Steepest Ascent",
+      "path": "Machine Learning > Training and Optimisation > Gradient Descent > The Gradient as Direction of Steepest Ascent",
+      "children": [],
+      "siblings": [
+        "Batch, Stochastic, and Mini-Batch Descent",
+        "Learning Rate and Convergence Behaviour",
+        "Momentum, RMSProp, and Adam",
+        "Local Minima, Saddle Points, and Plateaus"
+      ]
+    },
+    {
+      "id": "batch-stochastic-and-mini-batch-descent",
+      "level": "unit",
+      "title": "Batch, Stochastic, and Mini-Batch Descent",
+      "path": "Machine Learning > Training and Optimisation > Gradient Descent > Batch, Stochastic, and Mini-Batch Descent",
+      "children": [],
+      "siblings": [
+        "The Gradient as Direction of Steepest Ascent",
+        "Learning Rate and Convergence Behaviour",
+        "Momentum, RMSProp, and Adam",
+        "Local Minima, Saddle Points, and Plateaus"
+      ]
+    },
+    {
+      "id": "learning-rate-and-convergence-behaviour",
+      "level": "unit",
+      "title": "Learning Rate and Convergence Behaviour",
+      "path": "Machine Learning > Training and Optimisation > Gradient Descent > Learning Rate and Convergence Behaviour",
+      "children": [],
+      "siblings": [
+        "The Gradient as Direction of Steepest Ascent",
+        "Batch, Stochastic, and Mini-Batch Descent",
+        "Momentum, RMSProp, and Adam",
+        "Local Minima, Saddle Points, and Plateaus"
+      ]
+    },
+    {
+      "id": "momentum-rmsprop-and-adam",
+      "level": "unit",
+      "title": "Momentum, RMSProp, and Adam",
+      "path": "Machine Learning > Training and Optimisation > Gradient Descent > Momentum, RMSProp, and Adam",
+      "children": [],
+      "siblings": [
+        "The Gradient as Direction of Steepest Ascent",
+        "Batch, Stochastic, and Mini-Batch Descent",
+        "Learning Rate and Convergence Behaviour",
+        "Local Minima, Saddle Points, and Plateaus"
+      ]
+    },
+    {
+      "id": "local-minima-saddle-points-and-plateaus",
+      "level": "unit",
+      "title": "Local Minima, Saddle Points, and Plateaus",
+      "path": "Machine Learning > Training and Optimisation > Gradient Descent > Local Minima, Saddle Points, and Plateaus",
+      "children": [],
+      "siblings": [
+        "The Gradient as Direction of Steepest Ascent",
+        "Batch, Stochastic, and Mini-Batch Descent",
+        "Learning Rate and Convergence Behaviour",
+        "Momentum, RMSProp, and Adam"
+      ]
+    },
+    {
+      "id": "feature-engineering-and-preparation",
+      "level": "subsection",
+      "title": "Feature Engineering and Preparation",
+      "path": "Machine Learning > Training and Optimisation > Feature Engineering and Preparation",
+      "children": [
+        "Normalisation and Standardisation",
+        "Encoding Categorical Variables",
+        "Handling Missing Values",
+        "Feature Selection Methods",
+        "Principal Component Analysis"
+      ],
+      "siblings": [
+        "Gradient Descent",
+        "Hyperparameter Tuning"
+      ]
+    },
+    {
+      "id": "normalisation-and-standardisation",
+      "level": "unit",
+      "title": "Normalisation and Standardisation",
+      "path": "Machine Learning > Training and Optimisation > Feature Engineering and Preparation > Normalisation and Standardisation",
+      "children": [],
+      "siblings": [
+        "Encoding Categorical Variables",
+        "Handling Missing Values",
+        "Feature Selection Methods",
+        "Principal Component Analysis"
+      ]
+    },
+    {
+      "id": "encoding-categorical-variables",
+      "level": "unit",
+      "title": "Encoding Categorical Variables",
+      "path": "Machine Learning > Training and Optimisation > Feature Engineering and Preparation > Encoding Categorical Variables",
+      "children": [],
+      "siblings": [
+        "Normalisation and Standardisation",
+        "Handling Missing Values",
+        "Feature Selection Methods",
+        "Principal Component Analysis"
+      ]
+    },
+    {
+      "id": "handling-missing-values",
+      "level": "unit",
+      "title": "Handling Missing Values",
+      "path": "Machine Learning > Training and Optimisation > Feature Engineering and Preparation > Handling Missing Values",
+      "children": [],
+      "siblings": [
+        "Normalisation and Standardisation",
+        "Encoding Categorical Variables",
+        "Feature Selection Methods",
+        "Principal Component Analysis"
+      ]
+    },
+    {
+      "id": "feature-selection-methods",
+      "level": "unit",
+      "title": "Feature Selection Methods",
+      "path": "Machine Learning > Training and Optimisation > Feature Engineering and Preparation > Feature Selection Methods",
+      "children": [],
+      "siblings": [
+        "Normalisation and Standardisation",
+        "Encoding Categorical Variables",
+        "Handling Missing Values",
+        "Principal Component Analysis"
+      ]
+    },
+    {
+      "id": "principal-component-analysis",
+      "level": "unit",
+      "title": "Principal Component Analysis",
+      "path": "Machine Learning > Training and Optimisation > Feature Engineering and Preparation > Principal Component Analysis",
+      "children": [],
+      "siblings": [
+        "Normalisation and Standardisation",
+        "Encoding Categorical Variables",
+        "Handling Missing Values",
+        "Feature Selection Methods"
+      ]
+    },
+    {
+      "id": "hyperparameter-tuning",
+      "level": "subsection",
+      "title": "Hyperparameter Tuning",
+      "path": "Machine Learning > Training and Optimisation > Hyperparameter Tuning",
+      "children": [
+        "Parameters vs. Hyperparameters",
+        "Grid Search and Random Search",
+        "Bayesian Optimisation",
+        "Cross-Validation Strategies"
+      ],
+      "siblings": [
+        "Gradient Descent",
+        "Feature Engineering and Preparation"
+      ]
+    },
+    {
+      "id": "parameters-vs-hyperparameters",
+      "level": "unit",
+      "title": "Parameters vs. Hyperparameters",
+      "path": "Machine Learning > Training and Optimisation > Hyperparameter Tuning > Parameters vs. Hyperparameters",
+      "children": [],
+      "siblings": [
+        "Grid Search and Random Search",
+        "Bayesian Optimisation",
+        "Cross-Validation Strategies"
+      ]
+    },
+    {
+      "id": "grid-search-and-random-search",
+      "level": "unit",
+      "title": "Grid Search and Random Search",
+      "path": "Machine Learning > Training and Optimisation > Hyperparameter Tuning > Grid Search and Random Search",
+      "children": [],
+      "siblings": [
+        "Parameters vs. Hyperparameters",
+        "Bayesian Optimisation",
+        "Cross-Validation Strategies"
+      ]
+    },
+    {
+      "id": "bayesian-optimisation",
+      "level": "unit",
+      "title": "Bayesian Optimisation",
+      "path": "Machine Learning > Training and Optimisation > Hyperparameter Tuning > Bayesian Optimisation",
+      "children": [],
+      "siblings": [
+        "Parameters vs. Hyperparameters",
+        "Grid Search and Random Search",
+        "Cross-Validation Strategies"
+      ]
+    },
+    {
+      "id": "cross-validation-strategies",
+      "level": "unit",
+      "title": "Cross-Validation Strategies",
+      "path": "Machine Learning > Training and Optimisation > Hyperparameter Tuning > Cross-Validation Strategies",
+      "children": [],
+      "siblings": [
+        "Parameters vs. Hyperparameters",
+        "Grid Search and Random Search",
+        "Bayesian Optimisation"
+      ]
+    }
+  ]
+}

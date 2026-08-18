@@ -1,8 +1,8 @@
 import Link from "next/link";
-import { getAllTopics } from "@/lib/content";
+import { getTopicSummaries } from "@/lib/content";
 
 export default function NotFound() {
-  const topics = getAllTopics();
+  const topics = getTopicSummaries();
 
   return (
     <main className="not-found">
@@ -14,8 +14,8 @@ export default function NotFound() {
       </Link>
       <div className="not-found-topics">
         {topics.map((t) => (
-          <Link key={t.root.id} href={`/node/${t.root.id}`} className="not-found-topic-link">
-            {t.root.title}
+          <Link key={t.id} href={`/node/${t.id}`} className="not-found-topic-link">
+            {t.title}
           </Link>
         ))}
       </div>

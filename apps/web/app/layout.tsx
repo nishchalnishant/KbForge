@@ -3,7 +3,7 @@ import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import Link from "next/link";
 import { Analytics } from "@vercel/analytics/next";
-import { getAllTopics } from "@/lib/content";
+import { getTopicSummaries } from "@/lib/content";
 import { SITE_URL } from "@/lib/site";
 import { SearchPalette } from "@/components/SearchPalette";
 import "./globals.css";
@@ -43,7 +43,7 @@ export const viewport: Viewport = {
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
-  const topics = getAllTopics();
+  const topics = getTopicSummaries();
 
   return (
     <html lang="en" className={inter.variable}>
@@ -72,8 +72,8 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           <footer className="site-footer">
             <nav className="site-footer-nav" aria-label="Topics">
               {topics.map((t) => (
-                <Link key={t.root.id} href={`/node/${t.root.id}`}>
-                  {t.root.title}
+                <Link key={t.id} href={`/node/${t.id}`}>
+                  {t.title}
                 </Link>
               ))}
             </nav>

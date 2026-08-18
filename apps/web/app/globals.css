@@ -57,7 +57,11 @@ a {
 }
 
 .bg-orb {
-  display: none;
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  opacity: 0.12;
+  will-change: transform;
 }
 
 .bg-orb-1 {
@@ -660,6 +664,134 @@ a {
   scroll-snap-type: y mandatory;
 }
 
+/* ---------- Path rail ---------- */
+
+/*
+ * The rail is a fixed-width gutter and the track takes the rest. A matching
+ * empty gutter on the right keeps the centred reading column actually centred
+ * rather than pushed off-axis by the rail.
+ */
+.lesson-layout {
+  display: grid;
+  grid-template-columns: 16rem minmax(0, 1fr) 16rem;
+  align-items: start;
+  /* Constrain and centre the whole grid, else the reading column drifts left. */
+  width: 100%;
+  max-width: calc(var(--max-w) + 32rem);
+  margin-inline: auto;
+}
+
+.lesson-layout > .lesson-track {
+  grid-column: 2;
+}
+
+.path-rail {
+  grid-column: 1;
+  position: sticky;
+  top: 0;
+  /* Sticky needs the box no taller than the viewport, else it never pins. */
+  height: 100vh;
+  padding: clamp(2rem, 5vw, 4rem) 0 2rem 1.25rem;
+  /* The rail box is pinned; only the list inside it scrolls. */
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.path-rail-inner {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  border-left: 1px solid var(--glass-border);
+  padding-left: 1rem;
+}
+
+.path-rail-heading {
+  display: block;
+  flex: none;
+  margin-bottom: 0.9rem;
+  color: var(--muted-dim);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.path-rail-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  min-height: 0;
+  scrollbar-width: thin;
+  scrollbar-color: var(--glass-border-hover) transparent;
+}
+
+.path-rail-link {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  padding: 0.28rem 0.4rem 0.28rem 0;
+  color: var(--muted-dim);
+  font-size: 0.83rem;
+  line-height: 1.45;
+  text-decoration: none;
+  border-radius: var(--radius);
+  transition: color 0.18s var(--ease);
+}
+
+.path-rail-link:hover {
+  color: var(--fg);
+}
+
+/* Depth is carried by indent, so the tree shape survives without connectors. */
+.path-rail-d1 .path-rail-link { padding-left: 0.75rem; }
+.path-rail-d2 .path-rail-link { padding-left: 1.5rem; }
+.path-rail-d3 .path-rail-link { padding-left: 2.25rem; }
+.path-rail-d4 .path-rail-link { padding-left: 3rem; }
+
+.path-rail-tick {
+  flex: none;
+  width: 5px;
+  height: 5px;
+  margin-top: 0.45em;
+  border-radius: 50%;
+  background: var(--glass-border-hover);
+  transition: background 0.18s var(--ease), box-shadow 0.18s var(--ease);
+}
+
+.path-rail-title {
+  flex: 1;
+  min-width: 0;
+}
+
+.path-rail-pos {
+  flex: none;
+  color: var(--muted-dim);
+  font-size: 0.7rem;
+  font-variant-numeric: tabular-nums;
+  opacity: 0.65;
+}
+
+/* Ancestors of the current node read brighter than collapsed siblings. */
+.path-rail-on > .path-rail-link {
+  color: var(--muted);
+}
+
+.path-rail-active > .path-rail-link {
+  color: var(--fg);
+  font-weight: 600;
+}
+
+.path-rail-active .path-rail-tick {
+  background: var(--accent);
+  box-shadow: 0 0 0 3px rgba(255, 176, 0, 0.15);
+}
+
+.path-rail-toggle {
+  display: none;
+}
+
 .sibling-nav {
   width: min(var(--max-w), calc(100% - 4rem));
   margin: 0 auto;
@@ -738,21 +870,76 @@ a {
   width: min(var(--max-w), calc(100% - 4rem));
   margin: 0 auto;
   padding: clamp(2rem, 5vw, 4rem) 0;
+  position: relative;
 }
 
-.lesson-panel-deep {
+/*
+ * In deep mode the short copy and the video column step aside, and the deep
+ * body — rendered by DepthSwitch only once fetched — takes the full width.
+ */
+.lesson-panel[data-mode="deep"] .lesson-body-short,
+.lesson-panel[data-mode="deep"] .lesson-short-only {
+  display: none;
+}
+
+.lesson-panel[data-mode="deep"] {
   grid-template-columns: minmax(0, 1fr);
 }
 
-.lesson-panel-deep .lesson-copy {
+/*
+ * Deep mode stacks heading and prose in one column, so the copy block drops the
+ * short-mode centring that would otherwise leave a gap under the title.
+ */
+.lesson-panel[data-mode="deep"] {
+  align-items: start;
+  gap: 0;
+}
+
+.lesson-panel[data-mode="deep"] .lesson-copy {
   padding-right: 0;
   max-width: 54rem;
+  width: 100%;
+  min-height: 0;
+  justify-content: flex-start;
   margin: 0 auto;
 }
 
-.lesson-panel-deep .lesson-copy p {
+/*
+ * The actions row is short-mode wayfinding ("scroll for N sections", video
+ * badge) and would otherwise sit between the title and the deep prose.
+ */
+.lesson-panel[data-mode="deep"] .lesson-actions {
+  display: none;
+}
+
+/* The 12ch display measure is for the short-mode column; deep mode has the width. */
+.lesson-panel[data-mode="deep"] .lesson-copy h1,
+.lesson-panel[data-mode="deep"] .lesson-copy h2 {
   max-width: 100%;
-  white-space: pre-line;
+  margin-bottom: 1.6rem;
+}
+
+/* Sibling of .lesson-copy, so it repeats the copy column's measure and type. */
+.lesson-body-deep {
+  max-width: 54rem;
+  width: 100%;
+  margin: 0 auto;
+  color: var(--muted);
+  font-size: clamp(1.03rem, 1.7vw, 1.2rem);
+  line-height: 1.75;
+}
+
+.lesson-body-deep p {
+  margin: 0;
+}
+
+.lesson-body-deep p + p {
+  margin-top: 1.15rem;
+}
+
+.lesson-deep-note {
+  color: var(--muted-dim);
+  font-size: 0.85rem;
 }
 
 .lesson-copy {
@@ -804,6 +991,63 @@ a {
   line-height: 1.75;
 }
 
+/* Deep-dive copy runs to several paragraphs; short copy is a single one. */
+.lesson-copy p + p {
+  margin-top: 1.15rem;
+}
+
+.lesson-interview {
+  max-width: 40rem;
+  margin-top: 2.5rem;
+  padding-top: 1.75rem;
+  border-top: 1px solid var(--glass-border);
+}
+
+.lesson-panel[data-mode="deep"] .lesson-interview {
+  max-width: 100%;
+}
+
+.lesson-interview h3 {
+  margin: 0 0 1rem;
+  color: var(--muted-dim);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.lesson-interview details {
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius);
+  background: var(--glass);
+  margin-bottom: 0.6rem;
+  transition: border-color 0.2s var(--ease);
+}
+
+.lesson-interview details:hover {
+  border-color: var(--glass-border-hover);
+}
+
+.lesson-interview summary {
+  cursor: pointer;
+  padding: 0.85rem 1.05rem;
+  color: var(--fg);
+  font-size: 0.98rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.lesson-interview details[open] summary {
+  border-bottom: 1px solid var(--glass-border);
+}
+
+.lesson-interview details p {
+  margin: 0;
+  padding: 0.9rem 1.05rem;
+  font-size: 0.97rem;
+  line-height: 1.7;
+}
+
 .lesson-actions {
   display: flex;
   align-items: center;
@@ -820,11 +1064,20 @@ a {
   letter-spacing: 0.06em;
 }
 
+/*
+ * Direct child of .lesson-panel rather than of .lesson-meta: the toggle is the
+ * one client-rendered element, and keeping it out of the copy flow is what lets
+ * the prose stay server-rendered. Floated over the panel's top-right so it sits
+ * where it used to without taking a grid column.
+ */
 .depth-toggle {
+  position: absolute;
+  top: clamp(1.25rem, 3vw, 2.5rem);
+  right: 0;
+  z-index: 2;
   display: inline-flex;
   align-items: center;
   gap: 0.15rem;
-  margin-left: auto;
   padding: 0.2rem;
   background: var(--glass);
   border: 1px solid var(--glass-border);
@@ -1022,7 +1275,55 @@ a {
   font-weight: 800;
 }
 
+/* Not enough width for a symmetric gutter; drop the spacer, keep the rail. */
+@media (max-width: 1280px) {
+  .lesson-layout {
+    grid-template-columns: 15rem minmax(0, 1fr);
+  }
+}
+
 @media (max-width: 960px) {
+  /* Rail becomes an opt-in overlay so the reading column keeps full width. */
+  .lesson-layout {
+    display: block;
+  }
+
+  .path-rail-toggle {
+    display: inline-flex;
+    position: fixed;
+    left: 1rem;
+    bottom: 1rem;
+    z-index: 40;
+    align-items: center;
+    padding: 0.55rem 0.95rem;
+    border: 1px solid var(--glass-border-hover);
+    border-radius: 999px;
+    background: var(--bg);
+    color: var(--fg);
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .path-rail {
+    position: fixed;
+    inset: 0 auto 0 0;
+    z-index: 39;
+    width: min(20rem, 82vw);
+    max-height: none;
+    padding: 4rem 1rem 5rem 1.25rem;
+    background: var(--bg);
+    border-right: 1px solid var(--glass-border);
+    transform: translateX(-100%);
+    visibility: hidden;
+    transition: transform 0.28s var(--ease), visibility 0.28s var(--ease);
+  }
+
+  .path-rail-open {
+    transform: translateX(0);
+    visibility: visible;
+  }
+
   .lesson-panel {
     grid-template-columns: minmax(0, 1fr) minmax(260px, 0.52fr);
     gap: 1.8rem;
@@ -1071,8 +1372,18 @@ a {
     gap: 0;
   }
 
-  .lesson-copy {
+  /*
+   * Mobile shows the video plus the pull-up copy sheet, never the desktop
+   * two-column reading view — so the depth toggle has nothing to switch and
+   * the panel stays in short mode regardless of the data-mode flag.
+   */
+  .lesson-copy,
+  .depth-toggle {
     display: none;
+  }
+
+  .lesson-panel[data-mode="deep"] .lesson-short-only {
+    display: revert;
   }
 
   .lesson-video-wrap {
@@ -1205,6 +1516,18 @@ a {
 }
 
 /* ---------- Tree view ---------- */
+
+/* Placeholder while the lazily-loaded React Flow chunk is fetched. */
+.tree-loading {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 11rem);
+  color: var(--muted-dim);
+  font-size: 0.85rem;
+  letter-spacing: 0.02em;
+}
 
 .tree-view-wrap {
   flex: 1;

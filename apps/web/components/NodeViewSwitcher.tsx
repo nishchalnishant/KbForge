@@ -1,15 +1,25 @@
 "use client";
 
 import { useState, type ReactNode } from "react";
-import type { Node } from "@kbforge/content-types";
-import { TreeView } from "@/components/TreeView";
+import dynamic from "next/dynamic";
+
+// React Flow is a heavy dependency and most readers never leave the list view,
+// so the tree map is fetched only once someone actually asks for it.
+const TreeViewLoader = dynamic(
+  () => import("@/components/TreeViewLoader").then((m) => m.TreeViewLoader),
+  {
+    ssr: false,
+    loading: () => <div className="tree-loading">Loading map…</div>,
+  },
+);
 
 export function NodeViewSwitcher({
-  topicRoot,
+  topicId,
   currentId,
   children,
 }: {
-  topicRoot: Node;
+  /** Only the id crosses the boundary; the tree itself is fetched on demand. */
+  topicId: string;
   currentId: string;
   children: ReactNode;
 }) {
@@ -38,7 +48,7 @@ export function NodeViewSwitcher({
         </button>
       </div>
 
-      {view === "list" ? children : <TreeView root={topicRoot} currentId={currentId} />}
+      {view === "list" ? children : <TreeViewLoader topicId={topicId} currentId={currentId} />}
     </div>
   );
 }

@@ -1,16 +1,28 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getNode, getBreadcrumbPath, getSiblings } from "@/lib/content";
+import {
+  getNode,
+  getBreadcrumbPath,
+  getSiblings,
+  getSpine,
+  getAllNodeIds,
+} from "@/lib/content";
 import { NodeViewSwitcher } from "@/components/NodeViewSwitcher";
 import { LessonPanel } from "@/components/LessonPanel";
+import { PathRail } from "@/components/PathRail";
 import { SITE_URL } from "@/lib/site";
+
+/** Prerender every node so content JSON is only ever read at build time. */
+export function generateStaticParams() {
+  return getAllNodeIds().map((nodeId) => ({ nodeId }));
+}
 
 export async function generateMetadata({ params }: { params: Promise<{ nodeId: string }> }) {
   const { nodeId } = await params;
   const node = getNode(nodeId);
   if (!node) return {};
   return {
-    title: `${node.title} — learnforge.fyi`,
+    title: node.title,
     description: node.text.slice(0, 160),
     alternates: {
       canonical: `/node/${nodeId}`,
@@ -89,17 +101,24 @@ export default async function NodePage({ params }: { params: Promise<{ nodeId: s
         </span>
       </nav>
 
-      <NodeViewSwitcher topicRoot={topicRoot} currentId={node.id}>
-        <div className="lesson-track" aria-label={`${node.title} learning path`}>
-          {lessons.map((lesson, i) => (
-            <LessonPanel
-              key={lesson.id}
-              lesson={lesson}
-              index={i}
-              total={lessons.length}
-              isRoot={i === 0}
-            />
-          ))}
+      <NodeViewSwitcher topicId={topicRoot.id} currentId={node.id}>
+        <div className="lesson-layout">
+          <PathRail
+            spine={getSpine(topicRoot, node.id)}
+            topicTitle={topicRoot.title}
+            panelIds={lessons.map((l) => l.id)}
+          />
+          <div className="lesson-track" aria-label={`${node.title} learning path`}>
+            {lessons.map((lesson, i) => (
+              <LessonPanel
+                key={lesson.id}
+                lesson={lesson}
+                index={i}
+                total={lessons.length}
+                isRoot={i === 0}
+              />
+            ))}
+          </div>
         </div>
       </NodeViewSwitcher>
 

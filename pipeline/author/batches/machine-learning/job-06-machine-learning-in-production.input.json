@@ -1,0 +1,215 @@
+{
+  "key": "06-machine-learning-in-production",
+  "nodes": [
+    {
+      "id": "machine-learning-in-production",
+      "level": "section",
+      "title": "Machine Learning in Production",
+      "path": "Machine Learning > Machine Learning in Production",
+      "children": [
+        "From Notebook to Service",
+        "Monitoring and Maintenance",
+        "Responsible and Reliable ML"
+      ],
+      "siblings": [
+        "Foundations of Learning",
+        "Supervised Learning Algorithms",
+        "Training and Optimisation",
+        "Evaluation and Model Selection",
+        "Unsupervised and Semi-Supervised Learning"
+      ]
+    },
+    {
+      "id": "from-notebook-to-service",
+      "level": "subsection",
+      "title": "From Notebook to Service",
+      "path": "Machine Learning > Machine Learning in Production > From Notebook to Service",
+      "children": [
+        "Training-Serving Skew",
+        "Batch vs. Online Inference",
+        "Feature Stores",
+        "Model Serialisation and Versioning"
+      ],
+      "siblings": [
+        "Monitoring and Maintenance",
+        "Responsible and Reliable ML"
+      ]
+    },
+    {
+      "id": "training-serving-skew",
+      "level": "unit",
+      "title": "Training-Serving Skew",
+      "path": "Machine Learning > Machine Learning in Production > From Notebook to Service > Training-Serving Skew",
+      "children": [],
+      "siblings": [
+        "Batch vs. Online Inference",
+        "Feature Stores",
+        "Model Serialisation and Versioning"
+      ]
+    },
+    {
+      "id": "batch-vs-online-inference",
+      "level": "unit",
+      "title": "Batch vs. Online Inference",
+      "path": "Machine Learning > Machine Learning in Production > From Notebook to Service > Batch vs. Online Inference",
+      "children": [],
+      "siblings": [
+        "Training-Serving Skew",
+        "Feature Stores",
+        "Model Serialisation and Versioning"
+      ]
+    },
+    {
+      "id": "feature-stores",
+      "level": "unit",
+      "title": "Feature Stores",
+      "path": "Machine Learning > Machine Learning in Production > From Notebook to Service > Feature Stores",
+      "children": [],
+      "siblings": [
+        "Training-Serving Skew",
+        "Batch vs. Online Inference",
+        "Model Serialisation and Versioning"
+      ]
+    },
+    {
+      "id": "model-serialisation-and-versioning",
+      "level": "unit",
+      "title": "Model Serialisation and Versioning",
+      "path": "Machine Learning > Machine Learning in Production > From Notebook to Service > Model Serialisation and Versioning",
+      "children": [],
+      "siblings": [
+        "Training-Serving Skew",
+        "Batch vs. Online Inference",
+        "Feature Stores"
+      ]
+    },
+    {
+      "id": "monitoring-and-maintenance",
+      "level": "subsection",
+      "title": "Monitoring and Maintenance",
+      "path": "Machine Learning > Machine Learning in Production > Monitoring and Maintenance",
+      "children": [
+        "Data Drift and Concept Drift",
+        "Monitoring Models Without Ground Truth",
+        "Retraining Cadence and Triggers",
+        "Shadow Deployment and Canary Rollout"
+      ],
+      "siblings": [
+        "From Notebook to Service",
+        "Responsible and Reliable ML"
+      ]
+    },
+    {
+      "id": "data-drift-and-concept-drift",
+      "level": "unit",
+      "title": "Data Drift and Concept Drift",
+      "path": "Machine Learning > Machine Learning in Production > Monitoring and Maintenance > Data Drift and Concept Drift",
+      "children": [],
+      "siblings": [
+        "Monitoring Models Without Ground Truth",
+        "Retraining Cadence and Triggers",
+        "Shadow Deployment and Canary Rollout"
+      ]
+    },
+    {
+      "id": "monitoring-models-without-ground-truth",
+      "level": "unit",
+      "title": "Monitoring Models Without Ground Truth",
+      "path": "Machine Learning > Machine Learning in Production > Monitoring and Maintenance > Monitoring Models Without Ground Truth",
+      "children": [],
+      "siblings": [
+        "Data Drift and Concept Drift",
+        "Retraining Cadence and Triggers",
+        "Shadow Deployment and Canary Rollout"
+      ]
+    },
+    {
+      "id": "retraining-cadence-and-triggers",
+      "level": "unit",
+      "title": "Retraining Cadence and Triggers",
+      "path": "Machine Learning > Machine Learning in Production > Monitoring and Maintenance > Retraining Cadence and Triggers",
+      "children": [],
+      "siblings": [
+        "Data Drift and Concept Drift",
+        "Monitoring Models Without Ground Truth",
+        "Shadow Deployment and Canary Rollout"
+      ]
+    },
+    {
+      "id": "shadow-deployment-and-canary-rollout",
+      "level": "unit",
+      "title": "Shadow Deployment and Canary Rollout",
+      "path": "Machine Learning > Machine Learning in Production > Monitoring and Maintenance > Shadow Deployment and Canary Rollout",
+      "children": [],
+      "siblings": [
+        "Data Drift and Concept Drift",
+        "Monitoring Models Without Ground Truth",
+        "Retraining Cadence and Triggers"
+      ]
+    },
+    {
+      "id": "responsible-and-reliable-ml",
+      "level": "subsection",
+      "title": "Responsible and Reliable ML",
+      "path": "Machine Learning > Machine Learning in Production > Responsible and Reliable ML",
+      "children": [
+        "Sources of Bias in Training Data",
+        "Fairness Metrics and Their Incompatibility",
+        "Interpretability: SHAP and LIME",
+        "Reproducibility and Experiment Tracking"
+      ],
+      "siblings": [
+        "From Notebook to Service",
+        "Monitoring and Maintenance"
+      ]
+    },
+    {
+      "id": "sources-of-bias-in-training-data",
+      "level": "unit",
+      "title": "Sources of Bias in Training Data",
+      "path": "Machine Learning > Machine Learning in Production > Responsible and Reliable ML > Sources of Bias in Training Data",
+      "children": [],
+      "siblings": [
+        "Fairness Metrics and Their Incompatibility",
+        "Interpretability: SHAP and LIME",
+        "Reproducibility and Experiment Tracking"
+      ]
+    },
+    {
+      "id": "fairness-metrics-and-their-incompatibility",
+      "level": "unit",
+      "title": "Fairness Metrics and Their Incompatibility",
+      "path": "Machine Learning > Machine Learning in Production > Responsible and Reliable ML > Fairness Metrics and Their Incompatibility",
+      "children": [],
+      "siblings": [
+        "Sources of Bias in Training Data",
+        "Interpretability: SHAP and LIME",
+        "Reproducibility and Experiment Tracking"
+      ]
+    },
+    {
+      "id": "interpretability-shap-and-lime",
+      "level": "unit",
+      "title": "Interpretability: SHAP and LIME",
+      "path": "Machine Learning > Machine Learning in Production > Responsible and Reliable ML > Interpretability: SHAP and LIME",
+      "children": [],
+      "siblings": [
+        "Sources of Bias in Training Data",
+        "Fairness Metrics and Their Incompatibility",
+        "Reproducibility and Experiment Tracking"
+      ]
+    },
+    {
+      "id": "reproducibility-and-experiment-tracking",
+      "level": "unit",
+      "title": "Reproducibility and Experiment Tracking",
+      "path": "Machine Learning > Machine Learning in Production > Responsible and Reliable ML > Reproducibility and Experiment Tracking",
+      "children": [],
+      "siblings": [
+        "Sources of Bias in Training Data",
+        "Fairness Metrics and Their Incompatibility",
+        "Interpretability: SHAP and LIME"
+      ]
+    }
+  ]
+}

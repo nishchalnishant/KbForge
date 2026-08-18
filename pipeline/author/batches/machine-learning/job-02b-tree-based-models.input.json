@@ -1,0 +1,197 @@
+{
+  "key": "02b-tree-based-models",
+  "nodes": [
+    {
+      "id": "tree-based-models",
+      "level": "subsection",
+      "title": "Tree-Based Models",
+      "path": "Machine Learning > Supervised Learning Algorithms > Tree-Based Models",
+      "children": [
+        "Decision Trees",
+        "Bagging and Random Forests",
+        "Gradient Boosting"
+      ],
+      "siblings": [
+        "Linear Models",
+        "Distance and Margin Based Models",
+        "Neural Networks as Supervised Learners"
+      ]
+    },
+    {
+      "id": "decision-trees",
+      "level": "unit",
+      "title": "Decision Trees",
+      "path": "Machine Learning > Supervised Learning Algorithms > Tree-Based Models > Decision Trees",
+      "children": [
+        "Recursive Binary Splitting",
+        "Gini Impurity and Entropy",
+        "Pruning and Depth Control",
+        "Why Single Trees Overfit"
+      ],
+      "siblings": [
+        "Bagging and Random Forests",
+        "Gradient Boosting"
+      ]
+    },
+    {
+      "id": "recursive-binary-splitting",
+      "level": "unit",
+      "title": "Recursive Binary Splitting",
+      "path": "Machine Learning > Supervised Learning Algorithms > Tree-Based Models > Decision Trees > Recursive Binary Splitting",
+      "children": [],
+      "siblings": [
+        "Gini Impurity and Entropy",
+        "Pruning and Depth Control",
+        "Why Single Trees Overfit"
+      ]
+    },
+    {
+      "id": "gini-impurity-and-entropy",
+      "level": "unit",
+      "title": "Gini Impurity and Entropy",
+      "path": "Machine Learning > Supervised Learning Algorithms > Tree-Based Models > Decision Trees > Gini Impurity and Entropy",
+      "children": [],
+      "siblings": [
+        "Recursive Binary Splitting",
+        "Pruning and Depth Control",
+        "Why Single Trees Overfit"
+      ]
+    },
+    {
+      "id": "pruning-and-depth-control",
+      "level": "unit",
+      "title": "Pruning and Depth Control",
+      "path": "Machine Learning > Supervised Learning Algorithms > Tree-Based Models > Decision Trees > Pruning and Depth Control",
+      "children": [],
+      "siblings": [
+        "Recursive Binary Splitting",
+        "Gini Impurity and Entropy",
+        "Why Single Trees Overfit"
+      ]
+    },
+    {
+      "id": "why-single-trees-overfit",
+      "level": "unit",
+      "title": "Why Single Trees Overfit",
+      "path": "Machine Learning > Supervised Learning Algorithms > Tree-Based Models > Decision Trees > Why Single Trees Overfit",
+      "children": [],
+      "siblings": [
+        "Recursive Binary Splitting",
+        "Gini Impurity and Entropy",
+        "Pruning and Depth Control"
+      ]
+    },
+    {
+      "id": "bagging-and-random-forests",
+      "level": "unit",
+      "title": "Bagging and Random Forests",
+      "path": "Machine Learning > Supervised Learning Algorithms > Tree-Based Models > Bagging and Random Forests",
+      "children": [
+        "Bootstrap Aggregation",
+        "Feature Subsampling at Splits",
+        "Out-of-Bag Estimation"
+      ],
+      "siblings": [
+        "Decision Trees",
+        "Gradient Boosting"
+      ]
+    },
+    {
+      "id": "bootstrap-aggregation",
+      "level": "unit",
+      "title": "Bootstrap Aggregation",
+      "path": "Machine Learning > Supervised Learning Algorithms > Tree-Based Models > Bagging and Random Forests > Bootstrap Aggregation",
+      "children": [],
+      "siblings": [
+        "Feature Subsampling at Splits",
+        "Out-of-Bag Estimation"
+      ]
+    },
+    {
+      "id": "feature-subsampling-at-splits",
+      "level": "unit",
+      "title": "Feature Subsampling at Splits",
+      "path": "Machine Learning > Supervised Learning Algorithms > Tree-Based Models > Bagging and Random Forests > Feature Subsampling at Splits",
+      "children": [],
+      "siblings": [
+        "Bootstrap Aggregation",
+        "Out-of-Bag Estimation"
+      ]
+    },
+    {
+      "id": "out-of-bag-estimation",
+      "level": "unit",
+      "title": "Out-of-Bag Estimation",
+      "path": "Machine Learning > Supervised Learning Algorithms > Tree-Based Models > Bagging and Random Forests > Out-of-Bag Estimation",
+      "children": [],
+      "siblings": [
+        "Bootstrap Aggregation",
+        "Feature Subsampling at Splits"
+      ]
+    },
+    {
+      "id": "gradient-boosting",
+      "level": "unit",
+      "title": "Gradient Boosting",
+      "path": "Machine Learning > Supervised Learning Algorithms > Tree-Based Models > Gradient Boosting",
+      "children": [
+        "Boosting as Sequential Error Correction",
+        "Gradient Boosted Trees",
+        "XGBoost, LightGBM, and CatBoost in Practice",
+        "Learning Rate and Early Stopping"
+      ],
+      "siblings": [
+        "Decision Trees",
+        "Bagging and Random Forests"
+      ]
+    },
+    {
+      "id": "boosting-as-sequential-error-correction",
+      "level": "unit",
+      "title": "Boosting as Sequential Error Correction",
+      "path": "Machine Learning > Supervised Learning Algorithms > Tree-Based Models > Gradient Boosting > Boosting as Sequential Error Correction",
+      "children": [],
+      "siblings": [
+        "Gradient Boosted Trees",
+        "XGBoost, LightGBM, and CatBoost in Practice",
+        "Learning Rate and Early Stopping"
+      ]
+    },
+    {
+      "id": "gradient-boosted-trees",
+      "level": "unit",
+      "title": "Gradient Boosted Trees",
+      "path": "Machine Learning > Supervised Learning Algorithms > Tree-Based Models > Gradient Boosting > Gradient Boosted Trees",
+      "children": [],
+      "siblings": [
+        "Boosting as Sequential Error Correction",
+        "XGBoost, LightGBM, and CatBoost in Practice",
+        "Learning Rate and Early Stopping"
+      ]
+    },
+    {
+      "id": "xgboost-lightgbm-and-catboost-in-practice",
+      "level": "unit",
+      "title": "XGBoost, LightGBM, and CatBoost in Practice",
+      "path": "Machine Learning > Supervised Learning Algorithms > Tree-Based Models > Gradient Boosting > XGBoost, LightGBM, and CatBoost in Practice",
+      "children": [],
+      "siblings": [
+        "Boosting as Sequential Error Correction",
+        "Gradient Boosted Trees",
+        "Learning Rate and Early Stopping"
+      ]
+    },
+    {
+      "id": "learning-rate-and-early-stopping",
+      "level": "unit",
+      "title": "Learning Rate and Early Stopping",
+      "path": "Machine Learning > Supervised Learning Algorithms > Tree-Based Models > Gradient Boosting > Learning Rate and Early Stopping",
+      "children": [],
+      "siblings": [
+        "Boosting as Sequential Error Correction",
+        "Gradient Boosted Trees",
+        "XGBoost, LightGBM, and CatBoost in Practice"
+      ]
+    }
+  ]
+}

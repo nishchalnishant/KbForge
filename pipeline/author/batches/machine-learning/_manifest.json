@@ -1,0 +1,1767 @@
+{
+  "root": [
+    {
+      "id": "machine-learning",
+      "level": "topic",
+      "title": "Machine Learning",
+      "path": "Machine Learning",
+      "children": [
+        "Foundations of Learning",
+        "Supervised Learning Algorithms",
+        "Training and Optimisation",
+        "Evaluation and Model Selection",
+        "Unsupervised and Semi-Supervised Learning",
+        "Machine Learning in Production"
+      ],
+      "siblings": []
+    }
+  ],
+  "sections": [
+    {
+      "section": "Foundations of Learning",
+      "nodes": [
+        {
+          "id": "foundations-of-learning",
+          "level": "section",
+          "title": "Foundations of Learning",
+          "path": "Machine Learning > Foundations of Learning",
+          "children": [
+            "What Learning From Data Means",
+            "The Objective of Learning",
+            "Generalisation",
+            "Data as the Substrate"
+          ],
+          "siblings": [
+            "Supervised Learning Algorithms",
+            "Training and Optimisation",
+            "Evaluation and Model Selection",
+            "Unsupervised and Semi-Supervised Learning",
+            "Machine Learning in Production"
+          ]
+        },
+        {
+          "id": "what-learning-from-data-means",
+          "level": "subsection",
+          "title": "What Learning From Data Means",
+          "path": "Machine Learning > Foundations of Learning > What Learning From Data Means",
+          "children": [
+            "Rules vs. Learned Behaviour",
+            "The Three Learning Paradigms",
+            "Features, Labels, and Examples",
+            "The Hypothesis Space"
+          ],
+          "siblings": [
+            "The Objective of Learning",
+            "Generalisation",
+            "Data as the Substrate"
+          ]
+        },
+        {
+          "id": "rules-vs-learned-behaviour",
+          "level": "unit",
+          "title": "Rules vs. Learned Behaviour",
+          "path": "Machine Learning > Foundations of Learning > What Learning From Data Means > Rules vs. Learned Behaviour",
+          "children": [],
+          "siblings": [
+            "The Three Learning Paradigms",
+            "Features, Labels, and Examples",
+            "The Hypothesis Space"
+          ]
+        },
+        {
+          "id": "the-three-learning-paradigms",
+          "level": "unit",
+          "title": "The Three Learning Paradigms",
+          "path": "Machine Learning > Foundations of Learning > What Learning From Data Means > The Three Learning Paradigms",
+          "children": [],
+          "siblings": [
+            "Rules vs. Learned Behaviour",
+            "Features, Labels, and Examples",
+            "The Hypothesis Space"
+          ]
+        },
+        {
+          "id": "features-labels-and-examples",
+          "level": "unit",
+          "title": "Features, Labels, and Examples",
+          "path": "Machine Learning > Foundations of Learning > What Learning From Data Means > Features, Labels, and Examples",
+          "children": [],
+          "siblings": [
+            "Rules vs. Learned Behaviour",
+            "The Three Learning Paradigms",
+            "The Hypothesis Space"
+          ]
+        },
+        {
+          "id": "the-hypothesis-space",
+          "level": "unit",
+          "title": "The Hypothesis Space",
+          "path": "Machine Learning > Foundations of Learning > What Learning From Data Means > The Hypothesis Space",
+          "children": [],
+          "siblings": [
+            "Rules vs. Learned Behaviour",
+            "The Three Learning Paradigms",
+            "Features, Labels, and Examples"
+          ]
+        },
+        {
+          "id": "the-objective-of-learning",
+          "level": "subsection",
+          "title": "The Objective of Learning",
+          "path": "Machine Learning > Foundations of Learning > The Objective of Learning",
+          "children": [
+            "Loss Functions as Definitions of Wrong",
+            "Empirical Risk vs. True Risk",
+            "Why Minimising Training Error Is Not the Goal"
+          ],
+          "siblings": [
+            "What Learning From Data Means",
+            "Generalisation",
+            "Data as the Substrate"
+          ]
+        },
+        {
+          "id": "loss-functions-as-definitions-of-wrong",
+          "level": "unit",
+          "title": "Loss Functions as Definitions of Wrong",
+          "path": "Machine Learning > Foundations of Learning > The Objective of Learning > Loss Functions as Definitions of Wrong",
+          "children": [],
+          "siblings": [
+            "Empirical Risk vs. True Risk",
+            "Why Minimising Training Error Is Not the Goal"
+          ]
+        },
+        {
+          "id": "empirical-risk-vs-true-risk",
+          "level": "unit",
+          "title": "Empirical Risk vs. True Risk",
+          "path": "Machine Learning > Foundations of Learning > The Objective of Learning > Empirical Risk vs. True Risk",
+          "children": [],
+          "siblings": [
+            "Loss Functions as Definitions of Wrong",
+            "Why Minimising Training Error Is Not the Goal"
+          ]
+        },
+        {
+          "id": "why-minimising-training-error-is-not-the-goal",
+          "level": "unit",
+          "title": "Why Minimising Training Error Is Not the Goal",
+          "path": "Machine Learning > Foundations of Learning > The Objective of Learning > Why Minimising Training Error Is Not the Goal",
+          "children": [],
+          "siblings": [
+            "Loss Functions as Definitions of Wrong",
+            "Empirical Risk vs. True Risk"
+          ]
+        },
+        {
+          "id": "generalisation",
+          "level": "subsection",
+          "title": "Generalisation",
+          "path": "Machine Learning > Foundations of Learning > Generalisation",
+          "children": [
+            "Overfitting and Underfitting",
+            "The Bias-Variance Decomposition",
+            "Model Capacity and the Complexity Dial",
+            "Regularisation as Constrained Capacity",
+            "The Curse of Dimensionality"
+          ],
+          "siblings": [
+            "What Learning From Data Means",
+            "The Objective of Learning",
+            "Data as the Substrate"
+          ]
+        },
+        {
+          "id": "overfitting-and-underfitting",
+          "level": "unit",
+          "title": "Overfitting and Underfitting",
+          "path": "Machine Learning > Foundations of Learning > Generalisation > Overfitting and Underfitting",
+          "children": [],
+          "siblings": [
+            "The Bias-Variance Decomposition",
+            "Model Capacity and the Complexity Dial",
+            "Regularisation as Constrained Capacity",
+            "The Curse of Dimensionality"
+          ]
+        },
+        {
+          "id": "the-bias-variance-decomposition",
+          "level": "unit",
+          "title": "The Bias-Variance Decomposition",
+          "path": "Machine Learning > Foundations of Learning > Generalisation > The Bias-Variance Decomposition",
+          "children": [],
+          "siblings": [
+            "Overfitting and Underfitting",
+            "Model Capacity and the Complexity Dial",
+            "Regularisation as Constrained Capacity",
+            "The Curse of Dimensionality"
+          ]
+        },
+        {
+          "id": "model-capacity-and-the-complexity-dial",
+          "level": "unit",
+          "title": "Model Capacity and the Complexity Dial",
+          "path": "Machine Learning > Foundations of Learning > Generalisation > Model Capacity and the Complexity Dial",
+          "children": [],
+          "siblings": [
+            "Overfitting and Underfitting",
+            "The Bias-Variance Decomposition",
+            "Regularisation as Constrained Capacity",
+            "The Curse of Dimensionality"
+          ]
+        },
+        {
+          "id": "regularisation-as-constrained-capacity",
+          "level": "unit",
+          "title": "Regularisation as Constrained Capacity",
+          "path": "Machine Learning > Foundations of Learning > Generalisation > Regularisation as Constrained Capacity",
+          "children": [],
+          "siblings": [
+            "Overfitting and Underfitting",
+            "The Bias-Variance Decomposition",
+            "Model Capacity and the Complexity Dial",
+            "The Curse of Dimensionality"
+          ]
+        },
+        {
+          "id": "the-curse-of-dimensionality",
+          "level": "unit",
+          "title": "The Curse of Dimensionality",
+          "path": "Machine Learning > Foundations of Learning > Generalisation > The Curse of Dimensionality",
+          "children": [],
+          "siblings": [
+            "Overfitting and Underfitting",
+            "The Bias-Variance Decomposition",
+            "Model Capacity and the Complexity Dial",
+            "Regularisation as Constrained Capacity"
+          ]
+        },
+        {
+          "id": "data-as-the-substrate",
+          "level": "subsection",
+          "title": "Data as the Substrate",
+          "path": "Machine Learning > Foundations of Learning > Data as the Substrate",
+          "children": [
+            "Train, Validation, and Test Splits",
+            "Data Leakage",
+            "Independent and Identically Distributed Assumptions",
+            "Class Imbalance"
+          ],
+          "siblings": [
+            "What Learning From Data Means",
+            "The Objective of Learning",
+            "Generalisation"
+          ]
+        },
+        {
+          "id": "train-validation-and-test-splits",
+          "level": "unit",
+          "title": "Train, Validation, and Test Splits",
+          "path": "Machine Learning > Foundations of Learning > Data as the Substrate > Train, Validation, and Test Splits",
+          "children": [],
+          "siblings": [
+            "Data Leakage",
+            "Independent and Identically Distributed Assumptions",
+            "Class Imbalance"
+          ]
+        },
+        {
+          "id": "data-leakage",
+          "level": "unit",
+          "title": "Data Leakage",
+          "path": "Machine Learning > Foundations of Learning > Data as the Substrate > Data Leakage",
+          "children": [],
+          "siblings": [
+            "Train, Validation, and Test Splits",
+            "Independent and Identically Distributed Assumptions",
+            "Class Imbalance"
+          ]
+        },
+        {
+          "id": "independent-and-identically-distributed-assumptions",
+          "level": "unit",
+          "title": "Independent and Identically Distributed Assumptions",
+          "path": "Machine Learning > Foundations of Learning > Data as the Substrate > Independent and Identically Distributed Assumptions",
+          "children": [],
+          "siblings": [
+            "Train, Validation, and Test Splits",
+            "Data Leakage",
+            "Class Imbalance"
+          ]
+        },
+        {
+          "id": "class-imbalance",
+          "level": "unit",
+          "title": "Class Imbalance",
+          "path": "Machine Learning > Foundations of Learning > Data as the Substrate > Class Imbalance",
+          "children": [],
+          "siblings": [
+            "Train, Validation, and Test Splits",
+            "Data Leakage",
+            "Independent and Identically Distributed Assumptions"
+          ]
+        }
+      ]
+    },
+    {
+      "section": "Supervised Learning Algorithms",
+      "nodes": [
+        {
+          "id": "supervised-learning-algorithms",
+          "level": "section",
+          "title": "Supervised Learning Algorithms",
+          "path": "Machine Learning > Supervised Learning Algorithms",
+          "children": [
+            "Linear Models",
+            "Tree-Based Models",
+            "Distance and Margin Based Models",
+            "Neural Networks as Supervised Learners"
+          ],
+          "siblings": [
+            "Foundations of Learning",
+            "Training and Optimisation",
+            "Evaluation and Model Selection",
+            "Unsupervised and Semi-Supervised Learning",
+            "Machine Learning in Production"
+          ]
+        },
+        {
+          "id": "linear-models",
+          "level": "subsection",
+          "title": "Linear Models",
+          "path": "Machine Learning > Supervised Learning Algorithms > Linear Models",
+          "children": [
+            "Linear Regression",
+            "Regularised Linear Regression",
+            "Logistic Regression"
+          ],
+          "siblings": [
+            "Tree-Based Models",
+            "Distance and Margin Based Models",
+            "Neural Networks as Supervised Learners"
+          ]
+        },
+        {
+          "id": "linear-regression",
+          "level": "unit",
+          "title": "Linear Regression",
+          "path": "Machine Learning > Supervised Learning Algorithms > Linear Models > Linear Regression",
+          "children": [
+            "The Least Squares Objective",
+            "Closed Form vs. Iterative Solutions",
+            "Assumptions of Linear Regression"
+          ],
+          "siblings": [
+            "Regularised Linear Regression",
+            "Logistic Regression"
+          ]
+        },
+        {
+          "id": "the-least-squares-objective",
+          "level": "unit",
+          "title": "The Least Squares Objective",
+          "path": "Machine Learning > Supervised Learning Algorithms > Linear Models > Linear Regression > The Least Squares Objective",
+          "children": [],
+          "siblings": [
+            "Closed Form vs. Iterative Solutions",
+            "Assumptions of Linear Regression"
+          ]
+        },
+        {
+          "id": "closed-form-vs-iterative-solutions",
+          "level": "unit",
+          "title": "Closed Form vs. Iterative Solutions",
+          "path": "Machine Learning > Supervised Learning Algorithms > Linear Models > Linear Regression > Closed Form vs. Iterative Solutions",
+          "children": [],
+          "siblings": [
+            "The Least Squares Objective",
+            "Assumptions of Linear Regression"
+          ]
+        },
+        {
+          "id": "assumptions-of-linear-regression",
+          "level": "unit",
+          "title": "Assumptions of Linear Regression",
+          "path": "Machine Learning > Supervised Learning Algorithms > Linear Models > Linear Regression > Assumptions of Linear Regression",
+          "children": [],
+          "siblings": [
+            "The Least Squares Objective",
+            "Closed Form vs. Iterative Solutions"
+          ]
+        },
+        {
+          "id": "regularised-linear-regression",
+          "level": "unit",
+          "title": "Regularised Linear Regression",
+          "path": "Machine Learning > Supervised Learning Algorithms > Linear Models > Regularised Linear Regression",
+          "children": [
+            "Ridge Regression and L2 Penalty",
+            "Lasso Regression and L1 Sparsity",
+            "Elastic Net"
+          ],
+          "siblings": [
+            "Linear Regression",
+            "Logistic Regression"
+          ]
+        },
+        {
+          "id": "ridge-regression-and-l2-penalty",
+          "level": "unit",
+          "title": "Ridge Regression and L2 Penalty",
+          "path": "Machine Learning > Supervised Learning Algorithms > Linear Models > Regularised Linear Regression > Ridge Regression and L2 Penalty",
+          "children": [],
+          "siblings": [
+            "Lasso Regression and L1 Sparsity",
+            "Elastic Net"
+          ]
+        },
+        {
+          "id": "lasso-regression-and-l1-sparsity",
+          "level": "unit",
+          "title": "Lasso Regression and L1 Sparsity",
+          "path": "Machine Learning > Supervised Learning Algorithms > Linear Models > Regularised Linear Regression > Lasso Regression and L1 Sparsity",
+          "children": [],
+          "siblings": [
+            "Ridge Regression and L2 Penalty",
+            "Elastic Net"
+          ]
+        },
+        {
+          "id": "elastic-net",
+          "level": "unit",
+          "title": "Elastic Net",
+          "path": "Machine Learning > Supervised Learning Algorithms > Linear Models > Regularised Linear Regression > Elastic Net",
+          "children": [],
+          "siblings": [
+            "Ridge Regression and L2 Penalty",
+            "Lasso Regression and L1 Sparsity"
+          ]
+        },
+        {
+          "id": "logistic-regression",
+          "level": "unit",
+          "title": "Logistic Regression",
+          "path": "Machine Learning > Supervised Learning Algorithms > Linear Models > Logistic Regression",
+          "children": [
+            "The Sigmoid and Log-Odds",
+            "Cross-Entropy Loss",
+            "Multiclass via Softmax and One-vs-Rest"
+          ],
+          "siblings": [
+            "Linear Regression",
+            "Regularised Linear Regression"
+          ]
+        },
+        {
+          "id": "the-sigmoid-and-log-odds",
+          "level": "unit",
+          "title": "The Sigmoid and Log-Odds",
+          "path": "Machine Learning > Supervised Learning Algorithms > Linear Models > Logistic Regression > The Sigmoid and Log-Odds",
+          "children": [],
+          "siblings": [
+            "Cross-Entropy Loss",
+            "Multiclass via Softmax and One-vs-Rest"
+          ]
+        },
+        {
+          "id": "cross-entropy-loss",
+          "level": "unit",
+          "title": "Cross-Entropy Loss",
+          "path": "Machine Learning > Supervised Learning Algorithms > Linear Models > Logistic Regression > Cross-Entropy Loss",
+          "children": [],
+          "siblings": [
+            "The Sigmoid and Log-Odds",
+            "Multiclass via Softmax and One-vs-Rest"
+          ]
+        },
+        {
+          "id": "multiclass-via-softmax-and-one-vs-rest",
+          "level": "unit",
+          "title": "Multiclass via Softmax and One-vs-Rest",
+          "path": "Machine Learning > Supervised Learning Algorithms > Linear Models > Logistic Regression > Multiclass via Softmax and One-vs-Rest",
+          "children": [],
+          "siblings": [
+            "The Sigmoid and Log-Odds",
+            "Cross-Entropy Loss"
+          ]
+        },
+        {
+          "id": "tree-based-models",
+          "level": "subsection",
+          "title": "Tree-Based Models",
+          "path": "Machine Learning > Supervised Learning Algorithms > Tree-Based Models",
+          "children": [
+            "Decision Trees",
+            "Bagging and Random Forests",
+            "Gradient Boosting"
+          ],
+          "siblings": [
+            "Linear Models",
+            "Distance and Margin Based Models",
+            "Neural Networks as Supervised Learners"
+          ]
+        },
+        {
+          "id": "decision-trees",
+          "level": "unit",
+          "title": "Decision Trees",
+          "path": "Machine Learning > Supervised Learning Algorithms > Tree-Based Models > Decision Trees",
+          "children": [
+            "Recursive Binary Splitting",
+            "Gini Impurity and Entropy",
+            "Pruning and Depth Control",
+            "Why Single Trees Overfit"
+          ],
+          "siblings": [
+            "Bagging and Random Forests",
+            "Gradient Boosting"
+          ]
+        },
+        {
+          "id": "recursive-binary-splitting",
+          "level": "unit",
+          "title": "Recursive Binary Splitting",
+          "path": "Machine Learning > Supervised Learning Algorithms > Tree-Based Models > Decision Trees > Recursive Binary Splitting",
+          "children": [],
+          "siblings": [
+            "Gini Impurity and Entropy",
+            "Pruning and Depth Control",
+            "Why Single Trees Overfit"
+          ]
+        },
+        {
+          "id": "gini-impurity-and-entropy",
+          "level": "unit",
+          "title": "Gini Impurity and Entropy",
+          "path": "Machine Learning > Supervised Learning Algorithms > Tree-Based Models > Decision Trees > Gini Impurity and Entropy",
+          "children": [],
+          "siblings": [
+            "Recursive Binary Splitting",
+            "Pruning and Depth Control",
+            "Why Single Trees Overfit"
+          ]
+        },
+        {
+          "id": "pruning-and-depth-control",
+          "level": "unit",
+          "title": "Pruning and Depth Control",
+          "path": "Machine Learning > Supervised Learning Algorithms > Tree-Based Models > Decision Trees > Pruning and Depth Control",
+          "children": [],
+          "siblings": [
+            "Recursive Binary Splitting",
+            "Gini Impurity and Entropy",
+            "Why Single Trees Overfit"
+          ]
+        },
+        {
+          "id": "why-single-trees-overfit",
+          "level": "unit",
+          "title": "Why Single Trees Overfit",
+          "path": "Machine Learning > Supervised Learning Algorithms > Tree-Based Models > Decision Trees > Why Single Trees Overfit",
+          "children": [],
+          "siblings": [
+            "Recursive Binary Splitting",
+            "Gini Impurity and Entropy",
+            "Pruning and Depth Control"
+          ]
+        },
+        {
+          "id": "bagging-and-random-forests",
+          "level": "unit",
+          "title": "Bagging and Random Forests",
+          "path": "Machine Learning > Supervised Learning Algorithms > Tree-Based Models > Bagging and Random Forests",
+          "children": [
+            "Bootstrap Aggregation",
+            "Feature Subsampling at Splits",
+            "Out-of-Bag Estimation"
+          ],
+          "siblings": [
+            "Decision Trees",
+            "Gradient Boosting"
+          ]
+        },
+        {
+          "id": "bootstrap-aggregation",
+          "level": "unit",
+          "title": "Bootstrap Aggregation",
+          "path": "Machine Learning > Supervised Learning Algorithms > Tree-Based Models > Bagging and Random Forests > Bootstrap Aggregation",
+          "children": [],
+          "siblings": [
+            "Feature Subsampling at Splits",
+            "Out-of-Bag Estimation"
+          ]
+        },
+        {
+          "id": "feature-subsampling-at-splits",
+          "level": "unit",
+          "title": "Feature Subsampling at Splits",
+          "path": "Machine Learning > Supervised Learning Algorithms > Tree-Based Models > Bagging and Random Forests > Feature Subsampling at Splits",
+          "children": [],
+          "siblings": [
+            "Bootstrap Aggregation",
+            "Out-of-Bag Estimation"
+          ]
+        },
+        {
+          "id": "out-of-bag-estimation",
+          "level": "unit",
+          "title": "Out-of-Bag Estimation",
+          "path": "Machine Learning > Supervised Learning Algorithms > Tree-Based Models > Bagging and Random Forests > Out-of-Bag Estimation",
+          "children": [],
+          "siblings": [
+            "Bootstrap Aggregation",
+            "Feature Subsampling at Splits"
+          ]
+        },
+        {
+          "id": "gradient-boosting",
+          "level": "unit",
+          "title": "Gradient Boosting",
+          "path": "Machine Learning > Supervised Learning Algorithms > Tree-Based Models > Gradient Boosting",
+          "children": [
+            "Boosting as Sequential Error Correction",
+            "Gradient Boosted Trees",
+            "XGBoost, LightGBM, and CatBoost in Practice",
+            "Learning Rate and Early Stopping"
+          ],
+          "siblings": [
+            "Decision Trees",
+            "Bagging and Random Forests"
+          ]
+        },
+        {
+          "id": "boosting-as-sequential-error-correction",
+          "level": "unit",
+          "title": "Boosting as Sequential Error Correction",
+          "path": "Machine Learning > Supervised Learning Algorithms > Tree-Based Models > Gradient Boosting > Boosting as Sequential Error Correction",
+          "children": [],
+          "siblings": [
+            "Gradient Boosted Trees",
+            "XGBoost, LightGBM, and CatBoost in Practice",
+            "Learning Rate and Early Stopping"
+          ]
+        },
+        {
+          "id": "gradient-boosted-trees",
+          "level": "unit",
+          "title": "Gradient Boosted Trees",
+          "path": "Machine Learning > Supervised Learning Algorithms > Tree-Based Models > Gradient Boosting > Gradient Boosted Trees",
+          "children": [],
+          "siblings": [
+            "Boosting as Sequential Error Correction",
+            "XGBoost, LightGBM, and CatBoost in Practice",
+            "Learning Rate and Early Stopping"
+          ]
+        },
+        {
+          "id": "xgboost-lightgbm-and-catboost-in-practice",
+          "level": "unit",
+          "title": "XGBoost, LightGBM, and CatBoost in Practice",
+          "path": "Machine Learning > Supervised Learning Algorithms > Tree-Based Models > Gradient Boosting > XGBoost, LightGBM, and CatBoost in Practice",
+          "children": [],
+          "siblings": [
+            "Boosting as Sequential Error Correction",
+            "Gradient Boosted Trees",
+            "Learning Rate and Early Stopping"
+          ]
+        },
+        {
+          "id": "learning-rate-and-early-stopping",
+          "level": "unit",
+          "title": "Learning Rate and Early Stopping",
+          "path": "Machine Learning > Supervised Learning Algorithms > Tree-Based Models > Gradient Boosting > Learning Rate and Early Stopping",
+          "children": [],
+          "siblings": [
+            "Boosting as Sequential Error Correction",
+            "Gradient Boosted Trees",
+            "XGBoost, LightGBM, and CatBoost in Practice"
+          ]
+        },
+        {
+          "id": "distance-and-margin-based-models",
+          "level": "subsection",
+          "title": "Distance and Margin Based Models",
+          "path": "Machine Learning > Supervised Learning Algorithms > Distance and Margin Based Models",
+          "children": [
+            "K-Nearest Neighbours",
+            "Distance Metrics and Scaling Sensitivity",
+            "Support Vector Machines and the Maximum Margin",
+            "The Kernel Trick",
+            "Naive Bayes and Conditional Independence"
+          ],
+          "siblings": [
+            "Linear Models",
+            "Tree-Based Models",
+            "Neural Networks as Supervised Learners"
+          ]
+        },
+        {
+          "id": "k-nearest-neighbours",
+          "level": "unit",
+          "title": "K-Nearest Neighbours",
+          "path": "Machine Learning > Supervised Learning Algorithms > Distance and Margin Based Models > K-Nearest Neighbours",
+          "children": [],
+          "siblings": [
+            "Distance Metrics and Scaling Sensitivity",
+            "Support Vector Machines and the Maximum Margin",
+            "The Kernel Trick",
+            "Naive Bayes and Conditional Independence"
+          ]
+        },
+        {
+          "id": "distance-metrics-and-scaling-sensitivity",
+          "level": "unit",
+          "title": "Distance Metrics and Scaling Sensitivity",
+          "path": "Machine Learning > Supervised Learning Algorithms > Distance and Margin Based Models > Distance Metrics and Scaling Sensitivity",
+          "children": [],
+          "siblings": [
+            "K-Nearest Neighbours",
+            "Support Vector Machines and the Maximum Margin",
+            "The Kernel Trick",
+            "Naive Bayes and Conditional Independence"
+          ]
+        },
+        {
+          "id": "support-vector-machines-and-the-maximum-margin",
+          "level": "unit",
+          "title": "Support Vector Machines and the Maximum Margin",
+          "path": "Machine Learning > Supervised Learning Algorithms > Distance and Margin Based Models > Support Vector Machines and the Maximum Margin",
+          "children": [],
+          "siblings": [
+            "K-Nearest Neighbours",
+            "Distance Metrics and Scaling Sensitivity",
+            "The Kernel Trick",
+            "Naive Bayes and Conditional Independence"
+          ]
+        },
+        {
+          "id": "the-kernel-trick",
+          "level": "unit",
+          "title": "The Kernel Trick",
+          "path": "Machine Learning > Supervised Learning Algorithms > Distance and Margin Based Models > The Kernel Trick",
+          "children": [],
+          "siblings": [
+            "K-Nearest Neighbours",
+            "Distance Metrics and Scaling Sensitivity",
+            "Support Vector Machines and the Maximum Margin",
+            "Naive Bayes and Conditional Independence"
+          ]
+        },
+        {
+          "id": "naive-bayes-and-conditional-independence",
+          "level": "unit",
+          "title": "Naive Bayes and Conditional Independence",
+          "path": "Machine Learning > Supervised Learning Algorithms > Distance and Margin Based Models > Naive Bayes and Conditional Independence",
+          "children": [],
+          "siblings": [
+            "K-Nearest Neighbours",
+            "Distance Metrics and Scaling Sensitivity",
+            "Support Vector Machines and the Maximum Margin",
+            "The Kernel Trick"
+          ]
+        },
+        {
+          "id": "neural-networks-as-supervised-learners",
+          "level": "subsection",
+          "title": "Neural Networks as Supervised Learners",
+          "path": "Machine Learning > Supervised Learning Algorithms > Neural Networks as Supervised Learners",
+          "children": [
+            "The Perceptron and Linear Separability",
+            "Hidden Layers and Non-Linear Activation",
+            "Backpropagation as the Chain Rule",
+            "Universal Approximation and Its Limits"
+          ],
+          "siblings": [
+            "Linear Models",
+            "Tree-Based Models",
+            "Distance and Margin Based Models"
+          ]
+        },
+        {
+          "id": "the-perceptron-and-linear-separability",
+          "level": "unit",
+          "title": "The Perceptron and Linear Separability",
+          "path": "Machine Learning > Supervised Learning Algorithms > Neural Networks as Supervised Learners > The Perceptron and Linear Separability",
+          "children": [],
+          "siblings": [
+            "Hidden Layers and Non-Linear Activation",
+            "Backpropagation as the Chain Rule",
+            "Universal Approximation and Its Limits"
+          ]
+        },
+        {
+          "id": "hidden-layers-and-non-linear-activation",
+          "level": "unit",
+          "title": "Hidden Layers and Non-Linear Activation",
+          "path": "Machine Learning > Supervised Learning Algorithms > Neural Networks as Supervised Learners > Hidden Layers and Non-Linear Activation",
+          "children": [],
+          "siblings": [
+            "The Perceptron and Linear Separability",
+            "Backpropagation as the Chain Rule",
+            "Universal Approximation and Its Limits"
+          ]
+        },
+        {
+          "id": "backpropagation-as-the-chain-rule",
+          "level": "unit",
+          "title": "Backpropagation as the Chain Rule",
+          "path": "Machine Learning > Supervised Learning Algorithms > Neural Networks as Supervised Learners > Backpropagation as the Chain Rule",
+          "children": [],
+          "siblings": [
+            "The Perceptron and Linear Separability",
+            "Hidden Layers and Non-Linear Activation",
+            "Universal Approximation and Its Limits"
+          ]
+        },
+        {
+          "id": "universal-approximation-and-its-limits",
+          "level": "unit",
+          "title": "Universal Approximation and Its Limits",
+          "path": "Machine Learning > Supervised Learning Algorithms > Neural Networks as Supervised Learners > Universal Approximation and Its Limits",
+          "children": [],
+          "siblings": [
+            "The Perceptron and Linear Separability",
+            "Hidden Layers and Non-Linear Activation",
+            "Backpropagation as the Chain Rule"
+          ]
+        }
+      ]
+    },
+    {
+      "section": "Training and Optimisation",
+      "nodes": [
+        {
+          "id": "training-and-optimisation",
+          "level": "section",
+          "title": "Training and Optimisation",
+          "path": "Machine Learning > Training and Optimisation",
+          "children": [
+            "Gradient Descent",
+            "Feature Engineering and Preparation",
+            "Hyperparameter Tuning"
+          ],
+          "siblings": [
+            "Foundations of Learning",
+            "Supervised Learning Algorithms",
+            "Evaluation and Model Selection",
+            "Unsupervised and Semi-Supervised Learning",
+            "Machine Learning in Production"
+          ]
+        },
+        {
+          "id": "gradient-descent",
+          "level": "subsection",
+          "title": "Gradient Descent",
+          "path": "Machine Learning > Training and Optimisation > Gradient Descent",
+          "children": [
+            "The Gradient as Direction of Steepest Ascent",
+            "Batch, Stochastic, and Mini-Batch Descent",
+            "Learning Rate and Convergence Behaviour",
+            "Momentum, RMSProp, and Adam",
+            "Local Minima, Saddle Points, and Plateaus"
+          ],
+          "siblings": [
+            "Feature Engineering and Preparation",
+            "Hyperparameter Tuning"
+          ]
+        },
+        {
+          "id": "the-gradient-as-direction-of-steepest-ascent",
+          "level": "unit",
+          "title": "The Gradient as Direction of Steepest Ascent",
+          "path": "Machine Learning > Training and Optimisation > Gradient Descent > The Gradient as Direction of Steepest Ascent",
+          "children": [],
+          "siblings": [
+            "Batch, Stochastic, and Mini-Batch Descent",
+            "Learning Rate and Convergence Behaviour",
+            "Momentum, RMSProp, and Adam",
+            "Local Minima, Saddle Points, and Plateaus"
+          ]
+        },
+        {
+          "id": "batch-stochastic-and-mini-batch-descent",
+          "level": "unit",
+          "title": "Batch, Stochastic, and Mini-Batch Descent",
+          "path": "Machine Learning > Training and Optimisation > Gradient Descent > Batch, Stochastic, and Mini-Batch Descent",
+          "children": [],
+          "siblings": [
+            "The Gradient as Direction of Steepest Ascent",
+            "Learning Rate and Convergence Behaviour",
+            "Momentum, RMSProp, and Adam",
+            "Local Minima, Saddle Points, and Plateaus"
+          ]
+        },
+        {
+          "id": "learning-rate-and-convergence-behaviour",
+          "level": "unit",
+          "title": "Learning Rate and Convergence Behaviour",
+          "path": "Machine Learning > Training and Optimisation > Gradient Descent > Learning Rate and Convergence Behaviour",
+          "children": [],
+          "siblings": [
+            "The Gradient as Direction of Steepest Ascent",
+            "Batch, Stochastic, and Mini-Batch Descent",
+            "Momentum, RMSProp, and Adam",
+            "Local Minima, Saddle Points, and Plateaus"
+          ]
+        },
+        {
+          "id": "momentum-rmsprop-and-adam",
+          "level": "unit",
+          "title": "Momentum, RMSProp, and Adam",
+          "path": "Machine Learning > Training and Optimisation > Gradient Descent > Momentum, RMSProp, and Adam",
+          "children": [],
+          "siblings": [
+            "The Gradient as Direction of Steepest Ascent",
+            "Batch, Stochastic, and Mini-Batch Descent",
+            "Learning Rate and Convergence Behaviour",
+            "Local Minima, Saddle Points, and Plateaus"
+          ]
+        },
+        {
+          "id": "local-minima-saddle-points-and-plateaus",
+          "level": "unit",
+          "title": "Local Minima, Saddle Points, and Plateaus",
+          "path": "Machine Learning > Training and Optimisation > Gradient Descent > Local Minima, Saddle Points, and Plateaus",
+          "children": [],
+          "siblings": [
+            "The Gradient as Direction of Steepest Ascent",
+            "Batch, Stochastic, and Mini-Batch Descent",
+            "Learning Rate and Convergence Behaviour",
+            "Momentum, RMSProp, and Adam"
+          ]
+        },
+        {
+          "id": "feature-engineering-and-preparation",
+          "level": "subsection",
+          "title": "Feature Engineering and Preparation",
+          "path": "Machine Learning > Training and Optimisation > Feature Engineering and Preparation",
+          "children": [
+            "Normalisation and Standardisation",
+            "Encoding Categorical Variables",
+            "Handling Missing Values",
+            "Feature Selection Methods",
+            "Principal Component Analysis"
+          ],
+          "siblings": [
+            "Gradient Descent",
+            "Hyperparameter Tuning"
+          ]
+        },
+        {
+          "id": "normalisation-and-standardisation",
+          "level": "unit",
+          "title": "Normalisation and Standardisation",
+          "path": "Machine Learning > Training and Optimisation > Feature Engineering and Preparation > Normalisation and Standardisation",
+          "children": [],
+          "siblings": [
+            "Encoding Categorical Variables",
+            "Handling Missing Values",
+            "Feature Selection Methods",
+            "Principal Component Analysis"
+          ]
+        },
+        {
+          "id": "encoding-categorical-variables",
+          "level": "unit",
+          "title": "Encoding Categorical Variables",
+          "path": "Machine Learning > Training and Optimisation > Feature Engineering and Preparation > Encoding Categorical Variables",
+          "children": [],
+          "siblings": [
+            "Normalisation and Standardisation",
+            "Handling Missing Values",
+            "Feature Selection Methods",
+            "Principal Component Analysis"
+          ]
+        },
+        {
+          "id": "handling-missing-values",
+          "level": "unit",
+          "title": "Handling Missing Values",
+          "path": "Machine Learning > Training and Optimisation > Feature Engineering and Preparation > Handling Missing Values",
+          "children": [],
+          "siblings": [
+            "Normalisation and Standardisation",
+            "Encoding Categorical Variables",
+            "Feature Selection Methods",
+            "Principal Component Analysis"
+          ]
+        },
+        {
+          "id": "feature-selection-methods",
+          "level": "unit",
+          "title": "Feature Selection Methods",
+          "path": "Machine Learning > Training and Optimisation > Feature Engineering and Preparation > Feature Selection Methods",
+          "children": [],
+          "siblings": [
+            "Normalisation and Standardisation",
+            "Encoding Categorical Variables",
+            "Handling Missing Values",
+            "Principal Component Analysis"
+          ]
+        },
+        {
+          "id": "principal-component-analysis",
+          "level": "unit",
+          "title": "Principal Component Analysis",
+          "path": "Machine Learning > Training and Optimisation > Feature Engineering and Preparation > Principal Component Analysis",
+          "children": [],
+          "siblings": [
+            "Normalisation and Standardisation",
+            "Encoding Categorical Variables",
+            "Handling Missing Values",
+            "Feature Selection Methods"
+          ]
+        },
+        {
+          "id": "hyperparameter-tuning",
+          "level": "subsection",
+          "title": "Hyperparameter Tuning",
+          "path": "Machine Learning > Training and Optimisation > Hyperparameter Tuning",
+          "children": [
+            "Parameters vs. Hyperparameters",
+            "Grid Search and Random Search",
+            "Bayesian Optimisation",
+            "Cross-Validation Strategies"
+          ],
+          "siblings": [
+            "Gradient Descent",
+            "Feature Engineering and Preparation"
+          ]
+        },
+        {
+          "id": "parameters-vs-hyperparameters",
+          "level": "unit",
+          "title": "Parameters vs. Hyperparameters",
+          "path": "Machine Learning > Training and Optimisation > Hyperparameter Tuning > Parameters vs. Hyperparameters",
+          "children": [],
+          "siblings": [
+            "Grid Search and Random Search",
+            "Bayesian Optimisation",
+            "Cross-Validation Strategies"
+          ]
+        },
+        {
+          "id": "grid-search-and-random-search",
+          "level": "unit",
+          "title": "Grid Search and Random Search",
+          "path": "Machine Learning > Training and Optimisation > Hyperparameter Tuning > Grid Search and Random Search",
+          "children": [],
+          "siblings": [
+            "Parameters vs. Hyperparameters",
+            "Bayesian Optimisation",
+            "Cross-Validation Strategies"
+          ]
+        },
+        {
+          "id": "bayesian-optimisation",
+          "level": "unit",
+          "title": "Bayesian Optimisation",
+          "path": "Machine Learning > Training and Optimisation > Hyperparameter Tuning > Bayesian Optimisation",
+          "children": [],
+          "siblings": [
+            "Parameters vs. Hyperparameters",
+            "Grid Search and Random Search",
+            "Cross-Validation Strategies"
+          ]
+        },
+        {
+          "id": "cross-validation-strategies",
+          "level": "unit",
+          "title": "Cross-Validation Strategies",
+          "path": "Machine Learning > Training and Optimisation > Hyperparameter Tuning > Cross-Validation Strategies",
+          "children": [],
+          "siblings": [
+            "Parameters vs. Hyperparameters",
+            "Grid Search and Random Search",
+            "Bayesian Optimisation"
+          ]
+        }
+      ]
+    },
+    {
+      "section": "Evaluation and Model Selection",
+      "nodes": [
+        {
+          "id": "evaluation-and-model-selection",
+          "level": "section",
+          "title": "Evaluation and Model Selection",
+          "path": "Machine Learning > Evaluation and Model Selection",
+          "children": [
+            "Classification Metrics",
+            "Regression and Probabilistic Metrics",
+            "Choosing Between Models"
+          ],
+          "siblings": [
+            "Foundations of Learning",
+            "Supervised Learning Algorithms",
+            "Training and Optimisation",
+            "Unsupervised and Semi-Supervised Learning",
+            "Machine Learning in Production"
+          ]
+        },
+        {
+          "id": "classification-metrics",
+          "level": "subsection",
+          "title": "Classification Metrics",
+          "path": "Machine Learning > Evaluation and Model Selection > Classification Metrics",
+          "children": [
+            "The Confusion Matrix",
+            "Precision, Recall, and the Trade-Off",
+            "F1 and F-Beta Scores",
+            "ROC Curves and AUC",
+            "Precision-Recall Curves for Imbalanced Data",
+            "Why Accuracy Misleads"
+          ],
+          "siblings": [
+            "Regression and Probabilistic Metrics",
+            "Choosing Between Models"
+          ]
+        },
+        {
+          "id": "the-confusion-matrix",
+          "level": "unit",
+          "title": "The Confusion Matrix",
+          "path": "Machine Learning > Evaluation and Model Selection > Classification Metrics > The Confusion Matrix",
+          "children": [],
+          "siblings": [
+            "Precision, Recall, and the Trade-Off",
+            "F1 and F-Beta Scores",
+            "ROC Curves and AUC",
+            "Precision-Recall Curves for Imbalanced Data",
+            "Why Accuracy Misleads"
+          ]
+        },
+        {
+          "id": "precision-recall-and-the-trade-off",
+          "level": "unit",
+          "title": "Precision, Recall, and the Trade-Off",
+          "path": "Machine Learning > Evaluation and Model Selection > Classification Metrics > Precision, Recall, and the Trade-Off",
+          "children": [],
+          "siblings": [
+            "The Confusion Matrix",
+            "F1 and F-Beta Scores",
+            "ROC Curves and AUC",
+            "Precision-Recall Curves for Imbalanced Data",
+            "Why Accuracy Misleads"
+          ]
+        },
+        {
+          "id": "f1-and-f-beta-scores",
+          "level": "unit",
+          "title": "F1 and F-Beta Scores",
+          "path": "Machine Learning > Evaluation and Model Selection > Classification Metrics > F1 and F-Beta Scores",
+          "children": [],
+          "siblings": [
+            "The Confusion Matrix",
+            "Precision, Recall, and the Trade-Off",
+            "ROC Curves and AUC",
+            "Precision-Recall Curves for Imbalanced Data",
+            "Why Accuracy Misleads"
+          ]
+        },
+        {
+          "id": "roc-curves-and-auc",
+          "level": "unit",
+          "title": "ROC Curves and AUC",
+          "path": "Machine Learning > Evaluation and Model Selection > Classification Metrics > ROC Curves and AUC",
+          "children": [],
+          "siblings": [
+            "The Confusion Matrix",
+            "Precision, Recall, and the Trade-Off",
+            "F1 and F-Beta Scores",
+            "Precision-Recall Curves for Imbalanced Data",
+            "Why Accuracy Misleads"
+          ]
+        },
+        {
+          "id": "precision-recall-curves-for-imbalanced-data",
+          "level": "unit",
+          "title": "Precision-Recall Curves for Imbalanced Data",
+          "path": "Machine Learning > Evaluation and Model Selection > Classification Metrics > Precision-Recall Curves for Imbalanced Data",
+          "children": [],
+          "siblings": [
+            "The Confusion Matrix",
+            "Precision, Recall, and the Trade-Off",
+            "F1 and F-Beta Scores",
+            "ROC Curves and AUC",
+            "Why Accuracy Misleads"
+          ]
+        },
+        {
+          "id": "why-accuracy-misleads",
+          "level": "unit",
+          "title": "Why Accuracy Misleads",
+          "path": "Machine Learning > Evaluation and Model Selection > Classification Metrics > Why Accuracy Misleads",
+          "children": [],
+          "siblings": [
+            "The Confusion Matrix",
+            "Precision, Recall, and the Trade-Off",
+            "F1 and F-Beta Scores",
+            "ROC Curves and AUC",
+            "Precision-Recall Curves for Imbalanced Data"
+          ]
+        },
+        {
+          "id": "regression-and-probabilistic-metrics",
+          "level": "subsection",
+          "title": "Regression and Probabilistic Metrics",
+          "path": "Machine Learning > Evaluation and Model Selection > Regression and Probabilistic Metrics",
+          "children": [
+            "MSE, RMSE, and MAE",
+            "R-Squared and Its Failure Modes",
+            "Calibration of Predicted Probabilities"
+          ],
+          "siblings": [
+            "Classification Metrics",
+            "Choosing Between Models"
+          ]
+        },
+        {
+          "id": "mse-rmse-and-mae",
+          "level": "unit",
+          "title": "MSE, RMSE, and MAE",
+          "path": "Machine Learning > Evaluation and Model Selection > Regression and Probabilistic Metrics > MSE, RMSE, and MAE",
+          "children": [],
+          "siblings": [
+            "R-Squared and Its Failure Modes",
+            "Calibration of Predicted Probabilities"
+          ]
+        },
+        {
+          "id": "r-squared-and-its-failure-modes",
+          "level": "unit",
+          "title": "R-Squared and Its Failure Modes",
+          "path": "Machine Learning > Evaluation and Model Selection > Regression and Probabilistic Metrics > R-Squared and Its Failure Modes",
+          "children": [],
+          "siblings": [
+            "MSE, RMSE, and MAE",
+            "Calibration of Predicted Probabilities"
+          ]
+        },
+        {
+          "id": "calibration-of-predicted-probabilities",
+          "level": "unit",
+          "title": "Calibration of Predicted Probabilities",
+          "path": "Machine Learning > Evaluation and Model Selection > Regression and Probabilistic Metrics > Calibration of Predicted Probabilities",
+          "children": [],
+          "siblings": [
+            "MSE, RMSE, and MAE",
+            "R-Squared and Its Failure Modes"
+          ]
+        },
+        {
+          "id": "choosing-between-models",
+          "level": "subsection",
+          "title": "Choosing Between Models",
+          "path": "Machine Learning > Evaluation and Model Selection > Choosing Between Models",
+          "children": [
+            "Baselines and Why You Always Need One",
+            "Statistical Significance of Model Differences",
+            "The Cost of Errors Is Rarely Symmetric",
+            "Occam's Razor and Model Simplicity"
+          ],
+          "siblings": [
+            "Classification Metrics",
+            "Regression and Probabilistic Metrics"
+          ]
+        },
+        {
+          "id": "baselines-and-why-you-always-need-one",
+          "level": "unit",
+          "title": "Baselines and Why You Always Need One",
+          "path": "Machine Learning > Evaluation and Model Selection > Choosing Between Models > Baselines and Why You Always Need One",
+          "children": [],
+          "siblings": [
+            "Statistical Significance of Model Differences",
+            "The Cost of Errors Is Rarely Symmetric",
+            "Occam's Razor and Model Simplicity"
+          ]
+        },
+        {
+          "id": "statistical-significance-of-model-differences",
+          "level": "unit",
+          "title": "Statistical Significance of Model Differences",
+          "path": "Machine Learning > Evaluation and Model Selection > Choosing Between Models > Statistical Significance of Model Differences",
+          "children": [],
+          "siblings": [
+            "Baselines and Why You Always Need One",
+            "The Cost of Errors Is Rarely Symmetric",
+            "Occam's Razor and Model Simplicity"
+          ]
+        },
+        {
+          "id": "the-cost-of-errors-is-rarely-symmetric",
+          "level": "unit",
+          "title": "The Cost of Errors Is Rarely Symmetric",
+          "path": "Machine Learning > Evaluation and Model Selection > Choosing Between Models > The Cost of Errors Is Rarely Symmetric",
+          "children": [],
+          "siblings": [
+            "Baselines and Why You Always Need One",
+            "Statistical Significance of Model Differences",
+            "Occam's Razor and Model Simplicity"
+          ]
+        },
+        {
+          "id": "occams-razor-and-model-simplicity",
+          "level": "unit",
+          "title": "Occam's Razor and Model Simplicity",
+          "path": "Machine Learning > Evaluation and Model Selection > Choosing Between Models > Occam's Razor and Model Simplicity",
+          "children": [],
+          "siblings": [
+            "Baselines and Why You Always Need One",
+            "Statistical Significance of Model Differences",
+            "The Cost of Errors Is Rarely Symmetric"
+          ]
+        }
+      ]
+    },
+    {
+      "section": "Unsupervised and Semi-Supervised Learning",
+      "nodes": [
+        {
+          "id": "unsupervised-and-semi-supervised-learning",
+          "level": "section",
+          "title": "Unsupervised and Semi-Supervised Learning",
+          "path": "Machine Learning > Unsupervised and Semi-Supervised Learning",
+          "children": [
+            "Clustering",
+            "Dimensionality Reduction and Representation",
+            "Learning With Limited Labels"
+          ],
+          "siblings": [
+            "Foundations of Learning",
+            "Supervised Learning Algorithms",
+            "Training and Optimisation",
+            "Evaluation and Model Selection",
+            "Machine Learning in Production"
+          ]
+        },
+        {
+          "id": "clustering",
+          "level": "subsection",
+          "title": "Clustering",
+          "path": "Machine Learning > Unsupervised and Semi-Supervised Learning > Clustering",
+          "children": [
+            "K-Means and Centroid Assignment",
+            "Choosing K: Elbow and Silhouette",
+            "Hierarchical Clustering",
+            "DBSCAN and Density-Based Clustering",
+            "Gaussian Mixture Models"
+          ],
+          "siblings": [
+            "Dimensionality Reduction and Representation",
+            "Learning With Limited Labels"
+          ]
+        },
+        {
+          "id": "k-means-and-centroid-assignment",
+          "level": "unit",
+          "title": "K-Means and Centroid Assignment",
+          "path": "Machine Learning > Unsupervised and Semi-Supervised Learning > Clustering > K-Means and Centroid Assignment",
+          "children": [],
+          "siblings": [
+            "Choosing K: Elbow and Silhouette",
+            "Hierarchical Clustering",
+            "DBSCAN and Density-Based Clustering",
+            "Gaussian Mixture Models"
+          ]
+        },
+        {
+          "id": "choosing-k-elbow-and-silhouette",
+          "level": "unit",
+          "title": "Choosing K: Elbow and Silhouette",
+          "path": "Machine Learning > Unsupervised and Semi-Supervised Learning > Clustering > Choosing K: Elbow and Silhouette",
+          "children": [],
+          "siblings": [
+            "K-Means and Centroid Assignment",
+            "Hierarchical Clustering",
+            "DBSCAN and Density-Based Clustering",
+            "Gaussian Mixture Models"
+          ]
+        },
+        {
+          "id": "hierarchical-clustering",
+          "level": "unit",
+          "title": "Hierarchical Clustering",
+          "path": "Machine Learning > Unsupervised and Semi-Supervised Learning > Clustering > Hierarchical Clustering",
+          "children": [],
+          "siblings": [
+            "K-Means and Centroid Assignment",
+            "Choosing K: Elbow and Silhouette",
+            "DBSCAN and Density-Based Clustering",
+            "Gaussian Mixture Models"
+          ]
+        },
+        {
+          "id": "dbscan-and-density-based-clustering",
+          "level": "unit",
+          "title": "DBSCAN and Density-Based Clustering",
+          "path": "Machine Learning > Unsupervised and Semi-Supervised Learning > Clustering > DBSCAN and Density-Based Clustering",
+          "children": [],
+          "siblings": [
+            "K-Means and Centroid Assignment",
+            "Choosing K: Elbow and Silhouette",
+            "Hierarchical Clustering",
+            "Gaussian Mixture Models"
+          ]
+        },
+        {
+          "id": "gaussian-mixture-models",
+          "level": "unit",
+          "title": "Gaussian Mixture Models",
+          "path": "Machine Learning > Unsupervised and Semi-Supervised Learning > Clustering > Gaussian Mixture Models",
+          "children": [],
+          "siblings": [
+            "K-Means and Centroid Assignment",
+            "Choosing K: Elbow and Silhouette",
+            "Hierarchical Clustering",
+            "DBSCAN and Density-Based Clustering"
+          ]
+        },
+        {
+          "id": "dimensionality-reduction-and-representation",
+          "level": "subsection",
+          "title": "Dimensionality Reduction and Representation",
+          "path": "Machine Learning > Unsupervised and Semi-Supervised Learning > Dimensionality Reduction and Representation",
+          "children": [
+            "Why Reduce Dimensions",
+            "t-SNE and UMAP for Visualisation",
+            "Autoencoders as Learned Compression",
+            "Embeddings as Dense Representations"
+          ],
+          "siblings": [
+            "Clustering",
+            "Learning With Limited Labels"
+          ]
+        },
+        {
+          "id": "why-reduce-dimensions",
+          "level": "unit",
+          "title": "Why Reduce Dimensions",
+          "path": "Machine Learning > Unsupervised and Semi-Supervised Learning > Dimensionality Reduction and Representation > Why Reduce Dimensions",
+          "children": [],
+          "siblings": [
+            "t-SNE and UMAP for Visualisation",
+            "Autoencoders as Learned Compression",
+            "Embeddings as Dense Representations"
+          ]
+        },
+        {
+          "id": "t-sne-and-umap-for-visualisation",
+          "level": "unit",
+          "title": "t-SNE and UMAP for Visualisation",
+          "path": "Machine Learning > Unsupervised and Semi-Supervised Learning > Dimensionality Reduction and Representation > t-SNE and UMAP for Visualisation",
+          "children": [],
+          "siblings": [
+            "Why Reduce Dimensions",
+            "Autoencoders as Learned Compression",
+            "Embeddings as Dense Representations"
+          ]
+        },
+        {
+          "id": "autoencoders-as-learned-compression",
+          "level": "unit",
+          "title": "Autoencoders as Learned Compression",
+          "path": "Machine Learning > Unsupervised and Semi-Supervised Learning > Dimensionality Reduction and Representation > Autoencoders as Learned Compression",
+          "children": [],
+          "siblings": [
+            "Why Reduce Dimensions",
+            "t-SNE and UMAP for Visualisation",
+            "Embeddings as Dense Representations"
+          ]
+        },
+        {
+          "id": "embeddings-as-dense-representations",
+          "level": "unit",
+          "title": "Embeddings as Dense Representations",
+          "path": "Machine Learning > Unsupervised and Semi-Supervised Learning > Dimensionality Reduction and Representation > Embeddings as Dense Representations",
+          "children": [],
+          "siblings": [
+            "Why Reduce Dimensions",
+            "t-SNE and UMAP for Visualisation",
+            "Autoencoders as Learned Compression"
+          ]
+        },
+        {
+          "id": "learning-with-limited-labels",
+          "level": "subsection",
+          "title": "Learning With Limited Labels",
+          "path": "Machine Learning > Unsupervised and Semi-Supervised Learning > Learning With Limited Labels",
+          "children": [
+            "Anomaly and Outlier Detection",
+            "Self-Supervised Pretext Tasks",
+            "Transfer Learning and Fine-Tuning",
+            "Active Learning"
+          ],
+          "siblings": [
+            "Clustering",
+            "Dimensionality Reduction and Representation"
+          ]
+        },
+        {
+          "id": "anomaly-and-outlier-detection",
+          "level": "unit",
+          "title": "Anomaly and Outlier Detection",
+          "path": "Machine Learning > Unsupervised and Semi-Supervised Learning > Learning With Limited Labels > Anomaly and Outlier Detection",
+          "children": [],
+          "siblings": [
+            "Self-Supervised Pretext Tasks",
+            "Transfer Learning and Fine-Tuning",
+            "Active Learning"
+          ]
+        },
+        {
+          "id": "self-supervised-pretext-tasks",
+          "level": "unit",
+          "title": "Self-Supervised Pretext Tasks",
+          "path": "Machine Learning > Unsupervised and Semi-Supervised Learning > Learning With Limited Labels > Self-Supervised Pretext Tasks",
+          "children": [],
+          "siblings": [
+            "Anomaly and Outlier Detection",
+            "Transfer Learning and Fine-Tuning",
+            "Active Learning"
+          ]
+        },
+        {
+          "id": "transfer-learning-and-fine-tuning",
+          "level": "unit",
+          "title": "Transfer Learning and Fine-Tuning",
+          "path": "Machine Learning > Unsupervised and Semi-Supervised Learning > Learning With Limited Labels > Transfer Learning and Fine-Tuning",
+          "children": [],
+          "siblings": [
+            "Anomaly and Outlier Detection",
+            "Self-Supervised Pretext Tasks",
+            "Active Learning"
+          ]
+        },
+        {
+          "id": "active-learning",
+          "level": "unit",
+          "title": "Active Learning",
+          "path": "Machine Learning > Unsupervised and Semi-Supervised Learning > Learning With Limited Labels > Active Learning",
+          "children": [],
+          "siblings": [
+            "Anomaly and Outlier Detection",
+            "Self-Supervised Pretext Tasks",
+            "Transfer Learning and Fine-Tuning"
+          ]
+        }
+      ]
+    },
+    {
+      "section": "Machine Learning in Production",
+      "nodes": [
+        {
+          "id": "machine-learning-in-production",
+          "level": "section",
+          "title": "Machine Learning in Production",
+          "path": "Machine Learning > Machine Learning in Production",
+          "children": [
+            "From Notebook to Service",
+            "Monitoring and Maintenance",
+            "Responsible and Reliable ML"
+          ],
+          "siblings": [
+            "Foundations of Learning",
+            "Supervised Learning Algorithms",
+            "Training and Optimisation",
+            "Evaluation and Model Selection",
+            "Unsupervised and Semi-Supervised Learning"
+          ]
+        },
+        {
+          "id": "from-notebook-to-service",
+          "level": "subsection",
+          "title": "From Notebook to Service",
+          "path": "Machine Learning > Machine Learning in Production > From Notebook to Service",
+          "children": [
+            "Training-Serving Skew",
+            "Batch vs. Online Inference",
+            "Feature Stores",
+            "Model Serialisation and Versioning"
+          ],
+          "siblings": [
+            "Monitoring and Maintenance",
+            "Responsible and Reliable ML"
+          ]
+        },
+        {
+          "id": "training-serving-skew",
+          "level": "unit",
+          "title": "Training-Serving Skew",
+          "path": "Machine Learning > Machine Learning in Production > From Notebook to Service > Training-Serving Skew",
+          "children": [],
+          "siblings": [
+            "Batch vs. Online Inference",
+            "Feature Stores",
+            "Model Serialisation and Versioning"
+          ]
+        },
+        {
+          "id": "batch-vs-online-inference",
+          "level": "unit",
+          "title": "Batch vs. Online Inference",
+          "path": "Machine Learning > Machine Learning in Production > From Notebook to Service > Batch vs. Online Inference",
+          "children": [],
+          "siblings": [
+            "Training-Serving Skew",
+            "Feature Stores",
+            "Model Serialisation and Versioning"
+          ]
+        },
+        {
+          "id": "feature-stores",
+          "level": "unit",
+          "title": "Feature Stores",
+          "path": "Machine Learning > Machine Learning in Production > From Notebook to Service > Feature Stores",
+          "children": [],
+          "siblings": [
+            "Training-Serving Skew",
+            "Batch vs. Online Inference",
+            "Model Serialisation and Versioning"
+          ]
+        },
+        {
+          "id": "model-serialisation-and-versioning",
+          "level": "unit",
+          "title": "Model Serialisation and Versioning",
+          "path": "Machine Learning > Machine Learning in Production > From Notebook to Service > Model Serialisation and Versioning",
+          "children": [],
+          "siblings": [
+            "Training-Serving Skew",
+            "Batch vs. Online Inference",
+            "Feature Stores"
+          ]
+        },
+        {
+          "id": "monitoring-and-maintenance",
+          "level": "subsection",
+          "title": "Monitoring and Maintenance",
+          "path": "Machine Learning > Machine Learning in Production > Monitoring and Maintenance",
+          "children": [
+            "Data Drift and Concept Drift",
+            "Monitoring Models Without Ground Truth",
+            "Retraining Cadence and Triggers",
+            "Shadow Deployment and Canary Rollout"
+          ],
+          "siblings": [
+            "From Notebook to Service",
+            "Responsible and Reliable ML"
+          ]
+        },
+        {
+          "id": "data-drift-and-concept-drift",
+          "level": "unit",
+          "title": "Data Drift and Concept Drift",
+          "path": "Machine Learning > Machine Learning in Production > Monitoring and Maintenance > Data Drift and Concept Drift",
+          "children": [],
+          "siblings": [
+            "Monitoring Models Without Ground Truth",
+            "Retraining Cadence and Triggers",
+            "Shadow Deployment and Canary Rollout"
+          ]
+        },
+        {
+          "id": "monitoring-models-without-ground-truth",
+          "level": "unit",
+          "title": "Monitoring Models Without Ground Truth",
+          "path": "Machine Learning > Machine Learning in Production > Monitoring and Maintenance > Monitoring Models Without Ground Truth",
+          "children": [],
+          "siblings": [
+            "Data Drift and Concept Drift",
+            "Retraining Cadence and Triggers",
+            "Shadow Deployment and Canary Rollout"
+          ]
+        },
+        {
+          "id": "retraining-cadence-and-triggers",
+          "level": "unit",
+          "title": "Retraining Cadence and Triggers",
+          "path": "Machine Learning > Machine Learning in Production > Monitoring and Maintenance > Retraining Cadence and Triggers",
+          "children": [],
+          "siblings": [
+            "Data Drift and Concept Drift",
+            "Monitoring Models Without Ground Truth",
+            "Shadow Deployment and Canary Rollout"
+          ]
+        },
+        {
+          "id": "shadow-deployment-and-canary-rollout",
+          "level": "unit",
+          "title": "Shadow Deployment and Canary Rollout",
+          "path": "Machine Learning > Machine Learning in Production > Monitoring and Maintenance > Shadow Deployment and Canary Rollout",
+          "children": [],
+          "siblings": [
+            "Data Drift and Concept Drift",
+            "Monitoring Models Without Ground Truth",
+            "Retraining Cadence and Triggers"
+          ]
+        },
+        {
+          "id": "responsible-and-reliable-ml",
+          "level": "subsection",
+          "title": "Responsible and Reliable ML",
+          "path": "Machine Learning > Machine Learning in Production > Responsible and Reliable ML",
+          "children": [
+            "Sources of Bias in Training Data",
+            "Fairness Metrics and Their Incompatibility",
+            "Interpretability: SHAP and LIME",
+            "Reproducibility and Experiment Tracking"
+          ],
+          "siblings": [
+            "From Notebook to Service",
+            "Monitoring and Maintenance"
+          ]
+        },
+        {
+          "id": "sources-of-bias-in-training-data",
+          "level": "unit",
+          "title": "Sources of Bias in Training Data",
+          "path": "Machine Learning > Machine Learning in Production > Responsible and Reliable ML > Sources of Bias in Training Data",
+          "children": [],
+          "siblings": [
+            "Fairness Metrics and Their Incompatibility",
+            "Interpretability: SHAP and LIME",
+            "Reproducibility and Experiment Tracking"
+          ]
+        },
+        {
+          "id": "fairness-metrics-and-their-incompatibility",
+          "level": "unit",
+          "title": "Fairness Metrics and Their Incompatibility",
+          "path": "Machine Learning > Machine Learning in Production > Responsible and Reliable ML > Fairness Metrics and Their Incompatibility",
+          "children": [],
+          "siblings": [
+            "Sources of Bias in Training Data",
+            "Interpretability: SHAP and LIME",
+            "Reproducibility and Experiment Tracking"
+          ]
+        },
+        {
+          "id": "interpretability-shap-and-lime",
+          "level": "unit",
+          "title": "Interpretability: SHAP and LIME",
+          "path": "Machine Learning > Machine Learning in Production > Responsible and Reliable ML > Interpretability: SHAP and LIME",
+          "children": [],
+          "siblings": [
+            "Sources of Bias in Training Data",
+            "Fairness Metrics and Their Incompatibility",
+            "Reproducibility and Experiment Tracking"
+          ]
+        },
+        {
+          "id": "reproducibility-and-experiment-tracking",
+          "level": "unit",
+          "title": "Reproducibility and Experiment Tracking",
+          "path": "Machine Learning > Machine Learning in Production > Responsible and Reliable ML > Reproducibility and Experiment Tracking",
+          "children": [],
+          "siblings": [
+            "Sources of Bias in Training Data",
+            "Fairness Metrics and Their Incompatibility",
+            "Interpretability: SHAP and LIME"
+          ]
+        }
+      ]
+    }
+  ]
+}

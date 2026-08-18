@@ -1,0 +1,70 @@
+{
+  "key": "02d-neural-networks-as-supervised-learners",
+  "nodes": [
+    {
+      "id": "neural-networks-as-supervised-learners",
+      "level": "subsection",
+      "title": "Neural Networks as Supervised Learners",
+      "path": "Machine Learning > Supervised Learning Algorithms > Neural Networks as Supervised Learners",
+      "children": [
+        "The Perceptron and Linear Separability",
+        "Hidden Layers and Non-Linear Activation",
+        "Backpropagation as the Chain Rule",
+        "Universal Approximation and Its Limits"
+      ],
+      "siblings": [
+        "Linear Models",
+        "Tree-Based Models",
+        "Distance and Margin Based Models"
+      ]
+    },
+    {
+      "id": "the-perceptron-and-linear-separability",
+      "level": "unit",
+      "title": "The Perceptron and Linear Separability",
+      "path": "Machine Learning > Supervised Learning Algorithms > Neural Networks as Supervised Learners > The Perceptron and Linear Separability",
+      "children": [],
+      "siblings": [
+        "Hidden Layers and Non-Linear Activation",
+        "Backpropagation as the Chain Rule",
+        "Universal Approximation and Its Limits"
+      ]
+    },
+    {
+      "id": "hidden-layers-and-non-linear-activation",
+      "level": "unit",
+      "title": "Hidden Layers and Non-Linear Activation",
+      "path": "Machine Learning > Supervised Learning Algorithms > Neural Networks as Supervised Learners > Hidden Layers and Non-Linear Activation",
+      "children": [],
+      "siblings": [
+        "The Perceptron and Linear Separability",
+        "Backpropagation as the Chain Rule",
+        "Universal Approximation and Its Limits"
+      ]
+    },
+    {
+      "id": "backpropagation-as-the-chain-rule",
+      "level": "unit",
+      "title": "Backpropagation as the Chain Rule",
+      "path": "Machine Learning > Supervised Learning Algorithms > Neural Networks as Supervised Learners > Backpropagation as the Chain Rule",
+      "children": [],
+      "siblings": [
+        "The Perceptron and Linear Separability",
+        "Hidden Layers and Non-Linear Activation",
+        "Universal Approximation and Its Limits"
+      ]
+    },
+    {
+      "id": "universal-approximation-and-its-limits",
+      "level": "unit",
+      "title": "Universal Approximation and Its Limits",
+      "path": "Machine Learning > Supervised Learning Algorithms > Neural Networks as Supervised Learners > Universal Approximation and Its Limits",
+      "children": [],
+      "siblings": [
+        "The Perceptron and Linear Separability",
+        "Hidden Layers and Non-Linear Activation",
+        "Backpropagation as the Chain Rule"
+      ]
+    }
+  ]
+}

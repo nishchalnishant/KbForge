@@ -1,0 +1,20 @@
+{
+  "key": "00-overview",
+  "nodes": [
+    {
+      "id": "machine-learning",
+      "level": "topic",
+      "title": "Machine Learning",
+      "path": "Machine Learning",
+      "children": [
+        "Foundations of Learning",
+        "Supervised Learning Algorithms",
+        "Training and Optimisation",
+        "Evaluation and Model Selection",
+        "Unsupervised and Semi-Supervised Learning",
+        "Machine Learning in Production"
+      ],
+      "siblings": []
+    }
+  ]
+}

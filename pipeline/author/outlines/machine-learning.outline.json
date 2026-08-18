@@ -1,0 +1,271 @@
+{
+  "title": "Machine Learning",
+  "audience": "Working engineers and strong CS students who can code but have not formally studied ML. Comfortable with Python and basic linear algebra; not assumed to know calculus of optimisation, probability theory, or any ML framework.",
+  "summary": "How machines learn patterns from data: the foundational ideas that make learning possible, the classical algorithm families and when each applies, how models are trained and evaluated honestly, and what it takes to run them in production.",
+  "boundaries": [
+    "Deep learning architectures beyond the perceptron and basic backpropagation — owned by the Deep Learning pathway",
+    "Large language models, transformers, prompting, and generative AI — owned by the LLMs and Generative AI pathway",
+    "Production LLM application engineering, RAG, agents — owned by the AI Engineering pathway",
+    "Data pipeline and warehouse construction — owned by the Data Engineering pathway",
+    "Mathematical proofs and derivations for their own sake; maths appears only where it changes a practitioner's decision"
+  ],
+  "sections": [
+    {
+      "title": "Foundations of Learning",
+      "subsections": [
+        {
+          "title": "What Learning From Data Means",
+          "units": [
+            { "title": "Rules vs. Learned Behaviour" },
+            { "title": "The Three Learning Paradigms" },
+            { "title": "Features, Labels, and Examples" },
+            { "title": "The Hypothesis Space" }
+          ]
+        },
+        {
+          "title": "The Objective of Learning",
+          "units": [
+            { "title": "Loss Functions as Definitions of Wrong" },
+            { "title": "Empirical Risk vs. True Risk" },
+            { "title": "Why Minimising Training Error Is Not the Goal" }
+          ]
+        },
+        {
+          "title": "Generalisation",
+          "units": [
+            { "title": "Overfitting and Underfitting" },
+            { "title": "The Bias-Variance Decomposition" },
+            { "title": "Model Capacity and the Complexity Dial" },
+            { "title": "Regularisation as Constrained Capacity" },
+            { "title": "The Curse of Dimensionality" }
+          ]
+        },
+        {
+          "title": "Data as the Substrate",
+          "units": [
+            { "title": "Train, Validation, and Test Splits" },
+            { "title": "Data Leakage" },
+            { "title": "Independent and Identically Distributed Assumptions" },
+            { "title": "Class Imbalance" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Supervised Learning Algorithms",
+      "subsections": [
+        {
+          "title": "Linear Models",
+          "units": [
+            {
+              "title": "Linear Regression",
+              "units": [
+                { "title": "The Least Squares Objective" },
+                { "title": "Closed Form vs. Iterative Solutions" },
+                { "title": "Assumptions of Linear Regression" }
+              ]
+            },
+            {
+              "title": "Regularised Linear Regression",
+              "units": [
+                { "title": "Ridge Regression and L2 Penalty" },
+                { "title": "Lasso Regression and L1 Sparsity" },
+                { "title": "Elastic Net" }
+              ]
+            },
+            {
+              "title": "Logistic Regression",
+              "units": [
+                { "title": "The Sigmoid and Log-Odds" },
+                { "title": "Cross-Entropy Loss" },
+                { "title": "Multiclass via Softmax and One-vs-Rest" }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Tree-Based Models",
+          "units": [
+            {
+              "title": "Decision Trees",
+              "units": [
+                { "title": "Recursive Binary Splitting" },
+                { "title": "Gini Impurity and Entropy" },
+                { "title": "Pruning and Depth Control" },
+                { "title": "Why Single Trees Overfit" }
+              ]
+            },
+            {
+              "title": "Bagging and Random Forests",
+              "units": [
+                { "title": "Bootstrap Aggregation" },
+                { "title": "Feature Subsampling at Splits" },
+                { "title": "Out-of-Bag Estimation" }
+              ]
+            },
+            {
+              "title": "Gradient Boosting",
+              "units": [
+                { "title": "Boosting as Sequential Error Correction" },
+                { "title": "Gradient Boosted Trees" },
+                { "title": "XGBoost, LightGBM, and CatBoost in Practice" },
+                { "title": "Learning Rate and Early Stopping" }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Distance and Margin Based Models",
+          "units": [
+            { "title": "K-Nearest Neighbours" },
+            { "title": "Distance Metrics and Scaling Sensitivity" },
+            { "title": "Support Vector Machines and the Maximum Margin" },
+            { "title": "The Kernel Trick" },
+            { "title": "Naive Bayes and Conditional Independence" }
+          ]
+        },
+        {
+          "title": "Neural Networks as Supervised Learners",
+          "units": [
+            { "title": "The Perceptron and Linear Separability" },
+            { "title": "Hidden Layers and Non-Linear Activation" },
+            { "title": "Backpropagation as the Chain Rule" },
+            { "title": "Universal Approximation and Its Limits" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Training and Optimisation",
+      "subsections": [
+        {
+          "title": "Gradient Descent",
+          "units": [
+            { "title": "The Gradient as Direction of Steepest Ascent" },
+            { "title": "Batch, Stochastic, and Mini-Batch Descent" },
+            { "title": "Learning Rate and Convergence Behaviour" },
+            { "title": "Momentum, RMSProp, and Adam" },
+            { "title": "Local Minima, Saddle Points, and Plateaus" }
+          ]
+        },
+        {
+          "title": "Feature Engineering and Preparation",
+          "units": [
+            { "title": "Normalisation and Standardisation" },
+            { "title": "Encoding Categorical Variables" },
+            { "title": "Handling Missing Values" },
+            { "title": "Feature Selection Methods" },
+            { "title": "Principal Component Analysis" }
+          ]
+        },
+        {
+          "title": "Hyperparameter Tuning",
+          "units": [
+            { "title": "Parameters vs. Hyperparameters" },
+            { "title": "Grid Search and Random Search" },
+            { "title": "Bayesian Optimisation" },
+            { "title": "Cross-Validation Strategies" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Evaluation and Model Selection",
+      "subsections": [
+        {
+          "title": "Classification Metrics",
+          "units": [
+            { "title": "The Confusion Matrix" },
+            { "title": "Precision, Recall, and the Trade-Off" },
+            { "title": "F1 and F-Beta Scores" },
+            { "title": "ROC Curves and AUC" },
+            { "title": "Precision-Recall Curves for Imbalanced Data" },
+            { "title": "Why Accuracy Misleads" }
+          ]
+        },
+        {
+          "title": "Regression and Probabilistic Metrics",
+          "units": [
+            { "title": "MSE, RMSE, and MAE" },
+            { "title": "R-Squared and Its Failure Modes" },
+            { "title": "Calibration of Predicted Probabilities" }
+          ]
+        },
+        {
+          "title": "Choosing Between Models",
+          "units": [
+            { "title": "Baselines and Why You Always Need One" },
+            { "title": "Statistical Significance of Model Differences" },
+            { "title": "The Cost of Errors Is Rarely Symmetric" },
+            { "title": "Occam's Razor and Model Simplicity" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Unsupervised and Semi-Supervised Learning",
+      "subsections": [
+        {
+          "title": "Clustering",
+          "units": [
+            { "title": "K-Means and Centroid Assignment" },
+            { "title": "Choosing K: Elbow and Silhouette" },
+            { "title": "Hierarchical Clustering" },
+            { "title": "DBSCAN and Density-Based Clustering" },
+            { "title": "Gaussian Mixture Models" }
+          ]
+        },
+        {
+          "title": "Dimensionality Reduction and Representation",
+          "units": [
+            { "title": "Why Reduce Dimensions" },
+            { "title": "t-SNE and UMAP for Visualisation" },
+            { "title": "Autoencoders as Learned Compression" },
+            { "title": "Embeddings as Dense Representations" }
+          ]
+        },
+        {
+          "title": "Learning With Limited Labels",
+          "units": [
+            { "title": "Anomaly and Outlier Detection" },
+            { "title": "Self-Supervised Pretext Tasks" },
+            { "title": "Transfer Learning and Fine-Tuning" },
+            { "title": "Active Learning" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Machine Learning in Production",
+      "subsections": [
+        {
+          "title": "From Notebook to Service",
+          "units": [
+            { "title": "Training-Serving Skew" },
+            { "title": "Batch vs. Online Inference" },
+            { "title": "Feature Stores" },
+            { "title": "Model Serialisation and Versioning" }
+          ]
+        },
+        {
+          "title": "Monitoring and Maintenance",
+          "units": [
+            { "title": "Data Drift and Concept Drift" },
+            { "title": "Monitoring Models Without Ground Truth" },
+            { "title": "Retraining Cadence and Triggers" },
+            { "title": "Shadow Deployment and Canary Rollout" }
+          ]
+        },
+        {
+          "title": "Responsible and Reliable ML",
+          "units": [
+            { "title": "Sources of Bias in Training Data" },
+            { "title": "Fairness Metrics and Their Incompatibility" },
+            { "title": "Interpretability: SHAP and LIME" },
+            { "title": "Reproducibility and Experiment Tracking" }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,286 @@
+{
+  "key": "01-foundations-of-learning",
+  "nodes": [
+    {
+      "id": "foundations-of-learning",
+      "level": "section",
+      "title": "Foundations of Learning",
+      "path": "Machine Learning > Foundations of Learning",
+      "children": [
+        "What Learning From Data Means",
+        "The Objective of Learning",
+        "Generalisation",
+        "Data as the Substrate"
+      ],
+      "siblings": [
+        "Supervised Learning Algorithms",
+        "Training and Optimisation",
+        "Evaluation and Model Selection",
+        "Unsupervised and Semi-Supervised Learning",
+        "Machine Learning in Production"
+      ]
+    },
+    {
+      "id": "what-learning-from-data-means",
+      "level": "subsection",
+      "title": "What Learning From Data Means",
+      "path": "Machine Learning > Foundations of Learning > What Learning From Data Means",
+      "children": [
+        "Rules vs. Learned Behaviour",
+        "The Three Learning Paradigms",
+        "Features, Labels, and Examples",
+        "The Hypothesis Space"
+      ],
+      "siblings": [
+        "The Objective of Learning",
+        "Generalisation",
+        "Data as the Substrate"
+      ]
+    },
+    {
+      "id": "rules-vs-learned-behaviour",
+      "level": "unit",
+      "title": "Rules vs. Learned Behaviour",
+      "path": "Machine Learning > Foundations of Learning > What Learning From Data Means > Rules vs. Learned Behaviour",
+      "children": [],
+      "siblings": [
+        "The Three Learning Paradigms",
+        "Features, Labels, and Examples",
+        "The Hypothesis Space"
+      ]
+    },
+    {
+      "id": "the-three-learning-paradigms",
+      "level": "unit",
+      "title": "The Three Learning Paradigms",
+      "path": "Machine Learning > Foundations of Learning > What Learning From Data Means > The Three Learning Paradigms",
+      "children": [],
+      "siblings": [
+        "Rules vs. Learned Behaviour",
+        "Features, Labels, and Examples",
+        "The Hypothesis Space"
+      ]
+    },
+    {
+      "id": "features-labels-and-examples",
+      "level": "unit",
+      "title": "Features, Labels, and Examples",
+      "path": "Machine Learning > Foundations of Learning > What Learning From Data Means > Features, Labels, and Examples",
+      "children": [],
+      "siblings": [
+        "Rules vs. Learned Behaviour",
+        "The Three Learning Paradigms",
+        "The Hypothesis Space"
+      ]
+    },
+    {
+      "id": "the-hypothesis-space",
+      "level": "unit",
+      "title": "The Hypothesis Space",
+      "path": "Machine Learning > Foundations of Learning > What Learning From Data Means > The Hypothesis Space",
+      "children": [],
+      "siblings": [
+        "Rules vs. Learned Behaviour",
+        "The Three Learning Paradigms",
+        "Features, Labels, and Examples"
+      ]
+    },
+    {
+      "id": "the-objective-of-learning",
+      "level": "subsection",
+      "title": "The Objective of Learning",
+      "path": "Machine Learning > Foundations of Learning > The Objective of Learning",
+      "children": [
+        "Loss Functions as Definitions of Wrong",
+        "Empirical Risk vs. True Risk",
+        "Why Minimising Training Error Is Not the Goal"
+      ],
+      "siblings": [
+        "What Learning From Data Means",
+        "Generalisation",
+        "Data as the Substrate"
+      ]
+    },
+    {
+      "id": "loss-functions-as-definitions-of-wrong",
+      "level": "unit",
+      "title": "Loss Functions as Definitions of Wrong",
+      "path": "Machine Learning > Foundations of Learning > The Objective of Learning > Loss Functions as Definitions of Wrong",
+      "children": [],
+      "siblings": [
+        "Empirical Risk vs. True Risk",
+        "Why Minimising Training Error Is Not the Goal"
+      ]
+    },
+    {
+      "id": "empirical-risk-vs-true-risk",
+      "level": "unit",
+      "title": "Empirical Risk vs. True Risk",
+      "path": "Machine Learning > Foundations of Learning > The Objective of Learning > Empirical Risk vs. True Risk",
+      "children": [],
+      "siblings": [
+        "Loss Functions as Definitions of Wrong",
+        "Why Minimising Training Error Is Not the Goal"
+      ]
+    },
+    {
+      "id": "why-minimising-training-error-is-not-the-goal",
+      "level": "unit",
+      "title": "Why Minimising Training Error Is Not the Goal",
+      "path": "Machine Learning > Foundations of Learning > The Objective of Learning > Why Minimising Training Error Is Not the Goal",
+      "children": [],
+      "siblings": [
+        "Loss Functions as Definitions of Wrong",
+        "Empirical Risk vs. True Risk"
+      ]
+    },
+    {
+      "id": "generalisation",
+      "level": "subsection",
+      "title": "Generalisation",
+      "path": "Machine Learning > Foundations of Learning > Generalisation",
+      "children": [
+        "Overfitting and Underfitting",
+        "The Bias-Variance Decomposition",
+        "Model Capacity and the Complexity Dial",
+        "Regularisation as Constrained Capacity",
+        "The Curse of Dimensionality"
+      ],
+      "siblings": [
+        "What Learning From Data Means",
+        "The Objective of Learning",
+        "Data as the Substrate"
+      ]
+    },
+    {
+      "id": "overfitting-and-underfitting",
+      "level": "unit",
+      "title": "Overfitting and Underfitting",
+      "path": "Machine Learning > Foundations of Learning > Generalisation > Overfitting and Underfitting",
+      "children": [],
+      "siblings": [
+        "The Bias-Variance Decomposition",
+        "Model Capacity and the Complexity Dial",
+        "Regularisation as Constrained Capacity",
+        "The Curse of Dimensionality"
+      ]
+    },
+    {
+      "id": "the-bias-variance-decomposition",
+      "level": "unit",
+      "title": "The Bias-Variance Decomposition",
+      "path": "Machine Learning > Foundations of Learning > Generalisation > The Bias-Variance Decomposition",
+      "children": [],
+      "siblings": [
+        "Overfitting and Underfitting",
+        "Model Capacity and the Complexity Dial",
+        "Regularisation as Constrained Capacity",
+        "The Curse of Dimensionality"
+      ]
+    },
+    {
+      "id": "model-capacity-and-the-complexity-dial",
+      "level": "unit",
+      "title": "Model Capacity and the Complexity Dial",
+      "path": "Machine Learning > Foundations of Learning > Generalisation > Model Capacity and the Complexity Dial",
+      "children": [],
+      "siblings": [
+        "Overfitting and Underfitting",
+        "The Bias-Variance Decomposition",
+        "Regularisation as Constrained Capacity",
+        "The Curse of Dimensionality"
+      ]
+    },
+    {
+      "id": "regularisation-as-constrained-capacity",
+      "level": "unit",
+      "title": "Regularisation as Constrained Capacity",
+      "path": "Machine Learning > Foundations of Learning > Generalisation > Regularisation as Constrained Capacity",
+      "children": [],
+      "siblings": [
+        "Overfitting and Underfitting",
+        "The Bias-Variance Decomposition",
+        "Model Capacity and the Complexity Dial",
+        "The Curse of Dimensionality"
+      ]
+    },
+    {
+      "id": "the-curse-of-dimensionality",
+      "level": "unit",
+      "title": "The Curse of Dimensionality",
+      "path": "Machine Learning > Foundations of Learning > Generalisation > The Curse of Dimensionality",
+      "children": [],
+      "siblings": [
+        "Overfitting and Underfitting",
+        "The Bias-Variance Decomposition",
+        "Model Capacity and the Complexity Dial",
+        "Regularisation as Constrained Capacity"
+      ]
+    },
+    {
+      "id": "data-as-the-substrate",
+      "level": "subsection",
+      "title": "Data as the Substrate",
+      "path": "Machine Learning > Foundations of Learning > Data as the Substrate",
+      "children": [
+        "Train, Validation, and Test Splits",
+        "Data Leakage",
+        "Independent and Identically Distributed Assumptions",
+        "Class Imbalance"
+      ],
+      "siblings": [
+        "What Learning From Data Means",
+        "The Objective of Learning",
+        "Generalisation"
+      ]
+    },
+    {
+      "id": "train-validation-and-test-splits",
+      "level": "unit",
+      "title": "Train, Validation, and Test Splits",
+      "path": "Machine Learning > Foundations of Learning > Data as the Substrate > Train, Validation, and Test Splits",
+      "children": [],
+      "siblings": [
+        "Data Leakage",
+        "Independent and Identically Distributed Assumptions",
+        "Class Imbalance"
+      ]
+    },
+    {
+      "id": "data-leakage",
+      "level": "unit",
+      "title": "Data Leakage",
+      "path": "Machine Learning > Foundations of Learning > Data as the Substrate > Data Leakage",
+      "children": [],
+      "siblings": [
+        "Train, Validation, and Test Splits",
+        "Independent and Identically Distributed Assumptions",
+        "Class Imbalance"
+      ]
+    },
+    {
+      "id": "independent-and-identically-distributed-assumptions",
+      "level": "unit",
+      "title": "Independent and Identically Distributed Assumptions",
+      "path": "Machine Learning > Foundations of Learning > Data as the Substrate > Independent and Identically Distributed Assumptions",
+      "children": [],
+      "siblings": [
+        "Train, Validation, and Test Splits",
+        "Data Leakage",
+        "Class Imbalance"
+      ]
+    },
+    {
+      "id": "class-imbalance",
+      "level": "unit",
+      "title": "Class Imbalance",
+      "path": "Machine Learning > Foundations of Learning > Data as the Substrate > Class Imbalance",
+      "children": [],
+      "siblings": [
+        "Train, Validation, and Test Splits",
+        "Data Leakage",
+        "Independent and Identically Distributed Assumptions"
+      ]
+    }
+  ]
+}

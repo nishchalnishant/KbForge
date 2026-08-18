@@ -17,7 +17,7 @@ import {
   getStraightPath,
 } from "@xyflow/react";
 import "@xyflow/react/dist/style.css";
-import type { Node } from "@kbforge/content-types";
+import type { TreeNode } from "@/lib/tree";
 
 const RADIUS_STEP = 240;
 const CARD_WIDTH = 190;
@@ -41,11 +41,11 @@ interface LayoutNode {
   hasChildren: boolean;
 }
 
-function layoutRadial(root: Node): { nodes: LayoutNode[]; edges: { from: string; to: string }[] } {
+function layoutRadial(root: TreeNode): { nodes: LayoutNode[]; edges: { from: string; to: string }[] } {
   const nodes: LayoutNode[] = [];
   const edges: { from: string; to: string }[] = [];
 
-  function place(node: Node, depth: number, angleStart: number, angleEnd: number, parentId?: string) {
+  function place(node: TreeNode, depth: number, angleStart: number, angleEnd: number, parentId?: string) {
     const angle = (angleStart + angleEnd) / 2;
     const radius = depth * RADIUS_STEP;
     const x = depth === 0 ? 0 : radius * Math.cos(angle);
@@ -149,7 +149,7 @@ function FloatingEdge({ id, source, target, style, markerEnd }: EdgeProps) {
 
 const edgeTypes = { floating: FloatingEdge };
 
-export function TreeView({ root, currentId }: { root: Node; currentId: string }) {
+export function TreeView({ root, currentId }: { root: TreeNode; currentId: string }) {
   const router = useRouter();
   const { nodes: layoutNodes, edges: layoutEdges } = useMemo(() => layoutRadial(root), [root]);
 

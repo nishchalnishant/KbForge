@@ -1,0 +1,88 @@
+{
+  "key": "02c-distance-and-margin-based-models",
+  "nodes": [
+    {
+      "id": "distance-and-margin-based-models",
+      "level": "subsection",
+      "title": "Distance and Margin Based Models",
+      "path": "Machine Learning > Supervised Learning Algorithms > Distance and Margin Based Models",
+      "children": [
+        "K-Nearest Neighbours",
+        "Distance Metrics and Scaling Sensitivity",
+        "Support Vector Machines and the Maximum Margin",
+        "The Kernel Trick",
+        "Naive Bayes and Conditional Independence"
+      ],
+      "siblings": [
+        "Linear Models",
+        "Tree-Based Models",
+        "Neural Networks as Supervised Learners"
+      ]
+    },
+    {
+      "id": "k-nearest-neighbours",
+      "level": "unit",
+      "title": "K-Nearest Neighbours",
+      "path": "Machine Learning > Supervised Learning Algorithms > Distance and Margin Based Models > K-Nearest Neighbours",
+      "children": [],
+      "siblings": [
+        "Distance Metrics and Scaling Sensitivity",
+        "Support Vector Machines and the Maximum Margin",
+        "The Kernel Trick",
+        "Naive Bayes and Conditional Independence"
+      ]
+    },
+    {
+      "id": "distance-metrics-and-scaling-sensitivity",
+      "level": "unit",
+      "title": "Distance Metrics and Scaling Sensitivity",
+      "path": "Machine Learning > Supervised Learning Algorithms > Distance and Margin Based Models > Distance Metrics and Scaling Sensitivity",
+      "children": [],
+      "siblings": [
+        "K-Nearest Neighbours",
+        "Support Vector Machines and the Maximum Margin",
+        "The Kernel Trick",
+        "Naive Bayes and Conditional Independence"
+      ]
+    },
+    {
+      "id": "support-vector-machines-and-the-maximum-margin",
+      "level": "unit",
+      "title": "Support Vector Machines and the Maximum Margin",
+      "path": "Machine Learning > Supervised Learning Algorithms > Distance and Margin Based Models > Support Vector Machines and the Maximum Margin",
+      "children": [],
+      "siblings": [
+        "K-Nearest Neighbours",
+        "Distance Metrics and Scaling Sensitivity",
+        "The Kernel Trick",
+        "Naive Bayes and Conditional Independence"
+      ]
+    },
+    {
+      "id": "the-kernel-trick",
+      "level": "unit",
+      "title": "The Kernel Trick",
+      "path": "Machine Learning > Supervised Learning Algorithms > Distance and Margin Based Models > The Kernel Trick",
+      "children": [],
+      "siblings": [
+        "K-Nearest Neighbours",
+        "Distance Metrics and Scaling Sensitivity",
+        "Support Vector Machines and the Maximum Margin",
+        "Naive Bayes and Conditional Independence"
+      ]
+    },
+    {
+      "id": "naive-bayes-and-conditional-independence",
+      "level": "unit",
+      "title": "Naive Bayes and Conditional Independence",
+      "path": "Machine Learning > Supervised Learning Algorithms > Distance and Margin Based Models > Naive Bayes and Conditional Independence",
+      "children": [],
+      "siblings": [
+        "K-Nearest Neighbours",
+        "Distance Metrics and Scaling Sensitivity",
+        "Support Vector Machines and the Maximum Margin",
+        "The Kernel Trick"
+      ]
+    }
+  ]
+}

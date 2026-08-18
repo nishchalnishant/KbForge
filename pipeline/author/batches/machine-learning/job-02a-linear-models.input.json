@@ -1,0 +1,184 @@
+{
+  "key": "02a-linear-models",
+  "nodes": [
+    {
+      "id": "supervised-learning-algorithms",
+      "level": "section",
+      "title": "Supervised Learning Algorithms",
+      "path": "Machine Learning > Supervised Learning Algorithms",
+      "children": [
+        "Linear Models",
+        "Tree-Based Models",
+        "Distance and Margin Based Models",
+        "Neural Networks as Supervised Learners"
+      ],
+      "siblings": [
+        "Foundations of Learning",
+        "Training and Optimisation",
+        "Evaluation and Model Selection",
+        "Unsupervised and Semi-Supervised Learning",
+        "Machine Learning in Production"
+      ]
+    },
+    {
+      "id": "linear-models",
+      "level": "subsection",
+      "title": "Linear Models",
+      "path": "Machine Learning > Supervised Learning Algorithms > Linear Models",
+      "children": [
+        "Linear Regression",
+        "Regularised Linear Regression",
+        "Logistic Regression"
+      ],
+      "siblings": [
+        "Tree-Based Models",
+        "Distance and Margin Based Models",
+        "Neural Networks as Supervised Learners"
+      ]
+    },
+    {
+      "id": "linear-regression",
+      "level": "unit",
+      "title": "Linear Regression",
+      "path": "Machine Learning > Supervised Learning Algorithms > Linear Models > Linear Regression",
+      "children": [
+        "The Least Squares Objective",
+        "Closed Form vs. Iterative Solutions",
+        "Assumptions of Linear Regression"
+      ],
+      "siblings": [
+        "Regularised Linear Regression",
+        "Logistic Regression"
+      ]
+    },
+    {
+      "id": "the-least-squares-objective",
+      "level": "unit",
+      "title": "The Least Squares Objective",
+      "path": "Machine Learning > Supervised Learning Algorithms > Linear Models > Linear Regression > The Least Squares Objective",
+      "children": [],
+      "siblings": [
+        "Closed Form vs. Iterative Solutions",
+        "Assumptions of Linear Regression"
+      ]
+    },
+    {
+      "id": "closed-form-vs-iterative-solutions",
+      "level": "unit",
+      "title": "Closed Form vs. Iterative Solutions",
+      "path": "Machine Learning > Supervised Learning Algorithms > Linear Models > Linear Regression > Closed Form vs. Iterative Solutions",
+      "children": [],
+      "siblings": [
+        "The Least Squares Objective",
+        "Assumptions of Linear Regression"
+      ]
+    },
+    {
+      "id": "assumptions-of-linear-regression",
+      "level": "unit",
+      "title": "Assumptions of Linear Regression",
+      "path": "Machine Learning > Supervised Learning Algorithms > Linear Models > Linear Regression > Assumptions of Linear Regression",
+      "children": [],
+      "siblings": [
+        "The Least Squares Objective",
+        "Closed Form vs. Iterative Solutions"
+      ]
+    },
+    {
+      "id": "regularised-linear-regression",
+      "level": "unit",
+      "title": "Regularised Linear Regression",
+      "path": "Machine Learning > Supervised Learning Algorithms > Linear Models > Regularised Linear Regression",
+      "children": [
+        "Ridge Regression and L2 Penalty",
+        "Lasso Regression and L1 Sparsity",
+        "Elastic Net"
+      ],
+      "siblings": [
+        "Linear Regression",
+        "Logistic Regression"
+      ]
+    },
+    {
+      "id": "ridge-regression-and-l2-penalty",
+      "level": "unit",
+      "title": "Ridge Regression and L2 Penalty",
+      "path": "Machine Learning > Supervised Learning Algorithms > Linear Models > Regularised Linear Regression > Ridge Regression and L2 Penalty",
+      "children": [],
+      "siblings": [
+        "Lasso Regression and L1 Sparsity",
+        "Elastic Net"
+      ]
+    },
+    {
+      "id": "lasso-regression-and-l1-sparsity",
+      "level": "unit",
+      "title": "Lasso Regression and L1 Sparsity",
+      "path": "Machine Learning > Supervised Learning Algorithms > Linear Models > Regularised Linear Regression > Lasso Regression and L1 Sparsity",
+      "children": [],
+      "siblings": [
+        "Ridge Regression and L2 Penalty",
+        "Elastic Net"
+      ]
+    },
+    {
+      "id": "elastic-net",
+      "level": "unit",
+      "title": "Elastic Net",
+      "path": "Machine Learning > Supervised Learning Algorithms > Linear Models > Regularised Linear Regression > Elastic Net",
+      "children": [],
+      "siblings": [
+        "Ridge Regression and L2 Penalty",
+        "Lasso Regression and L1 Sparsity"
+      ]
+    },
+    {
+      "id": "logistic-regression",
+      "level": "unit",
+      "title": "Logistic Regression",
+      "path": "Machine Learning > Supervised Learning Algorithms > Linear Models > Logistic Regression",
+      "children": [
+        "The Sigmoid and Log-Odds",
+        "Cross-Entropy Loss",
+        "Multiclass via Softmax and One-vs-Rest"
+      ],
+      "siblings": [
+        "Linear Regression",
+        "Regularised Linear Regression"
+      ]
+    },
+    {
+      "id": "the-sigmoid-and-log-odds",
+      "level": "unit",
+      "title": "The Sigmoid and Log-Odds",
+      "path": "Machine Learning > Supervised Learning Algorithms > Linear Models > Logistic Regression > The Sigmoid and Log-Odds",
+      "children": [],
+      "siblings": [
+        "Cross-Entropy Loss",
+        "Multiclass via Softmax and One-vs-Rest"
+      ]
+    },
+    {
+      "id": "cross-entropy-loss",
+      "level": "unit",
+      "title": "Cross-Entropy Loss",
+      "path": "Machine Learning > Supervised Learning Algorithms > Linear Models > Logistic Regression > Cross-Entropy Loss",
+      "children": [],
+      "siblings": [
+        "The Sigmoid and Log-Odds",
+        "Multiclass via Softmax and One-vs-Rest"
+      ]
+    },
+    {
+      "id": "multiclass-via-softmax-and-one-vs-rest",
+      "level": "unit",
+      "title": "Multiclass via Softmax and One-vs-Rest",
+      "path": "Machine Learning > Supervised Learning Algorithms > Linear Models > Logistic Regression > Multiclass via Softmax and One-vs-Rest",
+      "children": [],
+      "siblings": [
+        "The Sigmoid and Log-Odds",
+        "Cross-Entropy Loss"
+      ]
+    }
+  ]
+}

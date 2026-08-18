@@ -1,0 +1,233 @@
+{
+  "key": "05-unsupervised-and-semi-supervised-learning",
+  "nodes": [
+    {
+      "id": "unsupervised-and-semi-supervised-learning",
+      "level": "section",
+      "title": "Unsupervised and Semi-Supervised Learning",
+      "path": "Machine Learning > Unsupervised and Semi-Supervised Learning",
+      "children": [
+        "Clustering",
+        "Dimensionality Reduction and Representation",
+        "Learning With Limited Labels"
+      ],
+      "siblings": [
+        "Foundations of Learning",
+        "Supervised Learning Algorithms",
+        "Training and Optimisation",
+        "Evaluation and Model Selection",
+        "Machine Learning in Production"
+      ]
+    },
+    {
+      "id": "clustering",
+      "level": "subsection",
+      "title": "Clustering",
+      "path": "Machine Learning > Unsupervised and Semi-Supervised Learning > Clustering",
+      "children": [
+        "K-Means and Centroid Assignment",
+        "Choosing K: Elbow and Silhouette",
+        "Hierarchical Clustering",
+        "DBSCAN and Density-Based Clustering",
+        "Gaussian Mixture Models"
+      ],
+      "siblings": [
+        "Dimensionality Reduction and Representation",
+        "Learning With Limited Labels"
+      ]
+    },
+    {
+      "id": "k-means-and-centroid-assignment",
+      "level": "unit",
+      "title": "K-Means and Centroid Assignment",
+      "path": "Machine Learning > Unsupervised and Semi-Supervised Learning > Clustering > K-Means and Centroid Assignment",
+      "children": [],
+      "siblings": [
+        "Choosing K: Elbow and Silhouette",
+        "Hierarchical Clustering",
+        "DBSCAN and Density-Based Clustering",
+        "Gaussian Mixture Models"
+      ]
+    },
+    {
+      "id": "choosing-k-elbow-and-silhouette",
+      "level": "unit",
+      "title": "Choosing K: Elbow and Silhouette",
+      "path": "Machine Learning > Unsupervised and Semi-Supervised Learning > Clustering > Choosing K: Elbow and Silhouette",
+      "children": [],
+      "siblings": [
+        "K-Means and Centroid Assignment",
+        "Hierarchical Clustering",
+        "DBSCAN and Density-Based Clustering",
+        "Gaussian Mixture Models"
+      ]
+    },
+    {
+      "id": "hierarchical-clustering",
+      "level": "unit",
+      "title": "Hierarchical Clustering",
+      "path": "Machine Learning > Unsupervised and Semi-Supervised Learning > Clustering > Hierarchical Clustering",
+      "children": [],
+      "siblings": [
+        "K-Means and Centroid Assignment",
+        "Choosing K: Elbow and Silhouette",
+        "DBSCAN and Density-Based Clustering",
+        "Gaussian Mixture Models"
+      ]
+    },
+    {
+      "id": "dbscan-and-density-based-clustering",
+      "level": "unit",
+      "title": "DBSCAN and Density-Based Clustering",
+      "path": "Machine Learning > Unsupervised and Semi-Supervised Learning > Clustering > DBSCAN and Density-Based Clustering",
+      "children": [],
+      "siblings": [
+        "K-Means and Centroid Assignment",
+        "Choosing K: Elbow and Silhouette",
+        "Hierarchical Clustering",
+        "Gaussian Mixture Models"
+      ]
+    },
+    {
+      "id": "gaussian-mixture-models",
+      "level": "unit",
+      "title": "Gaussian Mixture Models",
+      "path": "Machine Learning > Unsupervised and Semi-Supervised Learning > Clustering > Gaussian Mixture Models",
+      "children": [],
+      "siblings": [
+        "K-Means and Centroid Assignment",
+        "Choosing K: Elbow and Silhouette",
+        "Hierarchical Clustering",
+        "DBSCAN and Density-Based Clustering"
+      ]
+    },
+    {
+      "id": "dimensionality-reduction-and-representation",
+      "level": "subsection",
+      "title": "Dimensionality Reduction and Representation",
+      "path": "Machine Learning > Unsupervised and Semi-Supervised Learning > Dimensionality Reduction and Representation",
+      "children": [
+        "Why Reduce Dimensions",
+        "t-SNE and UMAP for Visualisation",
+        "Autoencoders as Learned Compression",
+        "Embeddings as Dense Representations"
+      ],
+      "siblings": [
+        "Clustering",
+        "Learning With Limited Labels"
+      ]
+    },
+    {
+      "id": "why-reduce-dimensions",
+      "level": "unit",
+      "title": "Why Reduce Dimensions",
+      "path": "Machine Learning > Unsupervised and Semi-Supervised Learning > Dimensionality Reduction and Representation > Why Reduce Dimensions",
+      "children": [],
+      "siblings": [
+        "t-SNE and UMAP for Visualisation",
+        "Autoencoders as Learned Compression",
+        "Embeddings as Dense Representations"
+      ]
+    },
+    {
+      "id": "t-sne-and-umap-for-visualisation",
+      "level": "unit",
+      "title": "t-SNE and UMAP for Visualisation",
+      "path": "Machine Learning > Unsupervised and Semi-Supervised Learning > Dimensionality Reduction and Representation > t-SNE and UMAP for Visualisation",
+      "children": [],
+      "siblings": [
+        "Why Reduce Dimensions",
+        "Autoencoders as Learned Compression",
+        "Embeddings as Dense Representations"
+      ]
+    },
+    {
+      "id": "autoencoders-as-learned-compression",
+      "level": "unit",
+      "title": "Autoencoders as Learned Compression",
+      "path": "Machine Learning > Unsupervised and Semi-Supervised Learning > Dimensionality Reduction and Representation > Autoencoders as Learned Compression",
+      "children": [],
+      "siblings": [
+        "Why Reduce Dimensions",
+        "t-SNE and UMAP for Visualisation",
+        "Embeddings as Dense Representations"
+      ]
+    },
+    {
+      "id": "embeddings-as-dense-representations",
+      "level": "unit",
+      "title": "Embeddings as Dense Representations",
+      "path": "Machine Learning > Unsupervised and Semi-Supervised Learning > Dimensionality Reduction and Representation > Embeddings as Dense Representations",
+      "children": [],
+      "siblings": [
+        "Why Reduce Dimensions",
+        "t-SNE and UMAP for Visualisation",
+        "Autoencoders as Learned Compression"
+      ]
+    },
+    {
+      "id": "learning-with-limited-labels",
+      "level": "subsection",
+      "title": "Learning With Limited Labels",
+      "path": "Machine Learning > Unsupervised and Semi-Supervised Learning > Learning With Limited Labels",
+      "children": [
+        "Anomaly and Outlier Detection",
+        "Self-Supervised Pretext Tasks",
+        "Transfer Learning and Fine-Tuning",
+        "Active Learning"
+      ],
+      "siblings": [
+        "Clustering",
+        "Dimensionality Reduction and Representation"
+      ]
+    },
+    {
+      "id": "anomaly-and-outlier-detection",
+      "level": "unit",
+      "title": "Anomaly and Outlier Detection",
+      "path": "Machine Learning > Unsupervised and Semi-Supervised Learning > Learning With Limited Labels > Anomaly and Outlier Detection",
+      "children": [],
+      "siblings": [
+        "Self-Supervised Pretext Tasks",
+        "Transfer Learning and Fine-Tuning",
+        "Active Learning"
+      ]
+    },
+    {
+      "id": "self-supervised-pretext-tasks",
+      "level": "unit",
+      "title": "Self-Supervised Pretext Tasks",
+      "path": "Machine Learning > Unsupervised and Semi-Supervised Learning > Learning With Limited Labels > Self-Supervised Pretext Tasks",
+      "children": [],
+      "siblings": [
+        "Anomaly and Outlier Detection",
+        "Transfer Learning and Fine-Tuning",
+        "Active Learning"
+      ]
+    },
+    {
+      "id": "transfer-learning-and-fine-tuning",
+      "level": "unit",
+      "title": "Transfer Learning and Fine-Tuning",
+      "path": "Machine Learning > Unsupervised and Semi-Supervised Learning > Learning With Limited Labels > Transfer Learning and Fine-Tuning",
+      "children": [],
+      "siblings": [
+        "Anomaly and Outlier Detection",
+        "Self-Supervised Pretext Tasks",
+        "Active Learning"
+      ]
+    },
+    {
+      "id": "active-learning",
+      "level": "unit",
+      "title": "Active Learning",
+      "path": "Machine Learning > Unsupervised and Semi-Supervised Learning > Learning With Limited Labels > Active Learning",
+      "children": [],
+      "siblings": [
+        "Anomaly and Outlier Detection",
+        "Self-Supervised Pretext Tasks",
+        "Transfer Learning and Fine-Tuning"
+      ]
+    }
+  ]
+}

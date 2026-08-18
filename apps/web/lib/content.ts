@@ -1,50 +1,83 @@
+import fs from "node:fs";
+import path from "node:path";
 import type { Node, Topic } from "@kbforge/content-types";
-import machineLearning from "../../../content/topics/machine-learning.json";
-import frontend from "../../../content/topics/frontend.json";
-import backendEngineering from "../../../content/topics/backend-engineering.json";
-import databases from "../../../content/topics/databases.json";
-import systemDesign from "../../../content/topics/system-design.json";
-import devops from "../../../content/topics/devops.json";
-import cloudComputing from "../../../content/topics/cloud-computing.json";
-import dataStructuresAndAlgorithms from "../../../content/topics/data-structures-and-algorithms.json";
-import llmsAndGenerativeAi from "../../../content/topics/llms-and-generative-ai.json";
-import aiEngineering from "../../../content/topics/ai-engineering.json";
-import mobileDevelopment from "../../../content/topics/mobile-development.json";
-import cybersecurity from "../../../content/topics/cybersecurity.json";
-import dataEngineering from "../../../content/topics/data-engineering.json";
-import gitAndVersionControl from "../../../content/topics/git-and-version-control.json";
-import testingAndQuality from "../../../content/topics/testing-and-quality.json";
-import operatingSystems from "../../../content/topics/operating-systems.json";
-import computerNetworking from "../../../content/topics/computer-networking.json";
-import deepLearning from "../../../content/topics/deep-learning.json";
-import lowLevelSystemDesign from "../../../content/topics/low-level-system-design.json";
-import pythonForEngineers from "../../../content/topics/python-for-engineers.json";
 
-const TOPICS = [
-  machineLearning,
-  frontend,
-  backendEngineering,
-  databases,
-  systemDesign,
-  devops,
-  cloudComputing,
-  dataStructuresAndAlgorithms,
-  llmsAndGenerativeAi,
-  aiEngineering,
-  mobileDevelopment,
-  cybersecurity,
-  dataEngineering,
-  gitAndVersionControl,
-  testingAndQuality,
-  operatingSystems,
-  computerNetworking,
-  deepLearning,
-  lowLevelSystemDesign,
-  pythonForEngineers,
-] as unknown as Topic[];
+/**
+ * Topics are read from disk at build time rather than statically imported.
+ * With static imports every page pulled the whole corpus into its module graph;
+ * at 100 topics that becomes the dominant build cost for no benefit, since any
+ * one page needs at most one topic.
+ */
+const TOPICS_DIR = path.join(process.cwd(), "..", "..", "content", "topics");
+
+/**
+ * Curated display order for the home page and footer. Files not listed here are
+ * appended alphabetically, so adding a topic never breaks the build — it just
+ * lands at the end until someone places it.
+ */
+const TOPIC_ORDER = [
+  "machine-learning.json",
+  "frontend.json",
+  "backend-engineering.json",
+  "databases.json",
+  "system-design.json",
+  "devops.json",
+  "cloud-computing.json",
+  "data-structures-and-algorithms.json",
+  "llms-and-generative-ai.json",
+  "ai-engineering.json",
+  "mobile-development.json",
+  "cybersecurity.json",
+  "data-engineering.json",
+  "git-and-version-control.json",
+  "testing-and-quality.json",
+  "operating-systems.json",
+  "computer-networking.json",
+  "deep-learning.json",
+  "low-level-system-design.json",
+  "python-for-engineers.json",
+];
+
+const topicCache = new Map<string, Topic>();
+let allTopicsCache: Topic[] | null = null;
+
+function topicFiles(): string[] {
+  const present = new Set(fs.readdirSync(TOPICS_DIR).filter((f) => f.endsWith(".json")));
+  const ordered = TOPIC_ORDER.filter((f) => present.has(f));
+  for (const f of ordered) present.delete(f);
+  return [...ordered, ...[...present].sort()];
+}
+
+function readTopicFile(file: string): Topic {
+  const cached = topicCache.get(file);
+  if (cached) return cached;
+  const parsed = JSON.parse(fs.readFileSync(path.join(TOPICS_DIR, file), "utf8")) as Topic;
+  topicCache.set(file, parsed);
+  return parsed;
+}
 
 function loadAllTopics(): Topic[] {
-  return TOPICS;
+  if (allTopicsCache) return allTopicsCache;
+  allTopicsCache = topicFiles().map(readTopicFile);
+  return allTopicsCache;
+}
+
+/** Id and title of every topic, without holding the trees in memory. */
+export type TopicSummary = { id: string; title: string };
+
+let summaryCache: TopicSummary[] | null = null;
+
+/**
+ * For nav and footer listings, which need labels only. Reads the same files but
+ * discards the bodies, so a listing page never retains 100 parsed trees.
+ */
+export function getTopicSummaries(): TopicSummary[] {
+  if (summaryCache) return summaryCache;
+  summaryCache = topicFiles().map((f) => {
+    const t = readTopicFile(f);
+    return { id: t.root.id, title: t.root.title };
+  });
+  return summaryCache;
 }
 
 function findNode(node: Node, id: string): Node | undefined {
@@ -117,6 +150,28 @@ export function getAllNodeIds(): string[] {
   return ids;
 }
 
+/**
+ * The deep-dive half of a node, served separately from the page.
+ *
+ * Anything rendered inside a client component is serialized into the RSC
+ * payload even when CSS hides it, so deep prose cannot be shipped with the page
+ * without being paid for. It's fetched on first use instead — same approach as
+ * the tree skeleton.
+ */
+export type { DeepPayload } from "./content-types";
+import type { DeepPayload } from "./content-types";
+
+export function getDeepPayload(nodeId: string): DeepPayload | undefined {
+  const node = getNode(nodeId);
+  if (!node?.deep_text) return undefined;
+  return { deep_text: node.deep_text, interview: node.interview };
+}
+
+/** Ids of nodes that actually have deep content, so only those get a route. */
+export function getDeepNodeIds(): string[] {
+  return getAllNodeIds().filter((id) => Boolean(getNode(id)?.deep_text));
+}
+
 /** Sibling nodes of the given node within its parent, in order, plus the node's index. */
 export function getSiblings(nodeId: string): { siblings: Node[]; index: number } | undefined {
   const trail = getBreadcrumbPath(nodeId);
@@ -125,6 +180,68 @@ export function getSiblings(nodeId: string): { siblings: Node[]; index: number }
   const index = parent.children.findIndex((c) => c.id === nodeId);
   if (index === -1) return undefined;
   return { siblings: parent.children, index };
+}
+
+export type SpineEntry = {
+  id: string;
+  title: string;
+  level: string;
+  depth: number;
+  /** 1-based position among siblings, and how many siblings there are. */
+  position: number;
+  of: number;
+  childCount: number;
+  onPath: boolean;
+  isCurrent: boolean;
+};
+
+/**
+ * The visible skeleton of a topic relative to one node: every ancestor of the
+ * node expanded to show its children, everything else left collapsed. Gives
+ * the reader depth and position at each level without dumping all 130 nodes.
+ */
+export function getSpine(topicRoot: Node, currentId: string): SpineEntry[] {
+  const trail = findPath(topicRoot, currentId, []) ?? [topicRoot];
+  const onPath = new Set(trail.map((n) => n.id));
+  const out: SpineEntry[] = [];
+
+  function walk(node: Node, depth: number, position: number, of: number): void {
+    out.push({
+      id: node.id,
+      title: node.title,
+      level: node.level,
+      depth,
+      position,
+      of,
+      childCount: node.children.length,
+      onPath: onPath.has(node.id),
+      isCurrent: node.id === currentId,
+    });
+    // Expand only along the trail; siblings are listed but not opened.
+    if (!onPath.has(node.id)) return;
+    node.children.forEach((c, i) => walk(c, depth + 1, i + 1, node.children.length));
+  }
+
+  walk(topicRoot, 0, 1, 1);
+  return out;
+}
+
+export type { TreeNode } from "./tree";
+import type { TreeNode } from "./tree";
+
+/**
+ * The topic tree with every body of text stripped out. The Tree map only draws
+ * labelled cards, so shipping deep_text and interview answers for all 130 nodes
+ * into the client bundle is pure waste.
+ */
+export function getTreeSkeleton(node: Node): TreeNode {
+  return {
+    id: node.id,
+    title: node.title,
+    level: node.level,
+    status: node.status,
+    children: node.children.map(getTreeSkeleton),
+  };
 }
 
 export type SearchEntry = {

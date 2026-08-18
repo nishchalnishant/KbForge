@@ -11,7 +11,9 @@
     "upload": "tsx upload/index.ts",
     "backfill": "tsx backfill/index.ts",
     "run": "tsx run.ts",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "smoke": "tsx author/smoke.ts",
+    "references": "tsx author/index.ts --references"
   },
   "dependencies": {
     "@kbforge/content-types": "workspace:*",
